@@ -1,11 +1,10 @@
-streamlit
-pandas
-numpy
+joblib
 scikit-learn
 shap
-plotly
-matplotlib
-joblib
-statsmodels
+pandas
+numpy
+streamlit
 pmdarima
+statsmodels
+plotly
 scipy
