@@ -1,10 +1,11 @@
-joblib
-scikit-learn
-shap
+streamlit
 pandas
 numpy
-streamlit
-pmdarima
-statsmodels
+scikit-learn
+shap
 plotly
+matplotlib
+joblib
+statsmodels
+pmdarima
 scipy
