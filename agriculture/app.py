@@ -15,6 +15,29 @@ import matplotlib.pyplot as plt
 
 warnings.filterwarnings("ignore")
 
+
+# for the yeild predictor
+#-----------------------------------------------------------
+import requests
+import os
+import joblib
+
+MODEL_URL = "https://huggingface.co/devc9876/farm-yield-predictor/resolve/main/yield_predictor.pkl"
+MODEL_PATH = "models/yield_predictor.pkl"
+
+@st.cache_resource  # caches the model so it doesn't re-download on every interaction
+def load_model():
+    if not os.path.exists(MODEL_PATH):
+        os.makedirs("models", exist_ok=True)
+        with requests.get(MODEL_URL, stream=True) as r:
+            r.raise_for_status()
+            with open(MODEL_PATH, "wb") as f:
+                for chunk in r.iter_content(chunk_size=8192):
+                    f.write(chunk)
+    return joblib.load(MODEL_PATH)
+
+model = load_model()
+
 # ──────────────────────────────────────────────────────────────────────────────
 # 0. UNIVERSAL PATH LOGIC - Works on Windows and Streamlit Cloud
 # ──────────────────────────────────────────────────────────────────────────────
