@@ -3,3 +3,4 @@ __pycache__/
 .env
 data/raw/
 *.ipynb
+models/yield_predictor.pkl 
