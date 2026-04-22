@@ -2,13 +2,6 @@
 app.py — AI-Powered Farm Profit Optimization (Fully Reactive)
 Changes to any sidebar input instantly update ALL predictions.
 """
-import streamlit as st
-
-st.set_page_config(
-    page_title="AI Farm Profit System",
-    initial_sidebar_state="expanded" # This keeps it open by default
-)
-
 
 import os, warnings
 import numpy as np
