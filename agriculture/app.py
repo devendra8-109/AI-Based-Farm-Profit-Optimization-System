@@ -1,3 +1,20 @@
+"""
+app.py — Agri-Intelligence Hub
+================================
+Streamlit Cloud / GitHub deployment-ready.
+
+Run order before launching:
+  1. python module1_module2.py
+  2. python module3_price.py
+  3. python module3_arima_module4_profit.py
+  4. python module5_shap.py
+  5. streamlit run app.py
+
+All paths use os.path.dirname(__file__) — NEVER hardcoded.
+All model loads are guarded with clear error messages.
+All KeyErrors / ValueErrors are caught and explained.
+"""
+
 import os
 import warnings
 import numpy as np
@@ -5,42 +22,15 @@ import pandas as pd
 import joblib
 import streamlit as st
 
-# Extra analytics imports to ensure compatibility with your modules
-import scipy
-import statsmodels
-import pmdarima
-import plotly.express as px
-import matplotlib
-import matplotlib.pyplot as plt
-
 warnings.filterwarnings("ignore")
 
-
-# for the yeild predictor
-#-----------------------------------------------------------
-import requests
+# ──────────────────────────────────────────────────────────────────────────────
+# 0. PORTABLE ROOT — works on Streamlit Cloud, Linux CI, any machine
+#    FIX: was hardcoded r"C:\Users\chouh\OneDrive\Desktop\agriculture"
+# ──────────────────────────────────────────────────────────────────────────────
 import os
-import joblib
 
-MODEL_URL = "https://huggingface.co/devc9876/farm-yield-predictor/resolve/main/yield_predictor.pkl"
-MODEL_PATH = "models/yield_predictor.pkl"
-
-@st.cache_resource  # caches the model so it doesn't re-download on every interaction
-def load_model():
-    if not os.path.exists(MODEL_PATH):
-        os.makedirs("models", exist_ok=True)
-        with requests.get(MODEL_URL, stream=True) as r:
-            r.raise_for_status()
-            with open(MODEL_PATH, "wb") as f:
-                for chunk in r.iter_content(chunk_size=8192):
-                    f.write(chunk)
-    return joblib.load(MODEL_PATH)
-
-model = load_model()
-
-# ──────────────────────────────────────────────────────────────────────────────
-# 0. UNIVERSAL PATH LOGIC - Works on Windows and Streamlit Cloud
-# ──────────────────────────────────────────────────────────────────────────────
+# UNIVERSAL PATH LOGIC - Works on Windows and Streamlit
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 RAW_DIR   = os.path.join(BASE_DIR, "data", "raw")
@@ -49,11 +39,8 @@ MODEL_DIR = os.path.join(BASE_DIR, "models")
 OUT_DIR   = os.path.join(BASE_DIR, "outputs")
 SHAP_DIR  = os.path.join(OUT_DIR, "shap_charts")
 
-# Ensure folders exist so the app doesn't crash on the first run
 for d in [RAW_DIR, CLEAN_DIR, MODEL_DIR, OUT_DIR, SHAP_DIR]:
-    os.makedirs(d, exist_ok=True)
-
-# ──────────────────────────────────────────────────────────────────────────────
+    os.makedirs(d, exist_ok=True)# ──────────────────────────────────────────────────────────────────────────────
 # 1. PAGE CONFIG — must be the very first Streamlit call
 # ──────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -65,6 +52,8 @@ st.set_page_config(
 
 # ──────────────────────────────────────────────────────────────────────────────
 # 2. THEME CSS
+#    FIX: original used 'unsafe_content_type=True' (wrong kwarg) →
+#         correct is 'unsafe_allow_html=True'
 # ──────────────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
@@ -79,51 +68,160 @@ st.markdown("""
 h1, h2, h3 { color: #2ecc71; }
 div[data-testid="stSidebar"] { background-color: #1c212b; }
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True)    # FIX: correct kwarg
 
 # ──────────────────────────────────────────────────────────────────────────────
 # 3. CROP MAPPING — matches all modules exactly
 # ──────────────────────────────────────────────────────────────────────────────
 CROP_MAPPING = {
-    "paddy": "rice",
+    "paddy":                    "rice",
     "bengal gram(gram)(whole)": "chickpea",
-    "bhindi(ladies finger)": "okra",
-    "arhar/tur": "pigeonpea",
-    "urad": "blackgram",
-    "moong(green gram)": "greengram",
-    "groundnut": "groundnut",
-    "sunflower": "sunflower",
-    "sesamum": "sesame",
-    "linseed": "linseed",
-    "safflower": "safflower",
-    "small millets": "millet",
-    "bajra": "pearl millet",
-    "jowar": "sorghum",
-    "ragi": "finger millet",
+    "bhindi(ladies finger)":    "okra",
+    "arhar/tur":                "pigeonpea",
+    "urad":                     "blackgram",
+    "moong(green gram)":        "greengram",
+    "groundnut":                "groundnut",
+    "sunflower":                "sunflower",
+    "sesamum":                  "sesame",
+    "linseed":                  "linseed",
+    "safflower":                "safflower",
+    "small millets":            "millet",
+    "bajra":                    "pearl millet",
+    "jowar":                    "sorghum",
+    "ragi":                     "finger millet",
 }
+
 
 def normalise_crop(series: pd.Series) -> pd.Series:
     return series.astype(str).str.strip().str.lower().replace(CROP_MAPPING)
 
+
 # ──────────────────────────────────────────────────────────────────────────────
-# 4. CACHED ASSET LOADERS (The rest of your logic follows here...)
+# 4. CACHED ASSET LOADERS
 # ──────────────────────────────────────────────────────────────────────────────
 
 @st.cache_resource(show_spinner="Loading crop recommender…")
 def load_crop_recommender():
     path = os.path.join(MODEL_DIR, "crop_recommender.pkl")
     if not os.path.exists(path):
-        st.session_state["rec_error"] = "crop_recommender.pkl not found in models/ folder."
+        st.session_state["rec_error"] = (
+            "crop_recommender.pkl not found in `models/`. "
+            "Run: python module1_module2.py"
+        )
         return None, None
     try:
         model = joblib.load(path)
-        feats = list(model.feature_names_in_) if hasattr(model, "feature_names_in_") else ["N","P","K","temperature","humidity","ph","rainfall"]
+        feats = (list(model.feature_names_in_)
+                 if hasattr(model, "feature_names_in_")
+                 else ["N","P","K","temperature","humidity","ph","rainfall"])
         return model, feats
     except Exception as exc:
-        st.session_state["rec_error"] = f"Failed to load: {exc}"
+        st.session_state["rec_error"] = f"Failed to load crop_recommender.pkl: {exc}"
         return None, None
 
-# ... (Insert the rest of your Tab, Sidebar, and SHAP logic here) ...
+
+@st.cache_resource(show_spinner="Loading yield predictor…")
+def load_yield_predictor():
+    """
+    FIX: yield_predictor.pkl was trained on
+    ['crop_enc', 'state_enc', 'area', 'rainfall']  (4 features, label-encoded)
+    NOT on [N, P, K, Temp, Humidity, pH, Rain, Fert].
+    The original Streamlit code passed 8 wrong features — guaranteed ValueError.
+    We now also load the LabelEncoders saved by module1_module2.py.
+    """
+    path = os.path.join(MODEL_DIR, "yield_predictor.pkl")
+    if not os.path.exists(path):
+        st.session_state["yield_error"] = (
+            "yield_predictor.pkl not found in `models/`. "
+            "Run: python module1_module2.py"
+        )
+        return None, None, None
+
+    enc_crop_path  = os.path.join(MODEL_DIR, "yield_crop_encoder.pkl")
+    enc_state_path = os.path.join(MODEL_DIR, "yield_state_encoder.pkl")
+    try:
+        model     = joblib.load(path)
+        le_crop   = joblib.load(enc_crop_path)  if os.path.exists(enc_crop_path)  else None
+        le_state  = joblib.load(enc_state_path) if os.path.exists(enc_state_path) else None
+        return model, le_crop, le_state
+    except Exception as exc:
+        st.session_state["yield_error"] = f"Failed to load yield_predictor.pkl: {exc}"
+        return None, None, None
+
+
+@st.cache_resource(show_spinner="Loading ARIMA model…")
+def load_arima():
+    path = os.path.join(MODEL_DIR, "price_arima.pkl")
+    if not os.path.exists(path):
+        return None
+    try:
+        return joblib.load(path)
+    except Exception:
+        return None
+
+
+@st.cache_data(show_spinner="Loading price data…")
+def load_price_data() -> pd.DataFrame:
+    for fname in ["mandi_prices_monthly.csv", "mandi_prices_clean.csv"]:
+        p = os.path.join(CLEAN_DIR, fname)
+        if os.path.exists(p):
+            df = pd.read_csv(p)
+            df.columns = df.columns.str.strip()
+            date_col = next((c for c in df.columns if "date" in c.lower()), None)
+            if date_col:
+                df[date_col] = pd.to_datetime(df[date_col], dayfirst=True, errors="coerce")
+                df = df.rename(columns={date_col: "date"})
+            return df
+    return pd.DataFrame()
+
+
+@st.cache_data(show_spinner="Loading profit results…")
+def load_profit_results() -> pd.DataFrame:
+    """
+    FIX: Tries multiple filenames — notebook may have saved under different name.
+    Also handles 'Optimized_Profit' vs 'Net_Profit' column name variants.
+    """
+    for fname in ["m4_final_recommendations.csv",
+                  "profit_optimization_results.csv",
+                  "profit_results.csv"]:
+        p = os.path.join(OUT_DIR, fname)
+        if os.path.exists(p):
+            df = pd.read_csv(p)
+            df.columns = df.columns.str.strip()
+            # Normalise profit column name
+            if "Optimized_Profit" in df.columns and "Net_Profit" not in df.columns:
+                df["Net_Profit"] = (df["Optimized_Profit"]
+                                    .astype(str)
+                                    .str.replace("₹","", regex=False)
+                                    .str.replace(",","", regex=False)
+                                    .pipe(pd.to_numeric, errors="coerce"))
+            return df
+    return pd.DataFrame()
+
+
+@st.cache_data(show_spinner="Loading crop factor data…")
+def load_crop_factors() -> pd.DataFrame:
+    for fname in ["crop_rec_factors_clean.csv",
+                  "crop_recommendation_clean.csv",
+                  "crop_recommendation_with_factors.csv"]:
+        p = os.path.join(CLEAN_DIR, fname)
+        if os.path.exists(p):
+            df = pd.read_csv(p)
+            df.columns = df.columns.str.strip()
+            return df
+    return pd.DataFrame()
+
+
+@st.cache_data(show_spinner="Loading yield data…")
+def load_yield_data() -> pd.DataFrame:
+    p = os.path.join(CLEAN_DIR, "crop_yield_clean.csv")
+    if os.path.exists(p):
+        df = pd.read_csv(p)
+        df.columns = df.columns.str.strip()
+        return df
+    return pd.DataFrame()
+
+
 # ──────────────────────────────────────────────────────────────────────────────
 # 5. LOAD ALL ASSETS
 # ──────────────────────────────────────────────────────────────────────────────
