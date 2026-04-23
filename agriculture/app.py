@@ -279,6 +279,20 @@ def panel(title, html):
 def profit_row(label, value_html):
     return f'<div class="profit-row"><div class="profit-label">{label}</div><div class="profit-value">{value_html}</div></div>'
 
+def shap_bar_html(label, val, max_val):
+    pct = int(abs(val) / max(max_val, 1e-9) * 45)
+    if val >= 0:
+        bar = f'<div class="shap-bar-pos" style="width:{pct}%;"></div>'
+        v   = f'<div class="shap-val shap-pos-txt">+{val:.3f}</div>'
+    else:
+        bar = f'<div class="shap-bar-neg" style="width:{pct}%;"></div>'
+        v   = f'<div class="shap-val shap-neg-txt">{val:.3f}</div>'
+    return f"""<div class="shap-row">
+        <div class="shap-feat">{label}</div>
+        <div class="shap-center"><div class="shap-line"></div>{bar}</div>
+        {v}
+    </div>"""
+
 # Friendly display names for features
 FEAT_DISPLAY = {
     "n": "Nitrogen", "N": "Nitrogen",
