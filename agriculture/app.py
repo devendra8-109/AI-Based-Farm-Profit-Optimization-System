@@ -1,33 +1,34 @@
 """
-app.py — AI-Powered Farm Profit Optimization
-=============================================
-Clean dashboard layout matching the HTML demo design.
-Sidebar navigation with 6 modules:
-  Overview | Crop Recommendation | Yield Prediction |
-  Price Forecast | Profit Optimization | Impact Analysis
+app.py — AI Farm Profit Optimizer (Fully Reactive)
+====================================================
+Every sidebar change instantly updates ALL values across ALL pages.
+SHAP works directly from crop_recommender model — no CSV needed.
+yield_predictor.pkl auto-downloaded from Hugging Face if missing.
 """
 
-import os
-import warnings
+import os, warnings, requests
 import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st
 
 warnings.filterwarnings("ignore")
+matplotlib_imported = False
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
 # 0. PATHS
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 CLEAN_DIR = os.path.join(BASE_DIR, "data", "cleaned")
 OUT_DIR   = os.path.join(BASE_DIR, "outputs")
 SHAP_DIR  = os.path.join(OUT_DIR, "shap_charts")
+for d in [MODEL_DIR, CLEAN_DIR, OUT_DIR, SHAP_DIR]:
+    os.makedirs(d, exist_ok=True)
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
 # 1. PAGE CONFIG
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="FarmAI — Profit Optimizer",
     page_icon="🌱",
@@ -35,209 +36,131 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 2. CSS — clean dashboard theme matching the HTML demo
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
+# 2. CSS
+# ─────────────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-/* Hide default streamlit chrome */
 #MainMenu, footer, header { visibility: hidden; }
-.block-container { padding: 2rem 2rem 2rem 2rem; }
+.block-container { padding: 1.5rem 2rem; }
 
-/* Sidebar */
-[data-testid="stSidebar"] {
-    background-color: #111318;
-    border-right: 1px solid #2a2d35;
-}
-[data-testid="stSidebar"] .block-container { padding: 1.5rem 1rem; }
+[data-testid="stSidebar"] { background-color: #111318; border-right: 1px solid #2a2d35; }
+[data-testid="stSidebar"] .block-container { padding: 1rem; }
 
-/* Navigation buttons */
 div.stButton > button {
-    width: 100%;
-    text-align: left;
-    background: transparent;
-    border: none;
-    color: #8b92a5;
-    padding: 9px 12px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.15s;
-    margin-bottom: 2px;
+    width: 100%; text-align: left; background: transparent; border: none;
+    color: #8b92a5; padding: 9px 12px; border-radius: 8px;
+    font-size: 13px; cursor: pointer; transition: all 0.15s; margin-bottom: 2px;
 }
-div.stButton > button:hover {
-    background: #1e2128;
-    color: #e0e4ef;
-}
-
-/* Active nav button */
+div.stButton > button:hover { background: #1e2128; color: #e0e4ef; }
 div.stButton > button[kind="primary"] {
-    background: #1a2e1a !important;
-    color: #4ade80 !important;
-    font-weight: 500 !important;
-    border: none !important;
+    background: #1a2e1a !important; color: #4ade80 !important;
+    font-weight: 600 !important; border: none !important;
 }
 
-/* Metric cards */
 [data-testid="stMetric"] {
-    background: #16191f;
-    border: 1px solid #2a2d35;
-    border-radius: 12px;
-    padding: 16px 20px;
+    background: #16191f; border: 1px solid #2a2d35;
+    border-radius: 12px; padding: 16px 20px;
 }
 [data-testid="stMetricLabel"] { color: #8b92a5 !important; font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.05em; }
 [data-testid="stMetricValue"] { color: #e0e4ef !important; font-size: 22px !important; font-weight: 500 !important; }
+[data-testid="stMetricDelta"] { font-size: 12px !important; }
 
-/* Panel / card */
-.panel {
-    background: #16191f;
-    border: 1px solid #2a2d35;
-    border-radius: 12px;
-    padding: 18px 22px;
-    margin-bottom: 16px;
-}
-.panel-title {
-    font-size: 13px;
-    font-weight: 500;
-    color: #e0e4ef;
-    margin-bottom: 14px;
-}
+.panel { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; }
+.panel-title { font-size: 12px; font-weight: 600; color: #8b92a5; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
 
-/* Top bar */
-.topbar {
-    background: #16191f;
-    border: 1px solid #2a2d35;
-    border-radius: 12px;
-    padding: 14px 22px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+.topbar { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 14px 22px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; }
 .topbar-title { font-size: 16px; font-weight: 600; color: #e0e4ef; }
-.topbar-sub   { font-size: 12px; color: #8b92a5; margin-top: 2px; }
-.badge-success {
-    background: #1a2e1a; color: #4ade80;
-    padding: 4px 12px; border-radius: 20px;
-    font-size: 11px; font-weight: 500;
-}
-.badge-warn {
-    background: #2e2a1a; color: #facc15;
-    padding: 4px 12px; border-radius: 20px;
-    font-size: 11px; font-weight: 500;
-}
+.topbar-sub { font-size: 12px; color: #8b92a5; margin-top: 2px; }
+.badge-success { background: #1a2e1a; color: #4ade80; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+.badge-warn { background: #2e2a1a; color: #facc15; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
 
-/* Bar chart rows */
 .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-.bar-label { font-size: 12px; color: #8b92a5; width: 90px; flex-shrink: 0; }
+.bar-label { font-size: 12px; color: #8b92a5; width: 110px; flex-shrink: 0; }
 .bar-bg { flex: 1; background: #2a2d35; border-radius: 4px; height: 10px; }
-.bar-val { font-size: 12px; font-weight: 500; color: #e0e4ef; width: 70px; text-align: right; flex-shrink: 0; }
+.bar-val { font-size: 12px; font-weight: 500; color: #e0e4ef; width: 90px; text-align: right; flex-shrink: 0; }
 
-/* Step flow pipeline */
-.step-flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin-bottom: 8px; }
-.step-box {
-    background: #1a2e1a; border: 1px solid #2d4a2d;
-    border-radius: 8px; padding: 8px 14px;
-    font-size: 11px; color: #4ade80; text-align: center; min-width: 80px;
-}
-.step-arrow { font-size: 16px; color: #4ade80; padding: 0 6px; }
-
-/* Crop cards */
-.crop-card {
-    background: #1e2128; border: 1px solid #2a2d35;
-    border-radius: 10px; padding: 14px; text-align: center;
-}
-.crop-rank  { font-size: 10px; color: #8b92a5; margin-bottom: 4px; text-transform: uppercase; }
-.crop-name  { font-size: 15px; font-weight: 600; color: #e0e4ef; margin-bottom: 8px; }
-.conf-bar-bg { background: #2a2d35; border-radius: 4px; height: 6px; margin-bottom: 6px; }
-
-/* Profit rows */
-.profit-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 10px 0; border-bottom: 1px solid #2a2d35;
-}
+.profit-row { display: flex; justify-content: space-between; align-items: center; padding: 11px 0; border-bottom: 1px solid #2a2d35; }
 .profit-row:last-child { border-bottom: none; }
 .profit-label { font-size: 13px; color: #8b92a5; }
 .profit-value { font-size: 14px; font-weight: 500; color: #e0e4ef; }
-.profit-pos   { color: #4ade80 !important; }
-.profit-neg   { color: #f87171 !important; }
+.profit-pos { color: #4ade80 !important; }
+.profit-neg { color: #f87171 !important; }
 
-/* Section headers */
+.crop-card { background: #1e2128; border: 1px solid #2a2d35; border-radius: 10px; padding: 14px; text-align: center; }
+.crop-rank { font-size: 10px; color: #8b92a5; margin-bottom: 4px; text-transform: uppercase; }
+.crop-name { font-size: 15px; font-weight: 600; color: #e0e4ef; margin-bottom: 8px; }
+
+.shap-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.shap-feat { font-size: 12px; color: #8b92a5; width: 100px; flex-shrink: 0; text-align: right; }
+.shap-center { flex: 1; position: relative; height: 14px; display: flex; align-items: center; }
+.shap-line { position: absolute; left: 50%; width: 1px; height: 14px; background: #2a2d35; }
+.shap-bar-pos { position: absolute; left: 50%; height: 14px; border-radius: 0 3px 3px 0; background: #4ade80; }
+.shap-bar-neg { position: absolute; height: 14px; border-radius: 3px 0 0 3px; background: #f87171; right: 50%; }
+.shap-val { font-size: 11px; width: 60px; flex-shrink: 0; text-align: left; }
+.shap-pos-txt { color: #4ade80; }
+.shap-neg-txt { color: #f87171; }
+
+.insight-pos { padding: 9px 14px; background: #1a2e1a; border-radius: 8px; font-size: 12px; color: #4ade80; margin-bottom: 6px; }
+.insight-neg { padding: 9px 14px; background: #2e1a1a; border-radius: 8px; font-size: 12px; color: #f87171; margin-bottom: 6px; }
+
+.step-box { background: #1a2e1a; border: 1px solid #2d4a2d; border-radius: 8px; padding: 8px 14px; font-size: 11px; color: #4ade80; text-align: center; min-width: 80px; }
+.step-arrow { font-size: 16px; color: #4ade80; padding: 0 6px; }
+.step-flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin-bottom: 8px; }
+
 h2 { color: #e0e4ef !important; font-size: 18px !important; font-weight: 600 !important; }
 h3 { color: #e0e4ef !important; font-size: 14px !important; font-weight: 500 !important; }
-
-/* Divider */
 hr { border-color: #2a2d35 !important; }
-
-/* Streamlit selectbox / inputs */
 [data-testid="stSelectbox"] label,
 [data-testid="stSlider"] label,
 [data-testid="stNumberInput"] label { color: #8b92a5 !important; font-size: 11px !important; }
-
 .stAlert { border-radius: 10px !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 3. CROP MAPPING
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. MODEL LOADERS (cached — load once)
+# ─────────────────────────────────────────────────────────────────────────────
 CROP_MAPPING = {
     "paddy": "rice", "bengal gram(gram)(whole)": "chickpea",
     "bhindi(ladies finger)": "okra", "arhar/tur": "pigeonpea",
     "urad": "blackgram", "moong(green gram)": "greengram",
-    "groundnut": "groundnut", "sunflower": "sunflower",
-    "sesamum": "sesame", "bajra": "pearl millet",
-    "jowar": "sorghum", "ragi": "finger millet",
 }
 
-def normalise_crop(series):
-    return series.astype(str).str.strip().str.lower().replace(CROP_MAPPING)
-
-# ──────────────────────────────────────────────────────────────────────────────
-# 4. CACHED LOADERS
-# ──────────────────────────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner=False)
 def load_crop_recommender():
     path = os.path.join(MODEL_DIR, "crop_recommender.pkl")
     if not os.path.exists(path):
         return None, None, "crop_recommender.pkl not found in models/"
     try:
-        model = joblib.load(path)
-        feats = list(model.feature_names_in_) if hasattr(model, "feature_names_in_") \
+        m = joblib.load(path)
+        feats = list(m.feature_names_in_) if hasattr(m, "feature_names_in_") \
                 else ["N","P","K","temperature","humidity","ph","rainfall"]
-        return model, feats, None
+        return m, feats, None
     except Exception as e:
         return None, None, str(e)
 
 @st.cache_resource(show_spinner=False)
 def load_yield_predictor():
-    import requests
     path = os.path.join(MODEL_DIR, "yield_predictor.pkl")
     os.makedirs(MODEL_DIR, exist_ok=True)
-
-    # ── Download from Hugging Face if not cached locally ──────────────────────
     if not os.path.exists(path):
-        HF_URL = (
-            "https://huggingface.co/devc9876/farm-yield-predictor"
-            "/resolve/main/yield_predictor.pkl"
-        )
+        HF_URL = "https://huggingface.co/devc9876/farm-yield-predictor/resolve/main/yield_predictor.pkl"
         try:
-            with st.spinner("⏳ Downloading yield model from Hugging Face (~141 MB)…"):
-                r = requests.get(HF_URL, stream=True, timeout=120)
+            with st.spinner("⏳ Downloading yield model from Hugging Face (~135 MB)…"):
+                r = requests.get(HF_URL, stream=True, timeout=180)
                 r.raise_for_status()
                 with open(path, "wb") as f:
                     for chunk in r.iter_content(chunk_size=8192):
                         f.write(chunk)
         except Exception as e:
             return None, None, None, f"HuggingFace download failed: {e}"
-
     try:
-        model    = joblib.load(path)
-        le_crop  = joblib.load(os.path.join(MODEL_DIR, "yield_crop_encoder.pkl"))  \
-                   if os.path.exists(os.path.join(MODEL_DIR, "yield_crop_encoder.pkl")) else None
-        le_state = joblib.load(os.path.join(MODEL_DIR, "yield_state_encoder.pkl")) \
-                   if os.path.exists(os.path.join(MODEL_DIR, "yield_state_encoder.pkl")) else None
+        model = joblib.load(path)
+        p_crop  = os.path.join(MODEL_DIR, "yield_crop_encoder.pkl")
+        p_state = os.path.join(MODEL_DIR, "yield_state_encoder.pkl")
+        le_crop  = joblib.load(p_crop)  if os.path.exists(p_crop)  else None
+        le_state = joblib.load(p_state) if os.path.exists(p_state) else None
         return model, le_crop, le_state, None
     except Exception as e:
         return None, None, None, str(e)
@@ -251,37 +174,24 @@ def load_arima():
 
 @st.cache_data(show_spinner=False)
 def load_price_data():
-    for fname in ["mandi_prices_monthly.csv", "mandi_prices_clean.csv"]:
+    for fname in ["mandi_prices_monthly.csv","mandi_prices_clean.csv"]:
         p = os.path.join(CLEAN_DIR, fname)
         if os.path.exists(p):
-            df = pd.read_csv(p)
-            df.columns = df.columns.str.strip()
-            date_col = next((c for c in df.columns if "date" in c.lower()), None)
-            if date_col:
-                df[date_col] = pd.to_datetime(df[date_col], dayfirst=True, errors="coerce")
-                df = df.rename(columns={date_col: "date"})
+            df = pd.read_csv(p); df.columns = df.columns.str.strip()
+            dc = next((c for c in df.columns if "date" in c.lower()), None)
+            if dc:
+                df[dc] = pd.to_datetime(df[dc], dayfirst=True, errors="coerce")
+                df = df.rename(columns={dc: "date"})
             return df
     return pd.DataFrame()
 
 @st.cache_data(show_spinner=False)
-def load_profit_results():
+def load_profit_csv():
     for fname in ["m4_final_recommendations.csv","profit_optimization_results.csv","profit_results.csv"]:
         p = os.path.join(OUT_DIR, fname)
         if os.path.exists(p):
             df = pd.read_csv(p); df.columns = df.columns.str.strip()
-            if "Optimized_Profit" in df.columns and "Net_Profit" not in df.columns:
-                df["Net_Profit"] = (df["Optimized_Profit"].astype(str)
-                    .str.replace("₹","",regex=False).str.replace(",","",regex=False)
-                    .pipe(pd.to_numeric, errors="coerce"))
             return df
-    return pd.DataFrame()
-
-@st.cache_data(show_spinner=False)
-def load_crop_factors():
-    for fname in ["crop_rec_factors_clean.csv","crop_recommendation_with_factors.csv"]:
-        p = os.path.join(CLEAN_DIR, fname)
-        if os.path.exists(p):
-            df = pd.read_csv(p); df.columns = df.columns.str.strip(); return df
     return pd.DataFrame()
 
 @st.cache_data(show_spinner=False)
@@ -291,318 +201,340 @@ def load_yield_data():
         df = pd.read_csv(p); df.columns = df.columns.str.strip(); return df
     return pd.DataFrame()
 
-# Load all assets
-rec_model, rec_features, rec_err = load_crop_recommender()
-yield_model, le_crop, le_state, yield_err = load_yield_predictor()
+# Load all models/data once
+rec_model,    rec_features, rec_err    = load_crop_recommender()
+yield_model,  le_crop, le_state, y_err = load_yield_predictor()
 arima_model   = load_arima()
 df_price      = load_price_data()
-df_profit     = load_profit_results()
-df_factors    = load_crop_factors()
+df_profit_csv = load_profit_csv()
 df_yield_data = load_yield_data()
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 5. SIDEBAR NAVIGATION + INPUTS
-# ──────────────────────────────────────────────────────────────────────────────
-if "page" not in st.session_state:
-    st.session_state.page = "Overview"
-
-PAGES = ["Overview", "Crop Recommendation", "Yield Prediction",
-         "Price Forecast", "Profit Optimization", "Impact Analysis"]
-
-with st.sidebar:
-    st.markdown("""
-    <div style='padding-bottom:16px; border-bottom:1px solid #2a2d35; margin-bottom:12px;'>
-        <div style='font-size:15px; font-weight:600; color:#e0e4ef;'>🌱 FarmAI</div>
-        <div style='font-size:11px; color:#8b92a5; margin-top:2px;'>Profit Optimizer</div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    for page in PAGES:
-        is_active = st.session_state.page == page
-        if st.button(
-            f"{'●' if is_active else '○'}  {page}",
-            key=f"nav_{page}",
-            type="primary" if is_active else "secondary",
-            use_container_width=True,
-        ):
-            st.session_state.page = page
-            st.rerun()
-
-    st.markdown("<hr style='margin:16px 0;'>", unsafe_allow_html=True)
-    st.markdown("<div style='font-size:11px; color:#8b92a5; font-weight:500; margin-bottom:8px;'>FIELD PARAMETERS</div>", unsafe_allow_html=True)
-
-    n    = st.slider("Nitrogen (N) kg/ha",  0, 140, 70)
-    p_   = st.slider("Phosphorus (P) kg/ha", 5, 145, 45)
-    k    = st.slider("Potassium (K) kg/ha",  5, 205, 30)
-    temp = st.slider("Temperature (°C)",    10,  45, 25)
-    hum  = st.slider("Humidity (%)",        20, 100, 65)
-    ph   = st.slider("Soil pH",           3.0,  9.0, 6.5, step=0.1)
-    rain = st.number_input("Rainfall (mm)", value=250.0, min_value=0.0)
-
-    st.markdown("<div style='font-size:11px; color:#8b92a5; font-weight:500; margin:12px 0 8px;'>YIELD INPUTS</div>", unsafe_allow_html=True)
-    y_crop  = st.selectbox("Crop",
-        sorted(df_yield_data["crop"].dropna().unique()) if not df_yield_data.empty and "crop" in df_yield_data.columns
-        else ["rice","wheat","maize","cotton","sugarcane"])
-    y_state = st.text_input("State", value="Madhya Pradesh")
-    y_area  = st.number_input("Area (ha)", value=1500.0, min_value=1.0)
-    y_rain  = st.number_input("Annual Rainfall (mm)", value=float(rain))
-
-# ──────────────────────────────────────────────────────────────────────────────
-# 6. HELPERS
-# ──────────────────────────────────────────────────────────────────────────────
-def bar_html(label, value_str, pct, color="#4ade80"):
-    return f"""
-    <div class="bar-row">
-        <div class="bar-label">{label}</div>
-        <div class="bar-bg"><div style="width:{pct}%;height:10px;border-radius:4px;background:{color};"></div></div>
-        <div class="bar-val">{value_str}</div>
-    </div>"""
-
-def panel(title, content_html):
-    return f"""<div class="panel"><div class="panel-title">{title}</div>{content_html}</div>"""
-
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. HELPERS
+# ─────────────────────────────────────────────────────────────────────────────
 def safe_encode(le, val):
     if le is not None:
         try: return int(le.transform([str(val).strip().lower()])[0])
-        except: return 0
+        except: pass
     return abs(hash(str(val).strip().lower())) % 10000
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 7. PAGES
-# ──────────────────────────────────────────────────────────────────────────────
-page = st.session_state.page
+def bar_html(label, val_str, pct, color="#4ade80"):
+    pct = min(max(int(pct), 0), 100)
+    return f"""<div class="bar-row">
+        <div class="bar-label">{label}</div>
+        <div class="bar-bg"><div style="width:{pct}%;height:10px;border-radius:4px;background:{color};"></div></div>
+        <div class="bar-val">{val_str}</div>
+    </div>"""
 
-# ── Compute recommendation for Overview & other pages ──────────────────────
-rec_crop_name = "N/A"
-rec_confidence = 0
+def panel(title, html):
+    return f'<div class="panel"><div class="panel-title">{title}</div>{html}</div>'
+
+def profit_row(label, value_html):
+    return f'<div class="profit-row"><div class="profit-label">{label}</div><div class="profit-value">{value_html}</div></div>'
+
+def shap_bar_html(label, val, max_val):
+    pct = int(abs(val) / max(max_val, 1e-9) * 45)
+    if val >= 0:
+        bar = f'<div class="shap-bar-pos" style="width:{pct}%;"></div>'
+        v   = f'<div class="shap-val shap-pos-txt">+{val:.2f}</div>'
+    else:
+        bar = f'<div class="shap-bar-neg" style="width:{pct}%;"></div>'
+        v   = f'<div class="shap-val shap-neg-txt">{val:.2f}</div>'
+    return f"""<div class="shap-row">
+        <div class="shap-feat">{label}</div>
+        <div class="shap-center"><div class="shap-line"></div>{bar}</div>
+        {v}
+    </div>"""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 5. SIDEBAR — navigation + all inputs
+# ─────────────────────────────────────────────────────────────────────────────
+if "page" not in st.session_state:
+    st.session_state.page = "Overview"
+
+PAGES = ["Overview","Crop Recommendation","Yield Prediction",
+         "Price Forecast","Profit Optimization","Impact Analysis"]
+
+with st.sidebar:
+    st.markdown("""
+    <div style='padding-bottom:14px;border-bottom:1px solid #2a2d35;margin-bottom:10px;'>
+        <div style='font-size:15px;font-weight:600;color:#e0e4ef;'>🌱 FarmAI</div>
+        <div style='font-size:11px;color:#8b92a5;margin-top:2px;'>Profit Optimizer</div>
+    </div>""", unsafe_allow_html=True)
+
+    for pg in PAGES:
+        active = st.session_state.page == pg
+        if st.button(f"{'●' if active else '○'}  {pg}", key=f"nav_{pg}",
+                     type="primary" if active else "secondary",
+                     use_container_width=True):
+            st.session_state.page = pg
+            st.rerun()
+
+    st.markdown("<hr style='margin:14px 0;'>", unsafe_allow_html=True)
+    st.markdown("<div style='font-size:11px;color:#8b92a5;font-weight:600;margin-bottom:8px;'>🌿 SOIL & WEATHER</div>", unsafe_allow_html=True)
+
+    n    = st.slider("Nitrogen (N) kg/ha",    0,   140,  70)
+    p_   = st.slider("Phosphorus (P) kg/ha",  5,   145,  45)
+    k    = st.slider("Potassium (K) kg/ha",   5,   205,  30)
+    temp = st.slider("Temperature (°C)",      10,   45,  25)
+    hum  = st.slider("Humidity (%)",          20,  100,  65)
+    ph   = st.slider("Soil pH",              3.0,  9.0, 6.5, step=0.1)
+    rain = st.number_input("Rainfall (mm)",  value=250.0, min_value=0.0)
+
+    st.markdown("<div style='font-size:11px;color:#8b92a5;font-weight:600;margin:12px 0 8px;'>🌾 YIELD INPUTS</div>", unsafe_allow_html=True)
+
+    crop_options = (sorted(df_yield_data["crop"].dropna().unique().tolist())
+                    if not df_yield_data.empty and "crop" in df_yield_data.columns
+                    else ["rice","wheat","maize","cotton","sugarcane","chickpea","groundnut"])
+    y_crop  = st.selectbox("Crop", crop_options)
+    y_state = st.text_input("State", value="Madhya Pradesh")
+    y_area  = st.number_input("Area (ha)", value=1500.0, min_value=1.0)
+    y_rain  = st.number_input("Annual Rainfall (mm)", value=float(rain), key="yrain")
+
+    st.markdown("<div style='font-size:11px;color:#8b92a5;font-weight:600;margin:12px 0 8px;'>💰 COST ASSUMPTIONS</div>", unsafe_allow_html=True)
+    cost_seed       = st.number_input("Seed (₹/ha)",        value=3000,  step=500)
+    cost_fertilizer = st.number_input("Fertilizer (₹/ha)",  value=5000,  step=500)
+    cost_labour     = st.number_input("Labour (₹/ha)",      value=8000,  step=500)
+    cost_irrigation = st.number_input("Irrigation (₹/ha)",  value=4000,  step=500)
+    cost_misc       = st.number_input("Misc (₹/ha)",        value=2000,  step=500)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 6. LIVE COMPUTATIONS — run on every render (reactive to slider changes)
+# ─────────────────────────────────────────────────────────────────────────────
+feat_map = {"n":n,"N":n,"p":p_,"P":p_,"k":k,"K":k,
+            "temperature":temp,"Temperature":temp,
+            "humidity":hum,"Humidity":hum,"ph":ph,"pH":ph,
+            "rainfall":rain,"Rainfall":rain}
+
+# — Crop recommendation
+rec_crop   = "N/A"
+rec_conf   = 0
 top5_crops = []
 if rec_model is not None:
-    feat_map = {"n":n,"N":n,"p":p_,"P":p_,"k":k,"K":k,
-                "temperature":temp,"Temperature":temp,
-                "humidity":hum,"Humidity":hum,"ph":ph,"pH":ph,
-                "rainfall":rain,"Rainfall":rain}
     try:
-        input_vec  = np.array([[feat_map.get(f, 0.0) for f in rec_features]])
-        prediction = rec_model.predict(input_vec)[0]
-        rec_crop_name = str(prediction)
+        inp = np.array([[feat_map.get(f, 0.0) for f in rec_features]])
+        rec_crop = str(rec_model.predict(inp)[0])
         if hasattr(rec_model, "predict_proba"):
-            proba = rec_model.predict_proba(input_vec)[0]
+            proba      = rec_model.predict_proba(inp)[0]
             top5_crops = sorted(zip(rec_model.classes_, proba), key=lambda x: -x[1])[:5]
-            rec_confidence = int(top5_crops[0][1] * 100)
+            rec_conf   = int(top5_crops[0][1] * 100)
     except: pass
 
-# Compute yield for Overview
-predicted_yield = 0.0
+# — Yield prediction (fully reactive from sliders)
+pred_yield = 0.0
 if yield_model is not None:
     try:
-        crop_enc  = safe_encode(le_crop,  y_crop)
-        state_enc = safe_encode(le_state, y_state)
-        predicted_yield = yield_model.predict(np.array([[crop_enc, state_enc, float(y_area), float(y_rain)]]))[0]
+        ce = safe_encode(le_crop,  y_crop)
+        se = safe_encode(le_state, y_state)
+        pred_yield = float(yield_model.predict(
+            np.array([[ce, se, float(y_area), float(y_rain)]])
+        )[0])
     except: pass
 
-# Compute best profit crop
-best_crop_profit = "N/A"
-best_profit_val  = 0.0
-if not df_profit.empty:
-    crop_col_p   = next((c for c in df_profit.columns if c.lower() == "crop"), None)
-    profit_col_p = next((c for c in df_profit.columns if "profit" in c.lower()), None)
-    if crop_col_p and profit_col_p:
-        try:
-            best_crop_profit = str(df_profit.iloc[0][crop_col_p]).title()
-            best_profit_val  = float(str(df_profit.iloc[0][profit_col_p]).replace("₹","").replace(",",""))
-        except: pass
-
-# Compute ARIMA forecast avg
-arima_avg = 0.0
+# — ARIMA forecast
+arima_avg  = 0.0
+arima_preds = None
 if arima_model is not None:
-    try: arima_avg = arima_model.predict(n_periods=6).mean()
+    try:
+        arima_preds = arima_model.predict(n_periods=6)
+        arima_avg   = float(arima_preds.mean())
     except: pass
 
-# ── Top bar ────────────────────────────────────────────────────────────────
-all_ready = rec_model is not None and arima_model is not None and not df_profit.empty
-badge = '<span class="badge-success">● All modules ready</span>' if all_ready \
-        else '<span class="badge-warn">⚠ Some modules pending</span>'
+# — Live profit calculation
+cost_per_ha   = cost_seed + cost_fertilizer + cost_labour + cost_irrigation + cost_misc
+total_cost    = cost_per_ha * y_area
+total_produce = pred_yield * y_area                         # kg
+price_per_kg  = (arima_avg / 100) if arima_avg else 0      # ₹/quintal → ₹/kg
+gross_revenue = total_produce * price_per_kg
+net_profit    = gross_revenue - total_cost
+profit_per_ha = net_profit / y_area if y_area > 0 else 0
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 7. TOP BAR
+# ─────────────────────────────────────────────────────────────────────────────
+page = st.session_state.page
+all_ok = rec_model is not None and yield_model is not None and arima_model is not None
+badge  = '<span class="badge-success">● All modules ready</span>' if all_ok \
+         else '<span class="badge-warn">⚠ Some modules pending</span>'
+
 st.markdown(f"""
 <div class="topbar">
   <div>
     <div class="topbar-title">🌱 AI Farm Profit Optimizer</div>
-    <div class="topbar-sub">Field: N={n} P={p_} K={k} | pH={ph} | Rain={rain:.0f}mm | Temp={temp}°C</div>
+    <div class="topbar-sub">N={n} P={p_} K={k} | pH={ph} | Rain={rain:.0f}mm | Temp={temp}°C | Crop: <b>{y_crop.title()}</b> | Area: {y_area:,.0f} ha</div>
   </div>
   {badge}
-</div>
-""", unsafe_allow_html=True)
+</div>""", unsafe_allow_html=True)
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ═════════════════════════════════════════════════════════════════════════════
+# 8. PAGES
+# ═════════════════════════════════════════════════════════════════════════════
+
+# ── OVERVIEW ─────────────────────────────────────────────────────────────────
 if page == "Overview":
-    # KPI cards
+    st.markdown("## 📊 Overview")
+
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("🏆 Best Crop",       rec_crop_name.title(),    f"{rec_confidence}% confidence")
-    c2.metric("🌾 Expected Yield",  f"{predicted_yield:,.0f}", "kg / hectare")
-    c3.metric("📈 Forecast Price",  f"₹{arima_avg:,.0f}" if arima_avg else "N/A", "per quintal (6-mo avg)")
-    c4.metric("💰 Net Profit",      f"₹{best_profit_val:,.0f}" if best_profit_val else "N/A", f"{best_crop_profit}")
+    c1.metric("🏆 Best Crop",       rec_crop.title(),          f"{rec_conf}% confidence")
+    c2.metric("🌾 Expected Yield",  f"{pred_yield:,.0f} kg/ha","per hectare")
+    c3.metric("📈 Forecast Price",  f"₹{arima_avg:,.0f}/q" if arima_avg else "N/A", "6-month avg")
+    profit_delta = f"₹{profit_per_ha:,.0f}/ha"
+    c4.metric("💰 Net Profit",      f"₹{net_profit:,.0f}",     profit_delta,
+              delta_color="normal" if net_profit >= 0 else "inverse")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Pipeline
     st.markdown(panel("Pipeline — how modules connect", """
     <div class="step-flow">
-        <div class="step-box">Soil &amp;<br>Weather</div>
-        <div class="step-arrow">→</div>
-        <div class="step-box">Crop<br>Recommend</div>
-        <div class="step-arrow">→</div>
-        <div class="step-box">Yield<br>Prediction</div>
-        <div class="step-arrow">→</div>
-        <div class="step-box">Price<br>Forecast</div>
-        <div class="step-arrow">→</div>
-        <div class="step-box">Profit<br>Optimizer</div>
-        <div class="step-arrow">→</div>
+        <div class="step-box">Soil &amp;<br>Weather</div><div class="step-arrow">→</div>
+        <div class="step-box">Crop<br>Recommend</div><div class="step-arrow">→</div>
+        <div class="step-box">Yield<br>Prediction</div><div class="step-arrow">→</div>
+        <div class="step-box">Price<br>Forecast</div><div class="step-arrow">→</div>
+        <div class="step-box">Profit<br>Optimizer</div><div class="step-arrow">→</div>
         <div class="step-box">SHAP<br>Analysis</div>
-    </div>
-    """), unsafe_allow_html=True)
+    </div>"""), unsafe_allow_html=True)
 
     col_a, col_b = st.columns(2)
     with col_a:
+        colors = ["#4ade80","#60a5fa","#facc15","#f87171","#a78bfa"]
         bars = ""
-        if top5_crops:
-            colors = ["#4ade80","#60a5fa","#facc15","#f87171","#a78bfa"]
-            for i, (cls_id, score) in enumerate(top5_crops[:3]):
-                bars += bar_html(str(cls_id).title(), f"{int(score*100)}%", int(score*100), colors[i])
-        else:
-            bars = "<div style='color:#8b92a5;font-size:13px;'>Run crop recommender to see results</div>"
-        st.markdown(panel("Top crop comparison", bars), unsafe_allow_html=True)
+        for i, (cls_id, score) in enumerate(top5_crops[:3]):
+            bars += bar_html(str(cls_id).title(), f"{int(score*100)}%", int(score*100), colors[i])
+        if not bars:
+            bars = "<div style='color:#8b92a5;font-size:13px;'>Load crop recommender model</div>"
+        st.markdown(panel("Top Crop Recommendations", bars), unsafe_allow_html=True)
 
     with col_b:
         inputs_html = (
-            bar_html("Nitrogen",   f"{n} kg/ha",  int(n/140*100), "#60a5fa") +
-            bar_html("Phosphorus", f"{p_} kg/ha", int(p_/145*100), "#60a5fa") +
-            bar_html("Potassium",  f"{k} kg/ha",  int(k/205*100), "#60a5fa") +
-            bar_html("Rainfall",   f"{rain:.0f}mm", min(int(rain/500*100),100), "#60a5fa")
+            bar_html("Nitrogen",   f"{n} kg/ha",    int(n/140*100),  "#60a5fa") +
+            bar_html("Phosphorus", f"{p_} kg/ha",   int(p_/145*100), "#60a5fa") +
+            bar_html("Potassium",  f"{k} kg/ha",    int(k/205*100),  "#60a5fa") +
+            bar_html("Rainfall",   f"{rain:.0f} mm",min(int(rain/500*100),100),"#60a5fa") +
+            bar_html("Temperature",f"{temp}°C",     int((temp-10)/35*100),"#facc15")
         )
-        st.markdown(panel("Current field inputs", inputs_html), unsafe_allow_html=True)
+        st.markdown(panel("Current Field Inputs", inputs_html), unsafe_allow_html=True)
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ── CROP RECOMMENDATION ───────────────────────────────────────────────────────
 elif page == "Crop Recommendation":
     st.markdown("## 🌿 Crop Recommendation Engine")
 
     if rec_model is None:
         st.error(f"❌ {rec_err}")
     else:
-        feat_map = {"n":n,"N":n,"p":p_,"P":p_,"k":k,"K":k,
-                    "temperature":temp,"Temperature":temp,
-                    "humidity":hum,"Humidity":hum,"ph":ph,"pH":ph,
-                    "rainfall":rain,"Rainfall":rain}
-        try:
-            input_vec  = np.array([[feat_map.get(f, 0.0) for f in rec_features]])
-            prediction = rec_model.predict(input_vec)[0]
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("🏆 Best Crop",  rec_crop.title())
+        col2.metric("📊 Confidence", f"{rec_conf}%")
+        col3.metric("🌧 Rainfall",   f"{rain:.0f} mm")
+        col4.metric("🌡 Temp",       f"{temp}°C")
 
-            col1, col2, col3 = st.columns(3)
-            col1.metric("🏆 Recommended Crop", str(prediction).title())
-            col2.metric("Soil pH", ph)
-            col3.metric("Rainfall", f"{rain:.0f} mm")
+        st.markdown("<br>", unsafe_allow_html=True)
 
-            st.markdown("<br>", unsafe_allow_html=True)
+        if top5_crops:
+            colors = ["#4ade80","#60a5fa","#facc15","#f87171","#a78bfa"]
+            ranks  = ["🥇 Rank 1","🥈 Rank 2","🥉 Rank 3","Rank 4","Rank 5"]
 
-            if hasattr(rec_model, "predict_proba"):
-                proba = rec_model.predict_proba(input_vec)[0]
-                top5  = sorted(zip(rec_model.classes_, proba), key=lambda x: -x[1])[:5]
-                colors = ["#4ade80","#60a5fa","#facc15","#f87171","#a78bfa"]
-                ranks  = ["🥇 Rank 1","🥈 Rank 2","🥉 Rank 3","Rank 4","Rank 5"]
+            cards_html = '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">'
+            for i, (cls_id, score) in enumerate(top5_crops[:3]):
+                pct = int(score * 100)
+                cards_html += f"""<div class="crop-card">
+                    <div class="crop-rank">{ranks[i]}</div>
+                    <div class="crop-name">{str(cls_id).title()}</div>
+                    <div style="background:#2a2d35;border-radius:4px;height:6px;margin-bottom:6px;">
+                        <div style="width:{pct}%;height:6px;border-radius:4px;background:{colors[i]};"></div>
+                    </div>
+                    <div style="font-size:12px;color:{colors[i]};font-weight:500;">{pct}% confidence</div>
+                </div>"""
+            cards_html += "</div>"
 
-                cards_html = '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">'
-                for i, (cls_id, score) in enumerate(top5[:3]):
-                    pct = int(score * 100)
-                    color = colors[i]
-                    cards_html += f"""
-                    <div class="crop-card">
-                        <div class="crop-rank">{ranks[i]}</div>
-                        <div class="crop-name">{str(cls_id).title()}</div>
-                        <div class="conf-bar-bg">
-                            <div style="width:{pct}%;height:6px;border-radius:4px;background:{color};"></div>
-                        </div>
-                        <div style="font-size:12px;color:{color};font-weight:500;">{pct}% confidence</div>
-                    </div>"""
-                cards_html += "</div>"
+            bars_html = ""
+            for i, (cls_id, score) in enumerate(top5_crops):
+                bars_html += bar_html(str(cls_id).title(), f"{int(score*100)}%",
+                                      int(score*100), colors[i] if i < 5 else "#8b92a5")
 
-                bars_html = ""
-                for i, (cls_id, score) in enumerate(top5):
-                    bars_html += bar_html(str(cls_id).title(), f"{int(score*100)}%", int(score*100), colors[i] if i < len(colors) else "#8b92a5")
+            col_l, col_r = st.columns([3,2])
+            with col_l:
+                st.markdown(panel("Top 3 Recommended Crops", cards_html), unsafe_allow_html=True)
+            with col_r:
+                st.markdown(panel("Top 5 Confidence Scores", bars_html), unsafe_allow_html=True)
 
-                col_left, col_right = st.columns([3,2])
-                with col_left:
-                    st.markdown(panel("Top 3 Recommended Crops", cards_html), unsafe_allow_html=True)
-                with col_right:
-                    st.markdown(panel("Top 5 Confidence Scores", bars_html), unsafe_allow_html=True)
+        # Soil input summary
+        soil_html = (
+            bar_html("Nitrogen",    f"{n} kg/ha",   int(n/140*100),  "#4ade80") +
+            bar_html("Phosphorus",  f"{p_} kg/ha",  int(p_/145*100), "#60a5fa") +
+            bar_html("Potassium",   f"{k} kg/ha",   int(k/205*100),  "#facc15") +
+            bar_html("Humidity",    f"{hum}%",       int(hum),        "#a78bfa") +
+            bar_html("Soil pH",     f"{ph}",         int((ph-3)/6*100),"#f87171")
+        )
+        st.markdown(panel("Input Soil Conditions Used", soil_html), unsafe_allow_html=True)
 
-        except Exception as e:
-            st.error(f"Recommendation error: {e}")
-
-    if not df_factors.empty:
-        st.markdown("---")
-        st.markdown("### 📊 Ideal Conditions by Crop")
-        lc = next((c for c in df_factors.columns if c.lower() in ("label","crop")), None)
-        if lc:
-            chosen = st.selectbox("Explore crop:", sorted(df_factors[lc].unique()))
-            sub    = df_factors[df_factors[lc] == chosen]
-            num_c  = sub.select_dtypes(include=np.number).columns.tolist()
-            if num_c:
-                st.dataframe(sub[num_c].describe().round(2), use_container_width=True)
-
-# ══════════════════════════════════════════════════════════════════════════════
+# ── YIELD PREDICTION ──────────────────────────────────────────────────────────
 elif page == "Yield Prediction":
     st.markdown("## 📈 Yield Prediction")
 
     if yield_model is None:
-        st.warning(f"⚠️ {yield_err}")
-        st.info("Upload `yield_predictor.pkl` to `models/` folder and redeploy.")
+        st.warning(f"⚠️ {y_err}")
     else:
-        crop_enc  = safe_encode(le_crop,  y_crop)
-        state_enc = safe_encode(le_state, y_state)
-        try:
-            pred_yield = yield_model.predict(np.array([[crop_enc, state_enc, float(y_area), float(y_rain)]]))[0]
+        total_yield   = pred_yield * y_area
+        est_rev_yield = total_yield * price_per_kg
 
-            c1, c2, c3, c4 = st.columns(4)
-            c1.metric("🌾 Predicted Yield", f"{pred_yield:,.0f} kg/ha")
-            c2.metric("Crop",  y_crop.title())
-            c3.metric("State", y_state)
-            c4.metric("Area",  f"{y_area:,.0f} ha")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("🌾 Predicted Yield", f"{pred_yield:,.0f} kg/ha")
+        c2.metric("📦 Total Produce",   f"{total_yield:,.0f} kg")
+        c3.metric("💵 Est. Revenue",    f"₹{est_rev_yield:,.0f}")
+        c4.metric("🗺 Area",            f"{y_area:,.0f} ha")
 
-            st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True)
 
-            # Yield breakdown panel
-            total_yield = pred_yield * y_area
-            est_revenue = total_yield * (arima_avg / 100) if arima_avg else 0
+        cls_rev = "profit-pos" if est_rev_yield > 0 else ""
+        rows = (
+            profit_row("Crop selected",             y_crop.title()) +
+            profit_row("State",                     y_state) +
+            profit_row("Area farmed",               f"{y_area:,.0f} ha") +
+            profit_row("Annual rainfall used",      f"{y_rain:.0f} mm") +
+            profit_row("Predicted yield / ha",      f"{pred_yield:,.0f} kg/ha") +
+            profit_row("Total estimated yield",     f'<span class="profit-pos">{total_yield:,.0f} kg</span>') +
+            profit_row("Market price (ARIMA avg)",  f"₹{arima_avg:,.0f}/quintal" if arima_avg else "N/A") +
+            profit_row("Estimated revenue",         f'<span class="{cls_rev}">₹{est_rev_yield:,.0f}</span>')
+        )
+        st.markdown(panel("Yield Breakdown", rows), unsafe_allow_html=True)
 
-            rows_html = f"""
-            <div class="profit-row"><div class="profit-label">Predicted yield per hectare</div><div class="profit-value">{pred_yield:,.0f} kg/ha</div></div>
-            <div class="profit-row"><div class="profit-label">Total area</div><div class="profit-value">{y_area:,.0f} ha</div></div>
-            <div class="profit-row"><div class="profit-label">Total estimated yield</div><div class="profit-value profit-pos">{total_yield:,.0f} kg</div></div>
-            <div class="profit-row"><div class="profit-label">Estimated revenue (at forecast price)</div><div class="profit-value profit-pos">₹{est_revenue:,.0f}</div></div>
-            """
-            st.markdown(panel("Yield Summary", rows_html), unsafe_allow_html=True)
-
-        except Exception as e:
-            st.error(f"Yield prediction error: {e}")
+        # Compare crops bar
+        st.markdown("### 📊 How Yield Varies with Rainfall")
+        rain_range = np.arange(50, 450, 50)
+        yields_rain = []
+        if yield_model is not None:
+            ce = safe_encode(le_crop, y_crop)
+            se = safe_encode(le_state, y_state)
+            for r in rain_range:
+                try:
+                    y = float(yield_model.predict(np.array([[ce, se, float(y_area), float(r)]]))[0])
+                    yields_rain.append(y)
+                except:
+                    yields_rain.append(0.0)
+            df_chart = pd.DataFrame({"Rainfall (mm)": rain_range, "Yield (kg/ha)": yields_rain})
+            st.line_chart(df_chart.set_index("Rainfall (mm)"))
 
     if not df_yield_data.empty:
         st.markdown("---")
-        st.markdown("### 📊 Yield Data Sample")
+        st.markdown("### 📋 Historical Yield Data")
         st.dataframe(df_yield_data.head(50), use_container_width=True)
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ── PRICE FORECAST ────────────────────────────────────────────────────────────
 elif page == "Price Forecast":
     st.markdown("## 💹 Market Price Forecast")
 
     if arima_model is None:
-        st.warning("price_arima.pkl not found. Run: python module3_arima_module4_profit.py")
+        st.warning("price_arima.pkl not found. Please add it to models/ folder.")
     else:
         try:
-            horizon    = st.slider("Forecast months", 3, 12, 6)
-            preds      = arima_model.predict(n_periods=horizon)
-            last_date  = df_price["date"].max() if not df_price.empty and "date" in df_price.columns \
-                         else pd.Timestamp.today()
-            _v2        = tuple(int(x) for x in pd.__version__.split(".")[:2])
-            mef        = "ME" if _v2 >= (2, 2) else "M"
-            future_idx = pd.date_range(last_date, periods=horizon+1, freq=mef)[1:]
+            horizon     = st.slider("Forecast months", 3, 12, 6)
+            preds       = arima_model.predict(n_periods=horizon)
+            last_date   = df_price["date"].max() if not df_price.empty and "date" in df_price.columns \
+                          else pd.Timestamp.today()
+            _v2         = tuple(int(x) for x in pd.__version__.split(".")[:2])
+            mef         = "ME" if _v2 >= (2,2) else "M"
+            future_idx  = pd.date_range(last_date, periods=horizon+1, freq=mef)[1:]
 
             df_fc = pd.DataFrame({
                 "Month": future_idx.strftime("%b %Y"),
@@ -610,9 +542,9 @@ elif page == "Price Forecast":
             })
 
             c1, c2, c3 = st.columns(3)
-            c1.metric("📈 Avg Forecast Price", f"₹{preds.mean():,.0f}/q")
-            c2.metric("📉 Min Price",          f"₹{preds.min():,.0f}/q")
-            c3.metric("📈 Max Price",          f"₹{preds.max():,.0f}/q")
+            c1.metric("📈 Avg Forecast",  f"₹{preds.mean():,.0f}/q")
+            c2.metric("📉 Min Price",     f"₹{preds.min():,.0f}/q")
+            c3.metric("📈 Max Price",     f"₹{preds.max():,.0f}/q")
 
             st.markdown("<br>", unsafe_allow_html=True)
             col_l, col_r = st.columns([3,2])
@@ -622,9 +554,8 @@ elif page == "Price Forecast":
             with col_r:
                 st.markdown("### Monthly Forecast")
                 st.dataframe(df_fc, use_container_width=True, hide_index=True)
-
         except Exception as e:
-            st.error(f"ARIMA forecast error: {e}")
+            st.error(f"ARIMA error: {e}")
 
     if not df_price.empty and "date" in df_price.columns:
         st.markdown("---")
@@ -634,253 +565,183 @@ elif page == "Price Forecast":
         if crop_col2 and price_col2 in df_price.columns:
             crops_av = sorted(df_price[crop_col2].dropna().unique())
             if crops_av:
-                chosen2 = st.selectbox("Select crop:", crops_av)
+                chosen2 = st.selectbox("Select crop for history:", crops_av)
                 sub2    = (df_price[df_price[crop_col2] == chosen2]
                            .groupby("date")[price_col2].mean()
                            .reset_index().sort_values("date"))
                 if not sub2.empty:
                     st.line_chart(sub2.set_index("date")[price_col2])
 
-# ══════════════════════════════════════════════════════════════════════════════
+# ── PROFIT OPTIMIZATION ───────────────────────────────────────────────────────
 elif page == "Profit Optimization":
     st.markdown("## 💰 Profit Optimization")
 
-    # ── LIVE profit calculation from sidebar inputs ────────────────────────────
-    st.markdown("### ⚡ Live Profit Calculator")
-
-    # Cost assumptions (per ha) — user can override
-    with st.expander("⚙️ Adjust cost assumptions", expanded=False):
-        cost_seed        = st.number_input("Seed cost (₹/ha)",        value=3000,  step=500)
-        cost_fertilizer  = st.number_input("Fertilizer cost (₹/ha)",  value=5000,  step=500)
-        cost_labour      = st.number_input("Labour cost (₹/ha)",      value=8000,  step=500)
-        cost_irrigation  = st.number_input("Irrigation cost (₹/ha)",  value=4000,  step=500)
-        cost_misc        = st.number_input("Miscellaneous cost (₹/ha)",value=2000,  step=500)
-
-    cost_per_ha   = cost_seed + cost_fertilizer + cost_labour + cost_irrigation + cost_misc
-    total_cost    = cost_per_ha * y_area
-
-    # Revenue from yield × ARIMA price
-    live_yield    = predicted_yield  # already computed above (0 if model missing)
-    total_produce = live_yield * y_area          # kg
-    price_per_kg  = (arima_avg / 100) if arima_avg else 0  # ₹/q → ₹/kg
-    gross_revenue = total_produce * price_per_kg
-    net_profit    = gross_revenue - total_cost
-
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("🌾 Crop",          y_crop.title())
-    c2.metric("📍 State",         y_state)
-    c3.metric("💵 Est. Revenue",  f"₹{gross_revenue:,.0f}")
-    profit_delta = "▲ profit" if net_profit >= 0 else "▼ loss"
-    c4.metric("💰 Est. Net Profit", f"₹{net_profit:,.0f}", profit_delta,
+    c1.metric("🌾 Crop",            y_crop.title())
+    c2.metric("📍 State",           y_state)
+    c3.metric("💵 Est. Revenue",    f"₹{gross_revenue:,.0f}")
+    c4.metric("💰 Est. Net Profit", f"₹{net_profit:,.0f}",
+              "▲ profit" if net_profit >= 0 else "▼ loss",
               delta_color="normal" if net_profit >= 0 else "inverse")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    col_l, col_r = st.columns([1, 1])
+    col_l, col_r = st.columns(2)
     with col_l:
-        cls_rev  = "profit-pos" if gross_revenue > 0 else ""
-        cls_cost = "profit-neg"
-        cls_net  = "profit-pos" if net_profit >= 0 else "profit-neg"
-        rows_html = f"""
-        <div class="profit-row">
-            <div class="profit-label">Yield × Area</div>
-            <div class="profit-value">{total_produce:,.0f} kg</div>
-        </div>
-        <div class="profit-row">
-            <div class="profit-label">Price (ARIMA avg)</div>
-            <div class="profit-value">₹{arima_avg:,.0f}/q</div>
-        </div>
-        <div class="profit-row">
-            <div class="profit-label">Gross Revenue</div>
-            <div class="profit-value {cls_rev}">₹{gross_revenue:,.0f}</div>
-        </div>
-        <div class="profit-row">
-            <div class="profit-label">Input Cost (est.)</div>
-            <div class="profit-value {cls_cost}">-₹{total_cost:,.0f}</div>
-        </div>
-        <div class="profit-row">
-            <div class="profit-label"><strong>Net Profit</strong></div>
-            <div class="profit-value {cls_net}"><strong>₹{net_profit:,.0f}</strong></div>
-        </div>"""
-        st.markdown(panel("LIVE PROFIT CALCULATION", rows_html), unsafe_allow_html=True)
+        cls_net = "profit-pos" if net_profit >= 0 else "profit-neg"
+        rows = (
+            profit_row("Yield × Area",       f"{total_produce:,.0f} kg") +
+            profit_row("Price (ARIMA avg)",   f"₹{arima_avg:,.0f}/q" if arima_avg else "N/A") +
+            profit_row("Gross Revenue",       f'<span class="profit-pos">₹{gross_revenue:,.0f}</span>') +
+            profit_row("Seed cost",           f'<span class="profit-neg">-₹{cost_seed*y_area:,.0f}</span>') +
+            profit_row("Fertilizer cost",     f'<span class="profit-neg">-₹{cost_fertilizer*y_area:,.0f}</span>') +
+            profit_row("Labour cost",         f'<span class="profit-neg">-₹{cost_labour*y_area:,.0f}</span>') +
+            profit_row("Irrigation cost",     f'<span class="profit-neg">-₹{cost_irrigation*y_area:,.0f}</span>') +
+            profit_row("Misc cost",           f'<span class="profit-neg">-₹{cost_misc*y_area:,.0f}</span>') +
+            profit_row("Total Input Cost",    f'<span class="profit-neg">-₹{total_cost:,.0f}</span>') +
+            profit_row("<strong>Net Profit</strong>", f'<span class="{cls_net}"><strong>₹{net_profit:,.0f}</strong></span>')
+        )
+        st.markdown(panel("Live Profit Calculation", rows), unsafe_allow_html=True)
 
     with col_r:
-        cost_breakdown = {
+        cost_items = {
             "Seed": cost_seed, "Fertilizer": cost_fertilizer,
-            "Labour": cost_labour, "Irrigation": cost_irrigation, "Misc": cost_misc,
+            "Labour": cost_labour, "Irrigation": cost_irrigation, "Misc": cost_misc
         }
-        bars = ""
-        for label, val in cost_breakdown.items():
+        cost_bars = ""
+        for lbl, val in cost_items.items():
             pct = int(val / cost_per_ha * 100) if cost_per_ha > 0 else 0
-            bars += bar_html(label, f"₹{val:,}", pct, "#f87171")
-        st.markdown(panel("Cost Breakdown (per ha)", bars), unsafe_allow_html=True)
+            cost_bars += bar_html(lbl, f"₹{val*y_area:,.0f}", pct, "#f87171")
+        st.markdown(panel("Cost Breakdown (total)", cost_bars), unsafe_allow_html=True)
 
-    # ── Saved results from CSV if available ───────────────────────────────────
-    if not df_profit.empty:
+        # Optimised comparison
+        opt_profit   = net_profit
+        def_profit   = gross_revenue - (cost_per_ha * 0.85 * y_area)
+        min_profit   = gross_revenue - (cost_per_ha * 0.60 * y_area)
+        max_val_opt  = max(abs(opt_profit), abs(def_profit), abs(min_profit), 1)
+        opt_bars = (
+            bar_html("Optimised",   f"₹{opt_profit:,.0f}", max(int(opt_profit/max_val_opt*100),0), "#4ade80") +
+            bar_html("Default",     f"₹{def_profit:,.0f}", max(int(def_profit/max_val_opt*100),0), "#facc15") +
+            bar_html("Min inputs",  f"₹{min_profit:,.0f}", max(int(min_profit/max_val_opt*100),0), "#f87171")
+        )
+        st.markdown(panel("Optimised vs Default Farming", opt_bars), unsafe_allow_html=True)
+
+    # Saved CSV results
+    if not df_profit_csv.empty:
         st.markdown("---")
-        st.markdown("### 📊 Saved Optimization Results")
-        crop_col_p   = next((c for c in df_profit.columns if c.lower() == "crop"), None)
-        profit_col_p = next((c for c in df_profit.columns if "profit" in c.lower()), None)
+        st.markdown("### 📊 Saved Crop Profit Rankings")
+        st.dataframe(df_profit_csv, use_container_width=True, hide_index=True)
 
-        if crop_col_p and profit_col_p:
-            top = df_profit.iloc[0]
-            try:
-                top_val = float(str(top[profit_col_p]).replace("₹","").replace(",",""))
-            except:
-                top_val = 0.0
-
-            rows_html2 = ""
-            for _, row in df_profit.iterrows():
-                try:
-                    val = float(str(row[profit_col_p]).replace("₹","").replace(",",""))
-                    val_str = f"₹{val:,.0f}"
-                    cls = "profit-pos" if val > 0 else "profit-neg"
-                except:
-                    val_str = str(row[profit_col_p])
-                    cls = ""
-                rows_html2 += f"""<div class="profit-row">
-                    <div class="profit-label">{str(row[crop_col_p]).title()}</div>
-                    <div class="profit-value {cls}">{val_str}</div>
-                </div>"""
-
-            col_l2, col_r2 = st.columns([2,3])
-            with col_l2:
-                st.markdown(panel("Crop Profit Rankings", rows_html2), unsafe_allow_html=True)
-            with col_r2:
-                st.markdown("### Full Results Table")
-                st.dataframe(df_profit, use_container_width=True, hide_index=True)
-
-# ══════════════════════════════════════════════════════════════════════════════
+# ── IMPACT ANALYSIS (SHAP) ────────────────────────────────────────────────────
 elif page == "Impact Analysis":
     st.markdown("## 🔍 SHAP — Decision Intelligence")
 
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt_shap
+    if rec_model is None:
+        st.error("❌ crop_recommender.pkl not found — cannot compute SHAP. Make sure it's in `agriculture/models/`.")
+    else:
+        # ── Compute SHAP for the current sidebar inputs ───────────────────────
+        try:
+            import shap as shap_lib
+            import matplotlib
+            matplotlib.use("Agg")
+            import matplotlib.pyplot as plt_s
 
-    os.makedirs(SHAP_DIR, exist_ok=True)
-    shap_beeswarm = os.path.join(SHAP_DIR, "shap_summary_detailed.png")
-    shap_bar      = os.path.join(SHAP_DIR, "shap_feature_ranking.png")
-
-    # ── Status diagnostics ────────────────────────────────────────────────────
-    s1, s2, s3 = st.columns(3)
-    s1.metric("Crop Recommender", "✅ Loaded" if rec_model  is not None else "❌ Missing")
-    s2.metric("Factors CSV",      f"✅ {len(df_factors)} rows" if not df_factors.empty else "❌ Missing")
-    s3.metric("SHAP Charts",      "✅ Ready" if os.path.exists(shap_bar) else "⏳ Not yet generated")
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    # ── Pick a model to explain: crop recommender preferred, yield as fallback ─
-    shap_model    = None
-    shap_features = []
-    shap_data     = pd.DataFrame()
-    shap_label    = ""
-
-    if rec_model is not None and not df_factors.empty:
-        shap_model    = rec_model
-        shap_features = rec_features
-        shap_data     = df_factors
-        shap_label    = "Crop Recommender"
-    elif yield_model is not None and not df_yield_data.empty:
-        shap_model    = yield_model
-        shap_features = ["crop_enc", "state_enc", "area", "rainfall"]
-        # build numeric proxy from yield data
-        _yd = df_yield_data.copy()
-        for col in _yd.select_dtypes(include="object").columns:
-            _yd[col] = pd.factorize(_yd[col])[0]
-        num_cols = _yd.select_dtypes(include=np.number).columns.tolist()[:4]
-        if len(num_cols) >= 2:
-            shap_data  = _yd[num_cols].rename(
-                columns=dict(zip(num_cols, shap_features[:len(num_cols)]))
-            )
-            shap_features = num_cols
-        shap_label = "Yield Predictor"
-
-    # ── Auto-generate charts ──────────────────────────────────────────────────
-    charts_missing = not os.path.exists(shap_bar) or not os.path.exists(shap_beeswarm)
-
-    if shap_model is not None and not shap_data.empty and charts_missing:
-        with st.spinner(f"🔍 Computing SHAP values for {shap_label}…"):
-            try:
-                import shap as shap_lib
-
-                # Build aligned X
-                X_shap = pd.DataFrame()
-                for feat in shap_features:
-                    match = [c for c in shap_data.columns if c.strip().lower() == feat.lower()]
-                    if match:
-                        X_shap[feat] = pd.to_numeric(shap_data[match[0]], errors="coerce").fillna(0)
-                    else:
-                        X_shap[feat] = 0.0
-
-                X_s  = X_shap.sample(min(300, len(X_shap)), random_state=42).reset_index(drop=True)
-                exp  = shap_lib.TreeExplainer(shap_model)
-                sv   = exp.shap_values(X_s, check_additivity=False)
-
-                # Collapse multi-class → mean abs per feature
-                if isinstance(sv, list):
-                    mean_abs = np.mean([np.abs(v) for v in sv], axis=0).mean(axis=0)
+            # Build a representative background dataset from current input
+            # varied slightly across the realistic range (no CSV needed)
+            np.random.seed(42)
+            n_bg = 100
+            feat_ranges = {
+                "N": (20,  140), "P": (5,  145), "K": (5,  205),
+                "temperature": (15, 40), "humidity": (30, 100),
+                "ph": (4.0, 9.0), "rainfall": (50, 500),
+            }
+            bg_data = {}
+            for feat in rec_features:
+                key = feat.lower().replace("n","N").strip()
+                matched = next((k for k in feat_ranges if k.lower() == feat.lower()), None)
+                if matched:
+                    lo, hi = feat_ranges[matched]
+                    bg_data[feat] = np.random.uniform(lo, hi, n_bg)
                 else:
-                    sv_arr   = np.abs(sv)
-                    if sv_arr.ndim == 3:
-                        mean_abs = sv_arr.mean(axis=2).mean(axis=0)
+                    bg_data[feat] = np.full(n_bg, feat_map.get(feat, 0.0))
+            X_bg = pd.DataFrame(bg_data)
+
+            # Current input row
+            X_cur = pd.DataFrame([{f: feat_map.get(f, 0.0) for f in rec_features}])
+
+            with st.spinner("🔍 Computing SHAP values for current field inputs…"):
+                explainer  = shap_lib.TreeExplainer(rec_model, X_bg)
+                sv         = explainer.shap_values(X_cur, check_additivity=False)
+
+                # Collapse multi-class → signed contribution per feature
+                if isinstance(sv, list):
+                    # list of (1, n_features) arrays per class — pick top-predicted class
+                    pred_class_idx = int(rec_model.predict(
+                        np.array([[feat_map.get(f,0.0) for f in rec_features]])
+                    )[0] if False else np.argmax([sv[i][0].sum() for i in range(len(sv))]))
+                    shap_vals = sv[pred_class_idx][0]
+                elif sv.ndim == 3:
+                    shap_vals = sv[0, :, np.argmax(sv[0].sum(axis=0))]
+                else:
+                    shap_vals = sv[0]
+
+            feat_names = list(rec_features)
+            max_abs    = max(np.abs(shap_vals).max(), 1e-9)
+
+            # Sort by absolute impact
+            sorted_idx = np.argsort(np.abs(shap_vals))[::-1]
+
+            # KPI cards
+            c1, c2, c3 = st.columns(3)
+            c1.metric("🏆 Recommended Crop",  rec_crop.title())
+            c2.metric("📊 Confidence",        f"{rec_conf}%")
+            c3.metric("🔑 Top Driver",        feat_names[sorted_idx[0]].title())
+
+            st.markdown("<br>", unsafe_allow_html=True)
+
+            col_l, col_r = st.columns([3, 2])
+            with col_l:
+                # Waterfall SHAP chart
+                shap_html = ""
+                for i in sorted_idx:
+                    shap_html += shap_bar_html(feat_names[i].title(), shap_vals[i], max_abs)
+
+                legend = """<div style="display:flex;gap:16px;margin-top:10px;">
+                    <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#8b92a5;">
+                        <div style="width:10px;height:10px;border-radius:2px;background:#4ade80;"></div>Increases yield prediction
+                    </div>
+                    <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#8b92a5;">
+                        <div style="width:10px;height:10px;border-radius:2px;background:#f87171;"></div>Decreases yield prediction
+                    </div>
+                </div>"""
+                st.markdown(panel("SHAP Feature Impact — What Drives the Prediction",
+                                  shap_html + legend), unsafe_allow_html=True)
+
+            with col_r:
+                # Feature importance bars
+                imp_html = ""
+                for i in sorted_idx:
+                    abs_v = abs(shap_vals[i])
+                    pct   = int(abs_v / max_abs * 100)
+                    color = "#4ade80" if shap_vals[i] >= 0 else "#f87171"
+                    imp_html += bar_html(feat_names[i].title(), f"{abs_v:.3f}", pct, color)
+                st.markdown(panel("Feature Importance Ranking", imp_html), unsafe_allow_html=True)
+
+                # Farmer insights
+                insights_html = ""
+                for i in sorted_idx[:4]:
+                    val = shap_vals[i]
+                    current_val = feat_map.get(rec_features[i], 0.0)
+                    if val > 0:
+                        insights_html += f'<div class="insight-pos">✅ {feat_names[i].title()} ({current_val:.1f}) is boosting prediction by +{val:.3f}</div>'
                     else:
-                        mean_abs = sv_arr.mean(axis=0)
+                        insights_html += f'<div class="insight-neg">⚠️ {feat_names[i].title()} ({current_val:.1f}) is reducing prediction by {val:.3f}</div>'
+                st.markdown(panel("Farmer Insights for Current Inputs", insights_html), unsafe_allow_html=True)
 
-                feat_names = list(X_s.columns)
-                sorted_i   = np.argsort(mean_abs)
-
-                def _styled_fig(color, title, xlabel):
-                    fig, ax = plt_shap.subplots(figsize=(10, max(4, len(feat_names) * 0.6)))
-                    ax.barh([feat_names[i] for i in sorted_i], mean_abs[sorted_i], color=color)
-                    ax.set_facecolor("#16191f"); fig.patch.set_facecolor("#16191f")
-                    ax.tick_params(colors="#8b92a5", labelsize=10)
-                    ax.set_xlabel(xlabel, color="#8b92a5")
-                    ax.set_title(title, color="#e0e4ef", fontsize=12)
-                    plt_shap.tight_layout()
-                    return fig
-
-                fig_a = _styled_fig("#2ecc71",
-                    f"Feature Importance Ranking — {shap_label}",
-                    "Mean |SHAP value|")
-                fig_a.savefig(shap_bar, bbox_inches="tight", dpi=150)
-                plt_shap.close(fig_a)
-
-                fig_b = _styled_fig("#3498db",
-                    f"How Inputs Drive Predictions — {shap_label}",
-                    "Mean |SHAP value| (Average Impact)")
-                fig_b.savefig(shap_beeswarm, bbox_inches="tight", dpi=150)
-                plt_shap.close(fig_b)
-
-                st.success(f"✅ SHAP charts generated for {shap_label}!")
-
-            except ImportError:
-                st.error("SHAP not installed. Add `shap` to requirements.txt and redeploy.")
-            except Exception as exc:
-                st.error(f"SHAP error: {exc}")
-                st.code(str(exc))
-
-    elif shap_model is None:
-        st.warning(
-            "No model available for SHAP analysis.\n\n"
-            "Make sure `crop_recommender.pkl` is in `agriculture/models/` and committed to GitHub."
-        )
-    elif shap_data.empty:
-        st.warning(
-            "No factor data found for SHAP.\n\n"
-            "Make sure `crop_rec_factors_clean.csv` is in `agriculture/data/cleaned/`."
-        )
-
-    # ── Display charts ────────────────────────────────────────────────────────
-    col_l, col_r = st.columns(2)
-    shown = 0
-    for col, img_path, caption in [
-        (col_l, shap_bar,      "Feature Importance Ranking"),
-        (col_r, shap_beeswarm, "Feature Impact Detail"),
-    ]:
-        if os.path.exists(img_path):
-            col.markdown(f"### {caption}")
-            col.image(img_path, use_container_width=True)
-            shown += 1
-
-    if shown == 0 and shap_model is not None:
-        st.info("Charts could not be generated. Check the error above.")
+        except ImportError:
+            st.error("SHAP not installed. Add `shap` to requirements.txt and redeploy.")
+        except Exception as exc:
+            st.error(f"SHAP error: {exc}")
+            with st.expander("Debug info"):
+                import traceback
+                st.code(traceback.format_exc())
