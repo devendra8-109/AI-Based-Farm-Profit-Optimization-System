@@ -758,75 +758,129 @@ elif page == "Impact Analysis":
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt_shap
 
+    os.makedirs(SHAP_DIR, exist_ok=True)
     shap_beeswarm = os.path.join(SHAP_DIR, "shap_summary_detailed.png")
     shap_bar      = os.path.join(SHAP_DIR, "shap_feature_ranking.png")
 
-    # ── Auto-generate SHAP charts inline if missing ──────────────────────────
+    # ── Status diagnostics ────────────────────────────────────────────────────
+    s1, s2, s3 = st.columns(3)
+    s1.metric("Crop Recommender", "✅ Loaded" if rec_model  is not None else "❌ Missing")
+    s2.metric("Factors CSV",      f"✅ {len(df_factors)} rows" if not df_factors.empty else "❌ Missing")
+    s3.metric("SHAP Charts",      "✅ Ready" if os.path.exists(shap_bar) else "⏳ Not yet generated")
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── Pick a model to explain: crop recommender preferred, yield as fallback ─
+    shap_model    = None
+    shap_features = []
+    shap_data     = pd.DataFrame()
+    shap_label    = ""
+
     if rec_model is not None and not df_factors.empty:
-        charts_missing = not os.path.exists(shap_bar) or not os.path.exists(shap_beeswarm)
-        if charts_missing:
-            with st.spinner("🔍 Generating SHAP decision charts…"):
-                try:
-                    import shap as shap_lib
-                    os.makedirs(SHAP_DIR, exist_ok=True)
+        shap_model    = rec_model
+        shap_features = rec_features
+        shap_data     = df_factors
+        shap_label    = "Crop Recommender"
+    elif yield_model is not None and not df_yield_data.empty:
+        shap_model    = yield_model
+        shap_features = ["crop_enc", "state_enc", "area", "rainfall"]
+        # build numeric proxy from yield data
+        _yd = df_yield_data.copy()
+        for col in _yd.select_dtypes(include="object").columns:
+            _yd[col] = pd.factorize(_yd[col])[0]
+        num_cols = _yd.select_dtypes(include=np.number).columns.tolist()[:4]
+        if len(num_cols) >= 2:
+            shap_data  = _yd[num_cols].rename(
+                columns=dict(zip(num_cols, shap_features[:len(num_cols)]))
+            )
+            shap_features = num_cols
+        shap_label = "Yield Predictor"
 
-                    X_shap = pd.DataFrame()
-                    for feat in rec_features:
-                        match = [c for c in df_factors.columns if c.strip().lower() == feat.lower()]
-                        X_shap[feat] = pd.to_numeric(df_factors[match[0]], errors="coerce").fillna(0) \
-                                       if match else 0.0
+    # ── Auto-generate charts ──────────────────────────────────────────────────
+    charts_missing = not os.path.exists(shap_bar) or not os.path.exists(shap_beeswarm)
 
-                    X_s    = X_shap.sample(min(300, len(X_shap)), random_state=42).reset_index(drop=True)
-                    exp    = shap_lib.TreeExplainer(rec_model)
-                    sv     = exp.shap_values(X_s, check_additivity=False)
+    if shap_model is not None and not shap_data.empty and charts_missing:
+        with st.spinner(f"🔍 Computing SHAP values for {shap_label}…"):
+            try:
+                import shap as shap_lib
 
-                    if isinstance(sv, list):
-                        mean_abs = np.mean([np.abs(v) for v in sv], axis=0).mean(axis=0)
+                # Build aligned X
+                X_shap = pd.DataFrame()
+                for feat in shap_features:
+                    match = [c for c in shap_data.columns if c.strip().lower() == feat.lower()]
+                    if match:
+                        X_shap[feat] = pd.to_numeric(shap_data[match[0]], errors="coerce").fillna(0)
                     else:
-                        sv_arr   = np.abs(sv)
-                        mean_abs = sv_arr.mean(axis=2).mean(axis=0) if sv_arr.ndim == 3 else sv_arr.mean(axis=0)
+                        X_shap[feat] = 0.0
 
-                    sorted_i = np.argsort(mean_abs)
+                X_s  = X_shap.sample(min(300, len(X_shap)), random_state=42).reset_index(drop=True)
+                exp  = shap_lib.TreeExplainer(shap_model)
+                sv   = exp.shap_values(X_s, check_additivity=False)
 
-                    # Chart A — Feature Importance Ranking
-                    fig_a, ax_a = plt_shap.subplots(figsize=(10, 5))
-                    ax_a.barh([rec_features[i] for i in sorted_i], mean_abs[sorted_i], color="#2ecc71")
-                    ax_a.set_facecolor("#16191f"); fig_a.patch.set_facecolor("#16191f")
-                    ax_a.tick_params(colors="#8b92a5")
-                    ax_a.set_xlabel("Mean |SHAP value|", color="#8b92a5")
-                    ax_a.set_title("Overall Feature Importance Ranking (SHAP)", color="#e0e4ef")
+                # Collapse multi-class → mean abs per feature
+                if isinstance(sv, list):
+                    mean_abs = np.mean([np.abs(v) for v in sv], axis=0).mean(axis=0)
+                else:
+                    sv_arr   = np.abs(sv)
+                    if sv_arr.ndim == 3:
+                        mean_abs = sv_arr.mean(axis=2).mean(axis=0)
+                    else:
+                        mean_abs = sv_arr.mean(axis=0)
+
+                feat_names = list(X_s.columns)
+                sorted_i   = np.argsort(mean_abs)
+
+                def _styled_fig(color, title, xlabel):
+                    fig, ax = plt_shap.subplots(figsize=(10, max(4, len(feat_names) * 0.6)))
+                    ax.barh([feat_names[i] for i in sorted_i], mean_abs[sorted_i], color=color)
+                    ax.set_facecolor("#16191f"); fig.patch.set_facecolor("#16191f")
+                    ax.tick_params(colors="#8b92a5", labelsize=10)
+                    ax.set_xlabel(xlabel, color="#8b92a5")
+                    ax.set_title(title, color="#e0e4ef", fontsize=12)
                     plt_shap.tight_layout()
-                    fig_a.savefig(shap_bar, bbox_inches="tight", dpi=150)
-                    plt_shap.close(fig_a)
+                    return fig
 
-                    # Chart B — Detailed Impact
-                    fig_b, ax_b = plt_shap.subplots(figsize=(10, 6))
-                    ax_b.barh([rec_features[i] for i in sorted_i], mean_abs[sorted_i], color="#3498db")
-                    ax_b.set_facecolor("#16191f"); fig_b.patch.set_facecolor("#16191f")
-                    ax_b.tick_params(colors="#8b92a5")
-                    ax_b.set_xlabel("Mean |SHAP value| (Average Impact)", color="#8b92a5")
-                    ax_b.set_title("How Soil/Weather Drive Crop Predictions", color="#e0e4ef")
-                    plt_shap.tight_layout()
-                    fig_b.savefig(shap_beeswarm, bbox_inches="tight", dpi=150)
-                    plt_shap.close(fig_b)
+                fig_a = _styled_fig("#2ecc71",
+                    f"Feature Importance Ranking — {shap_label}",
+                    "Mean |SHAP value|")
+                fig_a.savefig(shap_bar, bbox_inches="tight", dpi=150)
+                plt_shap.close(fig_a)
 
-                    st.success("✅ SHAP charts generated successfully!")
-                except ImportError:
-                    st.warning("Install SHAP: `pip install shap`")
-                except Exception as exc:
-                    st.error(f"SHAP generation error: {exc}")
+                fig_b = _styled_fig("#3498db",
+                    f"How Inputs Drive Predictions — {shap_label}",
+                    "Mean |SHAP value| (Average Impact)")
+                fig_b.savefig(shap_beeswarm, bbox_inches="tight", dpi=150)
+                plt_shap.close(fig_b)
+
+                st.success(f"✅ SHAP charts generated for {shap_label}!")
+
+            except ImportError:
+                st.error("SHAP not installed. Add `shap` to requirements.txt and redeploy.")
+            except Exception as exc:
+                st.error(f"SHAP error: {exc}")
+                st.code(str(exc))
+
+    elif shap_model is None:
+        st.warning(
+            "No model available for SHAP analysis.\n\n"
+            "Make sure `crop_recommender.pkl` is in `agriculture/models/` and committed to GitHub."
+        )
+    elif shap_data.empty:
+        st.warning(
+            "No factor data found for SHAP.\n\n"
+            "Make sure `crop_rec_factors_clean.csv` is in `agriculture/data/cleaned/`."
+        )
 
     # ── Display charts ────────────────────────────────────────────────────────
-    found = False
     col_l, col_r = st.columns(2)
+    shown = 0
     for col, img_path, caption in [
         (col_l, shap_bar,      "Feature Importance Ranking"),
-        (col_r, shap_beeswarm, "SHAP — Feature Impact"),
+        (col_r, shap_beeswarm, "Feature Impact Detail"),
     ]:
         if os.path.exists(img_path):
             col.markdown(f"### {caption}")
             col.image(img_path, use_container_width=True)
-            found = True
+            shown += 1
 
-    if not found and rec_model is None:
-        st.info("Crop recommender model not loaded — SHAP analysis unavailable.")
+    if shown == 0 and shap_model is not None:
+        st.info("Charts could not be generated. Check the error above.")
