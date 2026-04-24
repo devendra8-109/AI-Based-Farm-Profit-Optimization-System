@@ -1,0 +1,42 @@
+{
+  "crop_recommender": {
+    "test_accuracy_pct": 100.0,
+    "cv_accuracy_pct": 99.55,
+    "cv_std_pct": 0.29,
+    "n_crops": 22,
+    "features": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall"
+    ]
+  },
+  "yield": {
+    "model": "RandomForest",
+    "r2": 0.8998,
+    "cv_r2": 0.89,
+    "mae_tonnes_ha": 0.963,
+    "rmse_tonnes_ha": 3.47,
+    "features": [
+      "crop_enc",
+      "state_enc",
+      "season_enc",
+      "area",
+      "rainfall",
+      "fert_per_ha",
+      "pest_per_ha"
+    ],
+    "training_rows": 19295,
+    "note": "Output in tonnes/ha, multiply by 1000 for kg/ha"
+  },
+  "arima": {
+    "crop": "rice (mandi prices)",
+    "method": "Linear trend + seasonal adjustment",
+    "last_price_rs_q": 4033.0,
+    "trend_rs_month": 41.35,
+    "training_months": 14
+  }
+}
