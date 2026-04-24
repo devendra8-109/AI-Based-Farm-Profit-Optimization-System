@@ -1,2 +1,2 @@
-*.pkl filter=lfs diff=lfs merge=lfs -text
-*.h5 filter=lfs diff=lfs merge=lfs -text
+agriculture/models/price_lstm.h5 filter=lfs diff=lfs merge=lfs -text
+agriculture/models/crop_recommender.pkl filter=lfs diff=lfs merge=lfs -text
