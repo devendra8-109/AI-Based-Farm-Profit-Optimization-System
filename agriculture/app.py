@@ -18,12 +18,11 @@ import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st
+import plotly.graph_objects as go
 
 warnings.filterwarnings("ignore")
 
-# app.py lives in agriculture/agriculture/ but data+models live in agriculture/
-# So BASE_DIR must go ONE level up to find models/ and data/cleaned/
-BASE_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 CLEAN_DIR = os.path.join(BASE_DIR, "data", "cleaned")
 OUT_DIR   = os.path.join(BASE_DIR, "outputs")
@@ -577,7 +576,24 @@ elif page == "Yield Prediction":
         hist = df_yield_data[mask][["crop_year","yield"]].dropna().sort_values("crop_year")
         if not hist.empty:
             hist = hist.groupby("crop_year")["yield"].mean().reset_index()
-            st.line_chart(hist.set_index("crop_year")["yield"])
+            # Convert tonnes/ha to kg/ha for display
+            scale = 1.0 if y_crop.lower() in NON_TONNE_CROPS else 1000.0
+            hist["yield_kg_ha"] = hist["yield"] * scale
+            fig_y = go.Figure()
+            fig_y.add_trace(go.Scatter(
+                x=hist["crop_year"], y=hist["yield_kg_ha"],
+                mode="lines+markers", line=dict(color="#4ade80", width=2),
+                marker=dict(size=5), name="Yield kg/ha"
+            ))
+            fig_y.update_layout(
+                paper_bgcolor="#16191f", plot_bgcolor="#16191f",
+                font=dict(color="#8b92a5"), margin=dict(l=0,r=0,t=10,b=0),
+                xaxis=dict(title="Year", gridcolor="#2a2d35"),
+                yaxis=dict(title="Yield (kg/ha)", gridcolor="#2a2d35",
+                           tickformat=","),
+                height=280
+            )
+            st.plotly_chart(fig_y, use_container_width=True)
         else:
             st.info(f"No historical yield data for {y_crop.title()} in {y_state}.")
 
@@ -592,19 +608,48 @@ elif page == "Price Forecast":
             mask_st = (df_price["state"].str.lower() == y_state.lower()) & \
                       (df_price["crop"] == y_crop.lower())
             sub_st  = df_price[mask_st][["date", price_col2]].dropna().sort_values("date")
-            if not sub_st.empty:
-                m1, m2, m3 = st.columns(3)
-                m1.metric(f"Avg Price in {y_state}", f"Rs{sub_st[price_col2].mean():,.0f}/q")
-                m2.metric("Min", f"Rs{sub_st[price_col2].min():,.0f}/q")
-                m3.metric("Max", f"Rs{sub_st[price_col2].max():,.0f}/q")
-                st.line_chart(sub_st.set_index("date")[price_col2])
+
+            # Use national data if state has fewer than 5 records (not enough for a meaningful chart)
+            MIN_RECORDS = 5
+            if len(sub_st) >= MIN_RECORDS:
+                plot_df   = sub_st.copy()
+                plot_label = y_state
+                use_national = False
             else:
                 nat = df_price[df_price["crop"] == y_crop.lower()][["date", price_col2]].dropna().sort_values("date")
-                if not nat.empty:
-                    st.warning(f"No mandi data for {y_crop.title()} in {y_state}. Showing national average.")
-                    st.line_chart(nat.set_index("date")[price_col2])
-                else:
-                    st.info(f"No price data for {y_crop.title()}.")
+                plot_df    = nat.copy()
+                plot_label = "National Average"
+                use_national = True
+
+            if not plot_df.empty:
+                avg_p = sub_st[price_col2].mean() if not sub_st.empty else plot_df[price_col2].mean()
+                min_p = sub_st[price_col2].min()  if not sub_st.empty else plot_df[price_col2].min()
+                max_p = sub_st[price_col2].max()  if not sub_st.empty else plot_df[price_col2].max()
+                m1, m2, m3 = st.columns(3)
+                m1.metric(f"Avg Price ({plot_label})", f"Rs{avg_p:,.0f}/q")
+                m2.metric("Min", f"Rs{min_p:,.0f}/q")
+                m3.metric("Max", f"Rs{max_p:,.0f}/q")
+                if use_national:
+                    st.info(f"ℹ️ Only {len(sub_st)} price record(s) for {y_crop.title()} in {y_state}. Showing national trend instead.")
+                # Plotly chart with proper formatting
+                fig_p = go.Figure()
+                fig_p.add_trace(go.Scatter(
+                    x=plot_df["date"], y=plot_df[price_col2],
+                    mode="lines+markers", line=dict(color="#60a5fa", width=2),
+                    marker=dict(size=4), fill="tozeroy",
+                    fillcolor="rgba(96,165,250,0.1)", name=f"Price Rs/q"
+                ))
+                fig_p.update_layout(
+                    paper_bgcolor="#16191f", plot_bgcolor="#16191f",
+                    font=dict(color="#8b92a5"), margin=dict(l=0,r=0,t=10,b=0),
+                    xaxis=dict(title="Date", gridcolor="#2a2d35"),
+                    yaxis=dict(title="Price (Rs/quintal)", gridcolor="#2a2d35",
+                               tickformat=","),
+                    height=300
+                )
+                st.plotly_chart(fig_p, use_container_width=True)
+            else:
+                st.info(f"No price data available for {y_crop.title()}.")
 
     if arima_model is not None:
         st.markdown("---")
