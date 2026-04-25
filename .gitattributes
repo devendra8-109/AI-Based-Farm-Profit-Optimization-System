@@ -1,2 +1,4 @@
-agriculture/models/price_lstm.h5 filter=lfs diff=lfs merge=lfs -text
-agriculture/models/crop_recommender.pkl filter=lfs diff=lfs merge=lfs -text
+# No LFS - all model files are under GitHub's 100MB limit
+# yield_predictor.pkl = ~27MB (safe to commit directly)
+# crop_recommender.pkl = ~6.4MB (safe)
+# All other models < 1MB (safe)
