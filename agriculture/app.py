@@ -21,7 +21,9 @@ import streamlit as st
 
 warnings.filterwarnings("ignore")
 
-BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
+# app.py lives in agriculture/agriculture/ but data+models live in agriculture/
+# So BASE_DIR must go ONE level up to find models/ and data/cleaned/
+BASE_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 CLEAN_DIR = os.path.join(BASE_DIR, "data", "cleaned")
 OUT_DIR   = os.path.join(BASE_DIR, "outputs")
