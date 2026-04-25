@@ -389,10 +389,18 @@ if arima_model is not None:
 # BUG 6 FIX: live profit (no NaN)
 profit_result = compute_profit(y_state, y_crop, y_area, fert_cost, labour_cost, seed_cost)
 
-# ── Top bar ────────────────────────────────────────────────────────────────
-all_ready = rec_model is not None and arima_model is not None
+# ── Top bar — BUG FIX: show EXACTLY which modules are missing ─────────────
+_missing = []
+if rec_model    is None: _missing.append(f"Crop recommender ({rec_err or 'failed to load'})")
+if yield_model  is None: _missing.append(f"Yield predictor ({yield_err or 'failed to load'})")
+if arima_model  is None: _missing.append("Price ARIMA (run module3_arima_module4_profit.py)")
+if df_yield_data.empty:  _missing.append("crop_yield_clean.csv missing — ALL_STATES will be empty")
+if df_price.empty:       _missing.append("mandi_prices_monthly.csv missing — no mandi prices")
+
+all_ready = len(_missing) == 0
 badge = '<span class="badge-success">● All modules ready</span>' if all_ready \
-        else '<span class="badge-warn">⚠ Some modules pending</span>'
+        else f'<span class="badge-warn">⚠ {len(_missing)} module(s) pending</span>'
+
 st.markdown(f"""<div class="topbar">
   <div>
     <div class="topbar-title">🌱 AI Farm Profit Optimizer</div>
@@ -400,6 +408,11 @@ st.markdown(f"""<div class="topbar">
   </div>
   {badge}
 </div>""", unsafe_allow_html=True)
+
+if _missing:
+    with st.expander("⚠️ Pending modules — click to see details", expanded=True):
+        for m in _missing:
+            st.error(f"❌ {m}")
 
 page = st.session_state.page
 
