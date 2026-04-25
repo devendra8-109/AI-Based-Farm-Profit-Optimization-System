@@ -1,6 +1,0 @@
-__pycache__/
-*.pyc
-.env
-data/raw/
-*.ipynb
-models/yield_predictor.pkl 
