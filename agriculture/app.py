@@ -100,7 +100,7 @@ st.set_page_config(page_title="FarmAI Optimizer", layout="wide")
 # ... [Your 700+ lines of Logic continue here] ...
 <style>
 #MainMenu, footer, header { visibility: hidden; }
-.block-container { padding: 2rem 2rem 2rem 2rem; }
+block-container { padding: 2rem 2rem 2rem 2rem; }
 [data-testid="stSidebar"] { background-color: #111318; border-right: 1px solid #2a2d35; }
 [data-testid="stSidebar"] .block-container { padding: 1.5rem 1rem; }
 div.stButton > button {
