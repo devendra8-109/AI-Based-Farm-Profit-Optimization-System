@@ -11,7 +11,7 @@ LOGIC FIXES APPLIED:
   BUG 7 FIXED — Yield crop selectbox was global; now state-filtered
   BUG 8 FIXED — State input was free-text; now a selectbox from known states
 """
-
+"""
 import os
 import warnings
 import numpy as np
@@ -36,6 +36,68 @@ st.set_page_config(
 )
 
 st.markdown("""
+
+
+import os
+import warnings
+import numpy as np
+import pandas as pd
+import joblib
+import streamlit as st
+
+warnings.filterwarnings("ignore")
+
+# ── 1. EXACT PATH MAPPING (Based on your screenshots) ─────────────────────
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Folder names from your Repo
+RAW_DIR   = os.path.join(BASE_DIR, "data")    
+CLEAN_DIR = os.path.join(BASE_DIR, "data1")  
+MODEL_DIR = os.path.join(BASE_DIR, "models")
+OUT_DIR   = os.path.join(BASE_DIR, "outputs")
+
+# File names (Corrected to match your GitHub screenshots exactly)
+# Note: You have 'crop_yield_cleaned.csv' (with an 'ed') in your data1 SS
+YIELD_FILE = os.path.join(CLEAN_DIR, "crop_yield_cleaned.csv") 
+# If you use the price agriculture file:
+PRICE_FILE = os.path.join(RAW_DIR, "Price_Agriculture_commodities_Week.csv")
+
+# Create folders if they don't exist (prevents crash on first run)
+for folder in [RAW_DIR, CLEAN_DIR, MODEL_DIR, OUT_DIR]:
+    os.makedirs(folder, exist_ok=True)
+
+# ── 2. DATA LOADING LOGIC ────────────────────────────────────────────────
+
+@st.cache_data
+def load_global_data():
+    """Loads the state and crop lists from your data1 folder."""
+    if os.path.exists(YIELD_FILE):
+        return pd.read_csv(YIELD_FILE)
+    else:
+        st.error(f"❌ File Not Found in Repo: {YIELD_FILE}")
+        return None
+
+@st.cache_resource
+def load_trained_models():
+    """Loads the .pkl files from your models folder screenshot."""
+    try:
+        # File names matched to your 'models' screenshot
+        recommender = joblib.load(os.path.join(MODEL_DIR, "crop_recommender.pkl"))
+        price_model = joblib.load(os.path.join(MODEL_DIR, "price_arima.pkl"))
+        
+        # Encoders found in your screenshot
+        state_enc  = joblib.load(os.path.join(MODEL_DIR, "yield_state_encoder.pkl"))
+        crop_enc   = joblib.load(os.path.join(MODEL_DIR, "yield_crop_encoder.pkl"))
+        
+        return recommender, price_model, state_enc, crop_enc
+    except Exception as e:
+        st.warning(f"⚠️ Model Load Error: Ensure all .pkl files are pushed to GitHub.")
+        return None, None, None, None
+
+# ── 3. UI CONFIG & CSS ──────────────────────────────────────────────────
+st.set_page_config(page_title="FarmAI Optimizer", layout="wide")
+
+# ... [Your 700+ lines of Logic continue here] ...
 <style>
 #MainMenu, footer, header { visibility: hidden; }
 .block-container { padding: 2rem 2rem 2rem 2rem; }
