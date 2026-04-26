@@ -97,59 +97,59 @@ def load_trained_models():
 # ── 3. UI CONFIG & CSS ──────────────────────────────────────────────────
 st.set_page_config(page_title="FarmAI Optimizer", layout="wide")
 
-# ... [Your 700+ lines of Logic continue here] ...
+# This wrapper tells Python "This is text for the browser, not code to run"
+st.markdown("""
 <style>
-#MainMenu, footer, header { visibility: hidden; }
-block-container { padding: 2rem 2rem 2rem 2rem; }
-[data-testid="stSidebar"] { background-color: #111318; border-right: 1px solid #2a2d35; }
-[data-testid="stSidebar"] .block-container { padding: 1.5rem 1rem; }
-div.stButton > button {
-    width: 100%; text-align: left; background: transparent; border: none;
-    color: #8b92a5; padding: 9px 12px; border-radius: 8px;
-    font-size: 13px; font-weight: 400; cursor: pointer; transition: all 0.15s; margin-bottom: 2px;
-}
-div.stButton > button:hover { background: #1e2128; color: #e0e4ef; }
-div.stButton > button[kind="primary"] {
-    background: #1a2e1a !important; color: #4ade80 !important;
-    font-weight: 500 !important; border: none !important;
-}
-[data-testid="stMetric"] { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 16px 20px; }
-[data-testid="stMetricLabel"] { color: #8b92a5 !important; font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.05em; }
-[data-testid="stMetricValue"] { color: #e0e4ef !important; font-size: 22px !important; font-weight: 500 !important; }
-.panel { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; }
-.panel-title { font-size: 13px; font-weight: 500; color: #e0e4ef; margin-bottom: 14px; }
-.topbar { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 14px 22px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; }
-.topbar-title { font-size: 16px; font-weight: 600; color: #e0e4ef; }
-.topbar-sub   { font-size: 12px; color: #8b92a5; margin-top: 2px; }
-.badge-success { background: #1a2e1a; color: #4ade80; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
-.badge-warn    { background: #2e2a1a; color: #facc15; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
-.bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-.bar-label { font-size: 12px; color: #8b92a5; width: 110px; flex-shrink: 0; }
-.bar-bg { flex: 1; background: #2a2d35; border-radius: 4px; height: 10px; }
-.bar-val { font-size: 12px; font-weight: 500; color: #e0e4ef; width: 70px; text-align: right; flex-shrink: 0; }
-.step-flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin-bottom: 8px; }
-.step-box { background: #1a2e1a; border: 1px solid #2d4a2d; border-radius: 8px; padding: 8px 14px; font-size: 11px; color: #4ade80; text-align: center; min-width: 80px; }
-.step-arrow { font-size: 16px; color: #4ade80; padding: 0 6px; }
-.crop-card { background: #1e2128; border: 1px solid #2a2d35; border-radius: 10px; padding: 14px; text-align: center; }
-.crop-rank  { font-size: 10px; color: #8b92a5; margin-bottom: 4px; text-transform: uppercase; }
-.crop-name  { font-size: 15px; font-weight: 600; color: #e0e4ef; margin-bottom: 8px; }
-.conf-bar-bg { background: #2a2d35; border-radius: 4px; height: 6px; margin-bottom: 6px; }
-.profit-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #2a2d35; }
-.profit-row:last-child { border-bottom: none; }
-.profit-label { font-size: 13px; color: #8b92a5; }
-.profit-value { font-size: 14px; font-weight: 500; color: #e0e4ef; }
-.profit-pos   { color: #4ade80 !important; }
-.profit-neg   { color: #f87171 !important; }
-h2 { color: #e0e4ef !important; font-size: 18px !important; font-weight: 600 !important; }
-h3 { color: #e0e4ef !important; font-size: 14px !important; font-weight: 500 !important; }
-hr { border-color: #2a2d35 !important; }
-[data-testid="stSelectbox"] label,
-[data-testid="stSlider"] label,
-[data-testid="stNumberInput"] label { color: #8b92a5 !important; font-size: 11px !important; }
-.stAlert { border-radius: 10px !important; }
+    #MainMenu, footer, header { visibility: hidden; }
+    .block-container { padding: 2rem 2rem 2rem 2rem; }
+    [data-testid="stSidebar"] { background-color: #111318; border-right: 1px solid #2a2d35; }
+    [data-testid="stSidebar"] .block-container { padding: 1.5rem 1rem; }
+    div.stButton > button {
+        width: 100%; text-align: left; background: transparent; border: none;
+        color: #8b92a5; padding: 9px 12px; border-radius: 8px;
+        font-size: 13px; font-weight: 400; cursor: pointer; transition: all 0.15s; margin-bottom: 2px;
+    }
+    div.stButton > button:hover { background: #1e2128; color: #e0e4ef; }
+    div.stButton > button[kind="primary"] {
+        background: #1a2e1a !important; color: #4ade80 !important;
+        font-weight: 500 !important; border: none !important;
+    }
+    [data-testid="stMetric"] { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 16px 20px; }
+    [data-testid="stMetricLabel"] { color: #8b92a5 !important; font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.05em; }
+    [data-testid="stMetricValue"] { color: #e0e4ef !important; font-size: 22px !important; font-weight: 500 !important; }
+    .panel { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 18px 22px; margin-bottom: 16px; }
+    .panel-title { font-size: 13px; font-weight: 500; color: #e0e4ef; margin-bottom: 14px; }
+    .topbar { background: #16191f; border: 1px solid #2a2d35; border-radius: 12px; padding: 14px 22px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; }
+    .topbar-title { font-size: 16px; font-weight: 600; color: #e0e4ef; }
+    .topbar-sub    { font-size: 12px; color: #8b92a5; margin-top: 2px; }
+    .badge-success { background: #1a2e1a; color: #4ade80; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+    .badge-warn     { background: #2e2a1a; color: #facc15; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+    .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .bar-label { font-size: 12px; color: #8b92a5; width: 110px; flex-shrink: 0; }
+    .bar-bg { flex: 1; background: #2a2d35; border-radius: 4px; height: 10px; }
+    .bar-val { font-size: 12px; font-weight: 500; color: #e0e4ef; width: 70px; text-align: right; flex-shrink: 0; }
+    .step-flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin-bottom: 8px; }
+    .step-box { background: #1a2e1a; border: 1px solid #2d4a2d; border-radius: 8px; padding: 8px 14px; font-size: 11px; color: #4ade80; text-align: center; min-width: 80px; }
+    .step-arrow { font-size: 16px; color: #4ade80; padding: 0 6px; }
+    .crop-card { background: #1e2128; border: 1px solid #2a2d35; border-radius: 10px; padding: 14px; text-align: center; }
+    .crop-rank  { font-size: 10px; color: #8b92a5; margin-bottom: 4px; text-transform: uppercase; }
+    .crop-name  { font-size: 15px; font-weight: 600; color: #e0e4ef; margin-bottom: 8px; }
+    .conf-bar-bg { background: #2a2d35; border-radius: 4px; height: 6px; margin-bottom: 6px; }
+    .profit-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #2a2d35; }
+    .profit-row:last-child { border-bottom: none; }
+    .profit-label { font-size: 13px; color: #8b92a5; }
+    .profit-value { font-size: 14px; font-weight: 500; color: #e0e4ef; }
+    .profit-pos    { color: #4ade80 !important; }
+    .profit-neg    { color: #f87171 !important; }
+    h2 { color: #e0e4ef !important; font-size: 18px !important; font-weight: 600 !important; }
+    h3 { color: #e0e4ef !important; font-size: 14px !important; font-weight: 500 !important; }
+    hr { border-color: #2a2d35 !important; }
+    [data-testid="stSelectbox"] label,
+    [data-testid="stSlider"] label,
+    [data-testid="stNumberInput"] label { color: #8b92a5 !important; font-size: 11px !important; }
+    .stAlert { border-radius: 10px !important; }
 </style>
 """, unsafe_allow_html=True)
-
 # ── Crop name normalisation ────────────────────────────────────────────────
 CROP_MAPPING = {
     "paddy": "rice", "bengal gram(gram)(whole)": "chickpea",
