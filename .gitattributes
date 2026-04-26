@@ -1,1 +1,4 @@
-# Git LFS configurations removed to ensure .pkl files are pushed normally
+# No LFS - all model files are under GitHub's 100MB limit
+# yield_predictor.pkl = ~27MB (safe to commit directly)
+# crop_recommender.pkl = ~6.4MB (safe)
+# All other models < 1MB (safe)
