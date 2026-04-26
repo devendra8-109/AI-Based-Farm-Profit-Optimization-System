@@ -11,7 +11,7 @@ LOGIC FIXES APPLIED:
   BUG 7 FIXED — Yield crop selectbox was global; now state-filtered
   BUG 8 FIXED — State input was free-text; now a selectbox from known states
 """
-import. os
+import os
 import warnings
 import numpy as np
 import pandas as pd
