@@ -37,36 +37,22 @@ st.set_page_config(
 
 st.markdown("""
 
-
 import os
-import warnings
-import numpy as np
-import pandas as pd
-import joblib
 import streamlit as st
 
-warnings.filterwarnings("ignore")
-
-# ── 1. EXACT PATH MAPPING (Based on your screenshots) ─────────────────────
+# ── UNIVERSAL PATH LOGIC ────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Folder names from your Repo
-RAW_DIR   = os.path.join(BASE_DIR, "data")    
-CLEAN_DIR = os.path.join(BASE_DIR, "data1")  
+RAW_DIR   = os.path.join(BASE_DIR, "data", "raw")
+CLEAN_DIR = os.path.join(BASE_DIR, "data", "cleaned")
 MODEL_DIR = os.path.join(BASE_DIR, "models")
 OUT_DIR   = os.path.join(BASE_DIR, "outputs")
+SHAP_DIR  = os.path.join(OUT_DIR, "shap_charts")
 
-# File names (Corrected to match your GitHub screenshots exactly)
-# Note: You have 'crop_yield_cleaned.csv' (with an 'ed') in your data1 SS
-YIELD_FILE = os.path.join(CLEAN_DIR, "crop_yield_cleaned.csv") 
-# If you use the price agriculture file:
-PRICE_FILE = os.path.join(RAW_DIR, "Price_Agriculture_commodities_Week.csv")
-
-# Create folders if they don't exist (prevents crash on first run)
-for folder in [RAW_DIR, CLEAN_DIR, MODEL_DIR, OUT_DIR]:
-    os.makedirs(folder, exist_ok=True)
-
-# ── 2. DATA LOADING LOGIC ────────────────────────────────────────────────
+# This loop ensures Streamlit doesn't error out if a folder is missing
+for d in [RAW_DIR, CLEAN_DIR, MODEL_DIR, OUT_DIR, SHAP_DIR]:
+    if not os.path.exists(d):
+        os.makedirs(d, exist_ok=True)# ── 2. DATA LOADING LOGIC ────────────────────────────────────────────────
 
 @st.cache_data
 def load_global_data():
