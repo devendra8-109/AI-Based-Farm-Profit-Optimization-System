@@ -1,0 +1,2206 @@
+state,district,market,commodity,variety,arrival_date,min_price,max_price,modal_price,month,year,quarter
+Andaman And Nicobar,South Andaman,Port Blair,amaranthus,Amaranthus,2019-03-04,6000,8000,7000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,banana - green,Banana - Green,2019-03-04,4500,5500,5000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,okra,Bhindi,2019-03-04,6000,8000,7000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,bitter gourd,Other,2019-03-04,6000,8000,7000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,black pepper,Other,2019-03-04,110000,130000,120000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,bottle gourd,Other,2019-03-04,3000,4000,3500,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,brinjal,Other,2019-03-04,7000,8000,7500,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,cabbage,Other,2019-03-04,6000,7000,6500,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,carrot,Other,2019-03-04,9000,11000,10000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,cauliflower,Other,2019-03-04,10000,12000,11000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,cluster beans,Cluster Beans,2019-03-04,8000,10000,9000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,coconut,Big,2019-03-04,5400,6000,5600,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,colacasia,Other,2019-03-04,5000,7000,6000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,onion,Other,2019-03-04,2000,3500,3000,3,2019,1
+Andaman And Nicobar,South Andaman,Port Blair,potato,Other,2019-03-04,2000,3500,3000,3,2019,1
+Andhra Pradesh,Chittor,Kalikiri,tomato,Local,2019-03-04,400,960,620,3,2019,1
+Andhra Pradesh,Chittor,Mulakalacheruvu,tomato,Local,2019-03-04,200,500,300,3,2019,1
+Andhra Pradesh,Chittor,Vayalapadu,tomato,Local,2019-03-04,400,1120,760,3,2019,1
+Andhra Pradesh,Kurnool,Banaganapalli,chickpea,Desi (Whole),2019-03-04,4500,4700,4600,3,2019,1
+Andhra Pradesh,Kurnool,Banaganapalli,jowar(sorghum),Jowar ( White),2019-03-04,1800,1950,1900,3,2019,1
+Andhra Pradesh,Kurnool,Banaganapalli,paddy(dhan)(common),Sona Mahsuri,2019-03-04,1900,2000,1950,3,2019,1
+Andhra Pradesh,West Godavari,Attili,paddy(dhan)(common),Paddy,2019-03-04,1750,1770,1760,3,2019,1
+Assam,Cachar,Cachar,lentil (masur)(whole),Masur Dal,2019-03-04,5200,7200,7000,3,2019,1
+Assam,Cachar,Cachar,rice,Common,2019-03-04,2200,2500,2400,3,2019,1
+Assam,Cachar,Cachar,rice,Fine,2019-03-04,2500,3000,2800,3,2019,1
+Assam,Darrang,Kharupetia,bitter gourd,Bitter Gourd,2019-03-04,6000,6500,6400,3,2019,1
+Assam,Darrang,Kharupetia,bottle gourd,Bottle Gourd,2019-03-04,800,900,850,3,2019,1
+Assam,Darrang,Kharupetia,brinjal,Round,2019-03-04,800,900,850,3,2019,1
+Assam,Darrang,Kharupetia,cabbage,Cabbage,2019-03-04,300,400,350,3,2019,1
+Assam,Darrang,Kharupetia,carrot,Carrot,2019-03-04,1000,1100,1050,3,2019,1
+Assam,Darrang,Kharupetia,cauliflower,Local,2019-03-04,1400,1500,1450,3,2019,1
+Assam,Darrang,Kharupetia,cluster beans,Cluster Beans,2019-03-04,4000,4200,4100,3,2019,1
+Assam,Darrang,Kharupetia,cucumbar(kheera),Cucumbar,2019-03-04,1500,1600,1550,3,2019,1
+Assam,Darrang,Kharupetia,field pea,Field Pea,2019-03-04,2800,3000,2900,3,2019,1
+Assam,Darrang,Kharupetia,french beans (frasbean),French Beans (Frasbean),2019-03-04,2200,2300,2250,3,2019,1
+Assam,Darrang,Kharupetia,green chilli,Green Chilly,2019-03-04,3500,3700,3600,3,2019,1
+Assam,Darrang,Kharupetia,knool khol,Knool Khol,2019-03-04,900,1000,950,3,2019,1
+Assam,Darrang,Kharupetia,potato,Badshah,2019-03-04,600,700,650,3,2019,1
+Assam,Darrang,Kharupetia,pumpkin,Pumpkin,2019-03-04,600,700,650,3,2019,1
+Assam,Darrang,Kharupetia,raddish,Raddish,2019-03-04,800,900,850,3,2019,1
+Assam,Darrang,Kharupetia,tomato,Hybrid,2019-03-04,1100,1200,1150,3,2019,1
+Assam,Dhubri,Gauripur,black gram (urd beans)(whole),Black Gram (Whole),2019-03-04,4300,4425,4400,3,2019,1
+Assam,Dhubri,Gauripur,green gram (moong)(whole),Green (Whole),2019-03-04,6300,6640,6400,3,2019,1
+Assam,Dhubri,Gauripur,jute,TD-5,2019-03-04,2700,3700,2800,3,2019,1
+Assam,Dhubri,Gauripur,maida atta,Maida Atta,2019-03-04,2260,2550,2370,3,2019,1
+Assam,Dhubri,Gauripur,mustard,Mustard,2019-03-04,2300,2550,2400,3,2019,1
+Assam,Dhubri,Gauripur,rice,Fine,2019-03-04,3500,5000,4500,3,2019,1
+Assam,Dhubri,Gauripur,rice,Medium,2019-03-04,1800,3000,2500,3,2019,1
+Assam,Dhubri,Gauripur,wheat atta,Wheat Atta,2019-03-04,2200,2400,2300,3,2019,1
+Assam,Jorhat,Jorhat,garlic,Garlic,2019-03-04,3500,6000,5000,3,2019,1
+Assam,Jorhat,Jorhat,green gram (moong)(whole),Green (Whole),2019-03-04,6200,6800,6600,3,2019,1
+Assam,Jorhat,Jorhat,masur dal,Masur Dal,2019-03-04,5200,6600,6200,3,2019,1
+Assam,Jorhat,Jorhat,onion,Onion,2019-03-04,1150,1250,1200,3,2019,1
+Assam,Jorhat,Jorhat,potato,Potato,2019-03-04,500,580,550,3,2019,1
+Assam,Jorhat,Jorhat,rice,Common,2019-03-04,2500,7000,3200,3,2019,1
+Assam,Jorhat,Jorhat,wheat atta,Wheat Atta,2019-03-04,2600,3200,2800,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),bitter gourd,Bitter Gourd,2019-03-04,5000,6000,5500,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),brinjal,Brinjal,2019-03-04,1200,1400,1300,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),cabbage,Cabbage,2019-03-04,300,600,500,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),carrot,Carrot,2019-03-04,700,1200,1000,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),cauliflower,Cauliflower,2019-03-04,1800,2000,1900,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),cucumbar(kheera),Cucumbar,2019-03-04,1600,2200,2000,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),garlic,Garlic,2019-03-04,4000,5000,4500,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),green chilli,Green Chilly,2019-03-04,1500,3000,1600,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),onion,Onion,2019-03-04,950,1150,1100,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),potato,Potato,2019-03-04,600,750,700,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),pumpkin,Pumpkin,2019-03-04,800,1000,900,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),raddish,Raddish,2019-03-04,1000,1200,1100,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),ridgeguard(tori),Ridgeguard(Tori),2019-03-04,4000,4200,4100,3,2019,1
+Assam,Kamrup,Pamohi(Garchuk),tomato,Tomato,2019-03-04,1400,1500,1450,3,2019,1
+Assam,Sonitpur,Dhekiajuli,arecanut(betelnut/supari),Raw,2019-03-04,2000,2200,2200,3,2019,1
+Assam,Sonitpur,Dhekiajuli,arhar (tur/red gram)(whole),Other,2019-03-04,5700,5850,5850,3,2019,1
+Assam,Sonitpur,Dhekiajuli,brinjal,Other,2019-03-04,700,750,750,3,2019,1
+Assam,Sonitpur,Dhekiajuli,cabbage,Other,2019-03-04,650,700,700,3,2019,1
+Assam,Sonitpur,Dhekiajuli,green chilli,Green Chilly,2019-03-04,1800,2000,2000,3,2019,1
+Assam,Sonitpur,Dhekiajuli,jute,TD-5,2019-03-04,3600,3900,3900,3,2019,1
+Assam,Sonitpur,Dhekiajuli,maize,Other,2019-03-04,1700,1800,1800,3,2019,1
+Assam,Sonitpur,Dhekiajuli,mustard,Other,2019-03-04,4000,4100,4100,3,2019,1
+Assam,Sonitpur,Dhekiajuli,rice,Common,2019-03-04,2200,2500,2400,3,2019,1
+Assam,Sonitpur,Dhekiajuli,rice,Fine,2019-03-04,2700,2900,2800,3,2019,1
+Chattisgarh,Bastar,Jagdalpur,dry chillies,Dry,2019-03-04,4000,4410,4200,3,2019,1
+Chattisgarh,Kanker,Charama,paddy(dhan)(common),Other,2019-03-04,1500,1500,1500,3,2019,1
+Chattisgarh,Kanker,Lakhanpuri,paddy(dhan)(common),Other,2019-03-04,1500,1500,1500,3,2019,1
+Chattisgarh,Kanker,Narharpur,paddy(dhan)(common),Other,2019-03-04,1500,1500,1500,3,2019,1
+Chattisgarh,Surajpur,Pratappur,groundnut,Other,2019-03-04,4900,4900,4900,3,2019,1
+Goa,North Goa,Sanquelim,arecanut(betelnut/supari),Red,2019-03-04,19000,20000,19500,3,2019,1
+Goa,North Goa,Sanquelim,arecanut(betelnut/supari),Supari,2019-03-04,21500,23000,22250,3,2019,1
+Goa,North Goa,Sanquelim,arecanut(betelnut/supari),White,2019-03-04,20000,21000,20500,3,2019,1
+Gujarat,Amreli,Damnagar,okra,Bhindi,2019-03-04,1450,1650,1550,3,2019,1
+Gujarat,Amreli,Damnagar,brinjal,Other,2019-03-04,1000,1200,1100,3,2019,1
+Gujarat,Amreli,Damnagar,capsicum,Capsicum,2019-03-04,1200,1400,1300,3,2019,1
+Gujarat,Amreli,Damnagar,guar,Gwar,2019-03-04,1500,1700,1600,3,2019,1
+Gujarat,Amreli,Damnagar,lemon,Lemon,2019-03-04,1200,1400,1300,3,2019,1
+Gujarat,Anand,Khambhat(Grain Market),bajra(pearl millet/cumbu),Other,2019-03-04,2040,2120,2080,3,2019,1
+Gujarat,Anand,Umreth,bajra(pearl millet/cumbu),Deshi,2019-03-04,1950,2025,2015,3,2019,1
+Gujarat,Anand,Umreth,castor seed,Castor seed,2019-03-04,4800,4950,4870,3,2019,1
+Gujarat,Bharuch,Ankleshwar,okra,Bhindi,2019-03-04,2750,3650,3425,3,2019,1
+Gujarat,Bharuch,Ankleshwar,bottle gourd,Bottle Gourd,2019-03-04,1400,2100,1850,3,2019,1
+Gujarat,Bharuch,Ankleshwar,brinjal,Round,2019-03-04,425,875,650,3,2019,1
+Gujarat,Bharuch,Ankleshwar,cabbage,Cabbage,2019-03-04,750,1000,925,3,2019,1
+Gujarat,Bharuch,Ankleshwar,capsicum,Capsicum,2019-03-04,2150,3000,2600,3,2019,1
+Gujarat,Bharuch,Ankleshwar,carrot,Carrot,2019-03-04,650,875,825,3,2019,1
+Gujarat,Bharuch,Ankleshwar,cauliflower,Local,2019-03-04,650,1500,1100,3,2019,1
+Gujarat,Bharuch,Ankleshwar,coriander(leaves),Coriander,2019-03-04,550,1000,825,3,2019,1
+Gujarat,Bharuch,Ankleshwar,cowpea(veg),Cowpea (Veg),2019-03-04,2750,3650,3425,3,2019,1
+Gujarat,Bharuch,Ankleshwar,cucumbar(kheera),Cucumbar,2019-03-04,1500,2400,2175,3,2019,1
+Gujarat,Bharuch,Ankleshwar,drumstick,Drumstick,2019-03-04,2800,3700,3475,3,2019,1
+Gujarat,Bharuch,Ankleshwar,elephant yam (suran),Elephant Yam (Suran),2019-03-04,2150,3000,2825,3,2019,1
+Gujarat,Bharuch,Ankleshwar,ginger(green),Green Ginger,2019-03-04,5450,6350,6100,3,2019,1
+Gujarat,Bharuch,Ankleshwar,green chilli,Green Chilly,2019-03-04,2600,3300,3000,3,2019,1
+Gujarat,Bharuch,Ankleshwar,indian beans (seam),Indian Beans (Seam),2019-03-04,1000,1700,1450,3,2019,1
+Gujarat,Bharuch,Ankleshwar,lemon,Lemon,2019-03-04,3250,3950,3700,3,2019,1
+Gujarat,Bharuch,Ankleshwar,methi(leaves),Methi,2019-03-04,600,1000,825,3,2019,1
+Gujarat,Bharuch,Ankleshwar,onion green,Onion Green,2019-03-04,1000,1400,1225,3,2019,1
+Gujarat,Bharuch,Ankleshwar,peas cod,Peas cod,2019-03-04,1100,1500,1325,3,2019,1
+Gujarat,Bharuch,Ankleshwar,pegeon pea (arhar fali),Pigeon Pea (Arhar Fali),2019-03-04,2750,3650,3475,3,2019,1
+Gujarat,Bharuch,Ankleshwar,sponge gourd,Sponge gourd,2019-03-04,1325,1725,1500,3,2019,1
+Gujarat,Bharuch,Ankleshwar,surat beans (papadi),Surat Beans (Papadi),2019-03-04,2225,2625,2450,3,2019,1
+Gujarat,Bharuch,Ankleshwar,sweet potato,Sweet Potato,2019-03-04,2225,3125,2900,3,2019,1
+Gujarat,Bharuch,Ankleshwar,tinda,Tinda,2019-03-04,2750,3450,3150,3,2019,1
+Gujarat,Bharuch,Ankleshwar,tomato,Tomato,2019-03-04,750,1650,1425,3,2019,1
+Gujarat,Kachchh,Bachau,guar seed(cluster beans seed),Whole,2019-03-04,4000,4025,4010,3,2019,1
+Gujarat,Kheda,Nadiyad(Chaklasi),potato,Potato,2019-03-04,600,800,700,3,2019,1
+Gujarat,Kheda,Nadiyad(Chaklasi),sweet potato,Sweet Potato,2019-03-04,1250,1650,1450,3,2019,1
+Gujarat,Panchmahals,Gogamba,arhar (tur/red gram)(whole),Other,2019-03-04,4800,4900,4850,3,2019,1
+Gujarat,Panchmahals,Gogamba,cotton,Other,2019-03-04,4500,4600,4550,3,2019,1
+Gujarat,Panchmahals,Gogamba,maize,Deshi White,2019-03-04,1850,1950,1900,3,2019,1
+Gujarat,Panchmahals,Gogamba,paddy(dhan)(common),G. R. 11,2019-03-04,1500,1550,1525,3,2019,1
+Gujarat,Panchmahals,Gogamba,wheat,Other,2019-03-04,1850,1950,1900,3,2019,1
+Gujarat,Panchmahals,Gogamba(Similiya),bajra(pearl millet/cumbu),Other,2019-03-04,1750,1850,1800,3,2019,1
+Gujarat,Panchmahals,Gogamba(Similiya),maize,Deshi White,2019-03-04,1800,1900,1850,3,2019,1
+Gujarat,Panchmahals,Gogamba(Similiya),paddy(dhan)(common),Other,2019-03-04,1400,1450,1425,3,2019,1
+Gujarat,Surat,Bardoli(Katod),brinjal,Other,2019-03-04,600,1400,1150,3,2019,1
+Gujarat,Surat,Bardoli(Katod),cabbage,Other,2019-03-04,700,1250,1100,3,2019,1
+Gujarat,Surat,Bardoli(Katod),tomato,Other,2019-03-04,700,1600,1300,3,2019,1
+Gujarat,Surat,Mandvi,okra,Other,2019-03-04,3755,3755,3755,3,2019,1
+Gujarat,Surat,Mandvi,brinjal,Other,2019-03-04,600,1765,1182,3,2019,1
+Gujarat,Surat,Mandvi,cowpea(veg),Other,2019-03-04,1900,3955,2927,3,2019,1
+Gujarat,Surat,Mandvi,paddy(dhan)(common),Other,2019-03-04,1450,1500,1475,3,2019,1
+Gujarat,Surat,Mandvi,pegeon pea (arhar fali),Other,2019-03-04,2010,4000,3005,3,2019,1
+Gujarat,Surat,Mandvi,surat beans (papadi),Other,2019-03-04,2300,3995,3147,3,2019,1
+Gujarat,Surat,Mandvi,tomato,Other,2019-03-04,670,2105,1387,3,2019,1
+Gujarat,Surat,S.Mandvi,okra,Other,2019-03-04,3755,3755,3755,3,2019,1
+Gujarat,Surat,S.Mandvi,brinjal,Other,2019-03-04,600,1765,1182,3,2019,1
+Gujarat,Surat,S.Mandvi,cowpea(veg),Other,2019-03-04,1900,3955,2927,3,2019,1
+Gujarat,Surat,S.Mandvi,paddy(dhan)(common),Other,2019-03-04,1450,1500,1475,3,2019,1
+Gujarat,Surat,S.Mandvi,pegeon pea (arhar fali),Other,2019-03-04,2010,4000,3005,3,2019,1
+Gujarat,Surat,S.Mandvi,surat beans (papadi),Other,2019-03-04,2300,3995,3147,3,2019,1
+Gujarat,Surat,S.Mandvi,tomato,Other,2019-03-04,670,2105,1387,3,2019,1
+Gujarat,Surat,Vyra,bitter gourd,Bitter Gourd,2019-03-04,4800,5250,5025,3,2019,1
+Gujarat,Surat,Vyra,bottle gourd,Other,2019-03-04,800,1300,1050,3,2019,1
+Gujarat,Surat,Vyra,brinjal,Brinjal,2019-03-04,500,800,650,3,2019,1
+Gujarat,Surat,Vyra,cabbage,Other,2019-03-04,800,1100,950,3,2019,1
+Gujarat,Surat,Vyra,cauliflower,Other,2019-03-04,2000,2500,2250,3,2019,1
+Gujarat,Surat,Vyra,cucumbar(kheera),Other,2019-03-04,2250,2750,2500,3,2019,1
+Gujarat,Surat,Vyra,gram raw(chholia),Other,2019-03-04,1750,2250,2000,3,2019,1
+Gujarat,Surat,Vyra,guar,Other,2019-03-04,4500,6000,5200,3,2019,1
+Gujarat,Surat,Vyra,little gourd (kundru),Other,2019-03-04,3250,3500,3350,3,2019,1
+Gujarat,Surat,Vyra,paddy(dhan)(common),Sabnam,2019-03-04,1665,1730,1697,3,2019,1
+Gujarat,Surat,Vyra,pegeon pea (arhar fali),Other,2019-03-04,2750,3000,2850,3,2019,1
+Gujarat,Surat,Vyra,ridgeguard(tori),Other,2019-03-04,2500,3000,2750,3,2019,1
+Gujarat,Surat,Vyra,round gourd,Other,2019-03-04,1300,1500,1400,3,2019,1
+Gujarat,Surat,Vyra,tomato,Other,2019-03-04,1100,1500,1300,3,2019,1
+Gujarat,Vadodara(Baroda),Bodeli,cotton,Shanker 6 (B) 30mm FIne,2019-03-04,5301,5520,5400,3,2019,1
+Gujarat,Vadodara(Baroda),Bodeli(Hadod),cotton,Shanker 6 (B) 30mm FIne,2019-03-04,5301,5514,5400,3,2019,1
+Gujarat,Vadodara(Baroda),Bodeli(Kalediya),cotton,Shanker 6 (B) 30mm FIne,2019-03-04,5301,5517,5400,3,2019,1
+Gujarat,Vadodara(Baroda),Bodeli(Modasar),cotton,Shanker 6 (B) 30mm FIne,2019-03-04,5301,5519,5400,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,okra,Other,2019-03-04,3500,4000,3800,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,bitter gourd,Other,2019-03-04,3500,4000,3800,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,bottle gourd,Other,2019-03-04,1500,2000,1750,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,brinjal,Other,2019-03-04,400,1000,750,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,carrot,Other,2019-03-04,750,1000,850,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,cauliflower,Other,2019-03-04,1000,1300,1250,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,coriander(leaves),Other,2019-03-04,2500,3500,3000,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,cowpea(veg),Other,2019-03-04,3000,3500,3300,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,cucumbar(kheera),Other,2019-03-04,1250,2500,1750,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,drumstick,Other,2019-03-04,1250,1750,1400,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,elephant yam (suran),Other,2019-03-04,1500,1750,1650,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,ginger(green),Other,2019-03-04,6000,6500,6300,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,green chilli,Green Chilly,2019-03-04,2750,3500,3000,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,indian beans (seam),Other,2019-03-04,2000,2250,2100,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,leafy vegetable,Leafy Vegetables,2019-03-04,500,1000,750,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,lemon,Other,2019-03-04,3500,5000,4150,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,methi(leaves),Other,2019-03-04,700,1000,850,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,mint(pudina),Other,2019-03-04,1000,1500,1300,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,onion,Other,2019-03-04,500,700,600,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,papaya (raw),Other,2019-03-04,700,1000,850,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,peas cod,Other,2019-03-04,1500,1750,1600,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,pegeon pea (arhar fali),Other,2019-03-04,2500,3500,3000,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,potato,Other,2019-03-04,600,750,700,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,pumpkin,Other,2019-03-04,500,2000,950,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,raddish,Other,2019-03-04,800,1000,850,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,spinach,Other,2019-03-04,450,500,475,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,sponge gourd,Other,2019-03-04,1750,2250,1950,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,surat beans (papadi),Other,2019-03-04,2000,3000,2500,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,sweet potato,Other,2019-03-04,1500,2000,1700,3,2019,1
+Gujarat,Vadodara(Baroda),Padra,tomato,Other,2019-03-04,1200,1500,1350,3,2019,1
+Gujarat,Valsad,Chikli(Khorgam),bitter gourd,Other,2019-03-04,5500,6250,5875,3,2019,1
+Gujarat,Valsad,Chikli(Khorgam),bottle gourd,Other,2019-03-04,1250,1500,1375,3,2019,1
+Gujarat,Valsad,Chikli(Khorgam),pointed gourd (parval),Other,2019-03-04,5000,5500,5250,3,2019,1
+Gujarat,Valsad,Chikli(Khorgam),tinda,Other,2019-03-04,2750,3000,2875,3,2019,1
+Haryana,Ambala,Shahzadpur,banana,Other,2019-03-04,3000,3000,3000,3,2019,1
+Haryana,Ambala,Shahzadpur,ber(zizyphus/borehannu),Ber(Zizyphus),2019-03-04,2000,4000,3000,3,2019,1
+Haryana,Ambala,Shahzadpur,carrot,Carrot,2019-03-04,700,700,700,3,2019,1
+Haryana,Ambala,Shahzadpur,coriander(leaves),Coriander,2019-03-04,1000,1805,1805,3,2019,1
+Haryana,Ambala,Shahzadpur,garlic,Desi,2019-03-04,3000,3000,3000,3,2019,1
+Haryana,Ambala,Shahzadpur,ginger(green),Green Ginger,2019-03-04,8000,8000,8000,3,2019,1
+Haryana,Ambala,Shahzadpur,grapes,Green,2019-03-04,4000,4000,4000,3,2019,1
+Haryana,Ambala,Shahzadpur,green chilli,Green Chilly,2019-03-04,4500,5200,5000,3,2019,1
+Haryana,Ambala,Shahzadpur,kinnow,Other,2019-03-04,1200,2000,1500,3,2019,1
+Haryana,Ambala,Shahzadpur,leafy vegetable,Leafy Vegetables,2019-03-04,1000,1000,1000,3,2019,1
+Haryana,Ambala,Shahzadpur,methi(leaves),Methi,2019-03-04,1200,1500,1410,3,2019,1
+Haryana,Ambala,Shahzadpur,peas wet,Peas Wet,2019-03-04,1000,1400,1200,3,2019,1
+Haryana,Ambala,Shahzadpur,potato,Local,2019-03-04,325,350,325,3,2019,1
+Haryana,Ambala,Shahzadpur,raddish,Raddish,2019-03-04,500,600,600,3,2019,1
+Haryana,Ambala,Shahzadpur,spinach,Spinach,2019-03-04,600,715,715,3,2019,1
+Haryana,Faridabad,Faridabad,apple,Other,2019-03-04,4000,6000,5000,3,2019,1
+Haryana,Faridabad,Faridabad,cabbage,Other,2019-03-04,400,500,450,3,2019,1
+Haryana,Faridabad,Faridabad,carrot,Other,2019-03-04,400,500,450,3,2019,1
+Haryana,Faridabad,Faridabad,cauliflower,Cauliflower,2019-03-04,1500,2500,2000,3,2019,1
+Haryana,Faridabad,Faridabad,grapes,Other,2019-03-04,3000,5000,4000,3,2019,1
+Haryana,Faridabad,Faridabad,green chilli,Other,2019-03-04,2800,3000,2900,3,2019,1
+Haryana,Faridabad,Faridabad,kinnow,Kinnow,2019-03-04,1000,1500,1250,3,2019,1
+Haryana,Faridabad,Faridabad,orange,Other,2019-03-04,1500,2500,2000,3,2019,1
+Haryana,Faridabad,Faridabad,peas wet,Other,2019-03-04,800,1000,900,3,2019,1
+Haryana,Faridabad,Faridabad,pomegranate,Other,2019-03-04,3000,6000,4500,3,2019,1
+Haryana,Faridabad,Faridabad,potato,Other,2019-03-04,500,600,550,3,2019,1
+Haryana,Faridabad,Faridabad,raddish,Other,2019-03-04,800,1000,900,3,2019,1
+Haryana,Faridabad,Faridabad,tomato,Other,2019-03-04,1500,2000,1750,3,2019,1
+Haryana,Gurgaon,Pataudi,banana,Other,2019-03-04,3000,3000,3000,3,2019,1
+Haryana,Gurgaon,Pataudi,bottle gourd,Other,2019-03-04,2700,2700,2700,3,2019,1
+Haryana,Gurgaon,Pataudi,cabbage,Other,2019-03-04,500,600,550,3,2019,1
+Haryana,Gurgaon,Pataudi,carrot,Other,2019-03-04,300,500,400,3,2019,1
+Haryana,Gurgaon,Pataudi,cauliflower,Other,2019-03-04,1400,1500,1450,3,2019,1
+Haryana,Gurgaon,Pataudi,cucumbar(kheera),Other,2019-03-04,1400,1400,1400,3,2019,1
+Haryana,Gurgaon,Pataudi,grapes,Other,2019-03-04,3000,4000,3500,3,2019,1
+Haryana,Gurgaon,Pataudi,onion,Other,2019-03-04,800,1200,1000,3,2019,1
+Haryana,Gurgaon,Pataudi,orange,Other,2019-03-04,1400,3000,2200,3,2019,1
+Haryana,Gurgaon,Pataudi,papaya,Other,2019-03-04,1500,1800,1650,3,2019,1
+Haryana,Gurgaon,Pataudi,peas wet,Other,2019-03-04,1000,2000,1500,3,2019,1
+Haryana,Gurgaon,Pataudi,pomegranate,Other,2019-03-04,3500,5000,4250,3,2019,1
+Haryana,Gurgaon,Pataudi,potato,Other,2019-03-04,600,700,650,3,2019,1
+Haryana,Gurgaon,Pataudi,raddish,Other,2019-03-04,500,1000,750,3,2019,1
+Haryana,Gurgaon,Pataudi,spinach,Other,2019-03-04,500,1000,750,3,2019,1
+Haryana,Gurgaon,Pataudi,tinda,Other,2019-03-04,1500,1600,1550,3,2019,1
+Haryana,Gurgaon,Pataudi,tomato,Other,2019-03-04,1200,1800,1500,3,2019,1
+Haryana,Kurukshetra,Pipli,potato,Badshah,2019-03-04,100,400,296,3,2019,1
+Haryana,Mewat,Taura,apple,Other,2019-03-04,8000,8000,8000,3,2019,1
+Haryana,Mewat,Taura,banana,Other,2019-03-04,2000,2000,2000,3,2019,1
+Haryana,Mewat,Taura,ber(zizyphus/borehannu),Other,2019-03-04,1200,1300,1300,3,2019,1
+Haryana,Mewat,Taura,okra,Bhindi,2019-03-04,6000,6000,6000,3,2019,1
+Haryana,Mewat,Taura,carrot,Carrot,2019-03-04,600,700,700,3,2019,1
+Haryana,Mewat,Taura,chikoos(sapota),Other,2019-03-04,3000,3500,3500,3,2019,1
+Haryana,Mewat,Taura,cucumbar(kheera),Other,2019-03-04,3000,3000,3000,3,2019,1
+Haryana,Mewat,Taura,ginger(green),Other,2019-03-04,9000,9000,9000,3,2019,1
+Haryana,Mewat,Taura,grapes,Other,2019-03-04,3000,3000,3000,3,2019,1
+Haryana,Mewat,Taura,kinnow,Other,2019-03-04,1500,1500,1500,3,2019,1
+Haryana,Mewat,Taura,orange,Other,2019-03-04,3000,3000,3000,3,2019,1
+Haryana,Mewat,Taura,pomegranate,Other,2019-03-04,5000,5000,5000,3,2019,1
+Haryana,Mewat,Taura,potato,Potato,2019-03-04,700,700,700,3,2019,1
+Haryana,Mewat,Taura,raddish,Other,2019-03-04,800,800,800,3,2019,1
+Haryana,Mewat,Taura,tomato,Tomato,2019-03-04,1500,1500,1500,3,2019,1
+Haryana,Panipat,Madlauda,cauliflower,Cauliflower,2019-03-04,800,800,800,3,2019,1
+Haryana,Panipat,Madlauda,onion,Other,2019-03-04,1500,1500,1500,3,2019,1
+Haryana,Panipat,Madlauda,potato,Other,2019-03-04,1000,1000,1000,3,2019,1
+Haryana,Panipat,Madlauda,tomato,Other,2019-03-04,1500,1500,1500,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),apple,Apple,2019-03-04,7000,7500,7500,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),bottle gourd,Bottle Gourd,2019-03-04,2600,3000,2800,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),brinjal,Brinjal,2019-03-04,2400,2600,2500,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),cabbage,Cabbage,2019-03-04,700,900,800,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),capsicum,Capsicum,2019-03-04,4500,5000,4800,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),carrot,Carrot,2019-03-04,900,1000,1000,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),cauliflower,Cauliflower,2019-03-04,900,1100,1000,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),coriander(leaves),Coriander,2019-03-04,2500,2500,2500,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),kinnow,Kinnow,2019-03-04,2000,2400,2200,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),peas wet,Peas Wet,2019-03-04,1700,1800,1800,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),pomegranate,Other,2019-03-04,7500,7500,7500,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),potato,Potato,2019-03-04,700,800,800,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jaisinghpur),tomato,Tomato,2019-03-04,1800,2200,2000,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),apple,Other,2019-03-04,4000,6000,5000,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),banana,Other,2019-03-04,2300,2500,2400,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),okra,Other,2019-03-04,4000,4500,4250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),bottle gourd,Other,2019-03-04,2000,2500,2250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),brinjal,Other,2019-03-04,1200,1500,1350,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),cabbage,Other,2019-03-04,400,500,450,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),capsicum,Other,2019-03-04,4000,4500,4250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),carrot,Other,2019-03-04,600,700,650,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),cauliflower,Other,2019-03-04,1200,1500,1350,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),coriander(leaves),Other,2019-03-04,1200,1500,1350,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),french beans (frasbean),Other,2019-03-04,3800,4000,3900,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),ginger(green),Other,2019-03-04,8500,9000,8750,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),grapes,Other,2019-03-04,4000,5000,4250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),green chilli,Other,2019-03-04,6000,6500,6250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),kinnow,Other,2019-03-04,1500,1700,1600,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),lemon,Other,2019-03-04,3800,4000,3900,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),mashrooms,Other,2019-03-04,9000,10000,9500,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),methi(leaves),Other,2019-03-04,900,1000,950,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),mousambi(sweet lime),Other,2019-03-04,3500,4000,3750,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),onion,Other,2019-03-04,700,800,750,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),orange,Other,2019-03-04,3000,3500,3250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),papaya,Other,2019-03-04,2000,2500,2250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),peas cod,Other,2019-03-04,1600,1700,1650,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),pineapple,Other,2019-03-04,2000,2500,2250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),pomegranate,Other,2019-03-04,4000,4500,4250,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),potato,Other,2019-03-04,700,800,750,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),raddish,Other,2019-03-04,500,600,550,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),spinach,Other,2019-03-04,900,1000,950,3,2019,1
+Himachal Pradesh,Kangra,Kangra(Jassour),tomato,Other,2019-03-04,2200,2500,2350,3,2019,1
+Himachal Pradesh,Kangra,Palampur,apple,Apple,2019-03-04,7500,8000,8000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,ber(zizyphus/borehannu),Other,2019-03-04,2400,2500,2500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,okra,Other,2019-03-04,6000,6500,6500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,bottle gourd,Bottle Gourd,2019-03-04,2800,3000,3000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,brinjal,Other,2019-03-04,2500,2500,2500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,cabbage,Cabbage,2019-03-04,800,900,900,3,2019,1
+Himachal Pradesh,Kangra,Palampur,capsicum,Capsicum,2019-03-04,4500,4800,4500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,carrot,Carrot,2019-03-04,800,900,900,3,2019,1
+Himachal Pradesh,Kangra,Palampur,cauliflower,Cauliflower,2019-03-04,1000,1100,1100,3,2019,1
+Himachal Pradesh,Kangra,Palampur,cucumbar(kheera),Other,2019-03-04,5000,5500,5500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,french beans (frasbean),Other,2019-03-04,5000,6000,5500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,ginger(green),Other,2019-03-04,8000,9000,9000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,grapes,Other,2019-03-04,6500,7000,7000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,green chilli,Green Chilly,2019-03-04,4500,5000,5000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,guava,Other,2019-03-04,4000,5000,4500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,kinnow,Other,2019-03-04,2000,2400,2200,3,2019,1
+Himachal Pradesh,Kangra,Palampur,mashrooms,Other,2019-03-04,15000,20000,20000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,onion,Other,2019-03-04,1000,1100,1100,3,2019,1
+Himachal Pradesh,Kangra,Palampur,orange,Other,2019-03-04,4000,4500,4500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,papaya,Other,2019-03-04,2400,2600,2500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,peas wet,Other,2019-03-04,1700,1800,1800,3,2019,1
+Himachal Pradesh,Kangra,Palampur,pineapple,Other,2019-03-04,3500,4000,4000,3,2019,1
+Himachal Pradesh,Kangra,Palampur,pomegranate,Other,2019-03-04,7000,7500,7500,3,2019,1
+Himachal Pradesh,Kangra,Palampur,potato,Other,2019-03-04,700,800,800,3,2019,1
+Himachal Pradesh,Kangra,Palampur,pumpkin,Other,2019-03-04,1600,1800,1700,3,2019,1
+Himachal Pradesh,Kangra,Palampur,raddish,Raddish,2019-03-04,700,800,800,3,2019,1
+Himachal Pradesh,Kangra,Palampur,spinach,Spinach,2019-03-04,1600,1800,1700,3,2019,1
+Himachal Pradesh,Kangra,Palampur,tomato,Tomato,2019-03-04,2000,2200,2200,3,2019,1
+Himachal Pradesh,Kangra,Palampur,turnip,Other,2019-03-04,1000,1200,1200,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,banana,Other,2019-03-04,2340,2400,2370,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,okra,Other,2019-03-04,5500,5800,5650,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,bottle gourd,Other,2019-03-04,2500,2700,2600,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,brinjal,Other,2019-03-04,2400,2600,2500,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,cabbage,Other,2019-03-04,800,1000,900,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,capsicum,Other,2019-03-04,5500,5800,5650,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,carrot,Other,2019-03-04,1100,1200,1150,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,cauliflower,Other,2019-03-04,1600,1700,1650,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,coriander(leaves),Other,2019-03-04,1000,1500,1300,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,cucumbar(kheera),Other,2019-03-04,4500,5000,4800,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,french beans (frasbean),Other,2019-03-04,5200,5300,5250,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,garlic,Other,2019-03-04,5000,5500,5300,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,ginger(dry),Other,2019-03-04,9500,10000,9800,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,grapes,Other,2019-03-04,7000,8000,7500,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,green chilli,Other,2019-03-04,6000,6500,6300,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,guava,Other,2019-03-04,6000,6300,6150,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,kinnow,Other,2019-03-04,2600,2700,2650,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,lemon,Other,2019-03-04,6000,7000,6500,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,onion,Other,2019-03-04,1200,1300,1250,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,papaya,Other,2019-03-04,2800,3000,2900,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,peas wet,Other,2019-03-04,2600,2700,2650,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,potato,Other,2019-03-04,900,1800,1400,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,pumpkin,Other,2019-03-04,1700,1800,1750,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,raddish,Other,2019-03-04,500,900,700,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,spinach,Other,2019-03-04,800,1000,900,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,squash(chappal kadoo),Other,2019-03-04,1800,2000,1900,3,2019,1
+Himachal Pradesh,Kullu,Bhuntar,tomato,Other,2019-03-04,2500,2600,2550,3,2019,1
+Jammu And Kashmir,Badgam,Zaloosa-Chararishrief (F&V),cauliflower,Cauliflower,2019-03-04,700,900,800,3,2019,1
+Jammu And Kashmir,Badgam,Zaloosa-Chararishrief (F&V),cucumbar(kheera),Cucumbar,2019-03-04,1500,1700,1600,3,2019,1
+Jammu And Kashmir,Badgam,Zaloosa-Chararishrief (F&V),knool khol,Knool Khol,2019-03-04,1200,1300,1250,3,2019,1
+Karnataka,Bangalore,Ramanagara,beans,Beans (Whole),2019-03-04,3200,4000,3600,3,2019,1
+Karnataka,Bangalore,Ramanagara,beetroot,Beetroot,2019-03-04,1400,1800,1600,3,2019,1
+Karnataka,Bangalore,Ramanagara,okra,Bhindi,2019-03-04,3200,3600,3400,3,2019,1
+Karnataka,Bangalore,Ramanagara,bitter gourd,Bitter Gourd,2019-03-04,3600,4000,3800,3,2019,1
+Karnataka,Bangalore,Ramanagara,brinjal,Brinjal,2019-03-04,1000,1600,1300,3,2019,1
+Karnataka,Bangalore,Ramanagara,cabbage,Cabbage,2019-03-04,1200,1600,1400,3,2019,1
+Karnataka,Bangalore,Ramanagara,carrot,Carrot,2019-03-04,1400,1800,1600,3,2019,1
+Karnataka,Bangalore,Ramanagara,chilly capsicum,Chilly Capsicum,2019-03-04,5000,6000,5500,3,2019,1
+Karnataka,Bangalore,Ramanagara,cucumbar(kheera),Cucumbar,2019-03-04,1700,1800,1750,3,2019,1
+Karnataka,Bangalore,Ramanagara,drumstick,Drumstick,2019-03-04,2800,3000,2900,3,2019,1
+Karnataka,Bangalore,Ramanagara,ginger(green),Green Ginger,2019-03-04,5000,6000,5500,3,2019,1
+Karnataka,Bangalore,Ramanagara,green avare (w),Green Avare (W),2019-03-04,2800,3000,2900,3,2019,1
+Karnataka,Bangalore,Ramanagara,green chilli,Green Chilly,2019-03-04,3600,4000,3800,3,2019,1
+Karnataka,Bangalore,Ramanagara,knool khol,Knool Khol,2019-03-04,1600,2000,1800,3,2019,1
+Karnataka,Bangalore,Ramanagara,papaya,Papaya,2019-03-04,1200,1400,1300,3,2019,1
+Karnataka,Bangalore,Ramanagara,peas wet,Peas Wet,2019-03-04,2800,3200,3000,3,2019,1
+Karnataka,Bangalore,Ramanagara,raddish,Raddish,2019-03-04,1600,2000,1800,3,2019,1
+Karnataka,Bangalore,Ramanagara,ridgeguard(tori),Ridgeguard(Tori),2019-03-04,3200,4000,3600,3,2019,1
+Karnataka,Bangalore,Ramanagara,seemebadnekai,Seemebadanekai,2019-03-04,1400,1600,1500,3,2019,1
+Karnataka,Bangalore,Ramanagara,snakeguard,Snakeguard,2019-03-04,1200,1600,1400,3,2019,1
+Karnataka,Bangalore,Ramanagara,suvarna gadde,Suvarnagadde,2019-03-04,2400,2600,2500,3,2019,1
+Karnataka,Bangalore,Ramanagara,tomato,Tomato,2019-03-04,800,1000,900,3,2019,1
+Karnataka,Bangalore,Ramanagara,water melon,Water Melon,2019-03-04,1200,1600,1400,3,2019,1
+Karnataka,Kolar,Kolar,beans,Beans (Whole),2019-03-04,3000,3200,3100,3,2019,1
+Karnataka,Kolar,Kolar,beetroot,Beetroot,2019-03-04,1300,1500,1400,3,2019,1
+Karnataka,Kolar,Kolar,cabbage,Cabbage,2019-03-04,1000,1300,1100,3,2019,1
+Karnataka,Kolar,Kolar,capsicum,Capsicum,2019-03-04,3500,4000,3800,3,2019,1
+Karnataka,Kolar,Kolar,carrot,Carrot,2019-03-04,1000,1400,1200,3,2019,1
+Karnataka,Kolar,Kolar,cauliflower,Local,2019-03-04,1000,1400,1200,3,2019,1
+Karnataka,Kolar,Kolar,chilly capsicum,Chilly Capsicum,2019-03-04,2500,3500,3000,3,2019,1
+Karnataka,Kolar,Kolar,knool khol,Knool Khol,2019-03-04,800,1200,1000,3,2019,1
+Karnataka,Kolar,Kolar,raddish,Raddish,2019-03-04,300,600,400,3,2019,1
+Karnataka,Kolar,Kolar,ridgeguard(tori),Ridgeguard(Tori),2019-03-04,3500,4200,3800,3,2019,1
+Karnataka,Kolar,Kolar,tomato,Hybrid,2019-03-04,367,1633,1000,3,2019,1
+Karnataka,Kolar,Kolar,tomato,Tomato,2019-03-04,334,1000,667,3,2019,1
+Karnataka,Tumkur,Gubbi,copra,other,2019-03-04,9000,9000,9000,3,2019,1
+Kerala,Alappuzha,Aroor,amphophalus,Amphophalus,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Alappuzha,Aroor,apple,Other,2019-03-04,10000,11200,11000,3,2019,1
+Kerala,Alappuzha,Aroor,ashgourd,Other,2019-03-04,1000,1200,1100,3,2019,1
+Kerala,Alappuzha,Aroor,banana,Nendra Bale,2019-03-04,4200,4400,4300,3,2019,1
+Kerala,Alappuzha,Aroor,banana,Palayamthodan,2019-03-04,2800,3000,2900,3,2019,1
+Kerala,Alappuzha,Aroor,banana,Robusta,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Alappuzha,Aroor,banana - green,Banana - Green,2019-03-04,4000,4200,4100,3,2019,1
+Kerala,Alappuzha,Chengannur,amphophalus,Other,2019-03-04,2300,2600,2400,3,2019,1
+Kerala,Alappuzha,Chengannur,ashgourd,Other,2019-03-04,1100,1400,1200,3,2019,1
+Kerala,Alappuzha,Chengannur,banana - green,Other,2019-03-04,3700,4000,3800,3,2019,1
+Kerala,Alappuzha,Chengannur,beetroot,Other,2019-03-04,1800,2100,2000,3,2019,1
+Kerala,Alappuzha,Chengannur,okra,Other,2019-03-04,4000,4200,4000,3,2019,1
+Kerala,Alappuzha,Chengannur,bitter gourd,Other,2019-03-04,4000,4600,4500,3,2019,1
+Kerala,Alappuzha,Chengannur,bottle gourd,Other,2019-03-04,1000,1300,1100,3,2019,1
+Kerala,Alappuzha,Chengannur,capsicum,Other,2019-03-04,5700,6200,6000,3,2019,1
+Kerala,Alappuzha,Chengannur,carrot,Other,2019-03-04,3400,3700,3600,3,2019,1
+Kerala,Alappuzha,Chengannur,cowpea(veg),Cowpea (Veg),2019-03-04,4000,4300,4200,3,2019,1
+Kerala,Alappuzha,Chengannur,cucumbar(kheera),Other,2019-03-04,1600,2200,2000,3,2019,1
+Kerala,Alappuzha,Mannar,amphophalus,Other,2019-03-04,3500,3700,3600,3,2019,1
+Kerala,Alappuzha,Mannar,ashgourd,Other,2019-03-04,1000,1300,1100,3,2019,1
+Kerala,Alappuzha,Mannar,banana - green,Other,2019-03-04,4000,4200,4100,3,2019,1
+Kerala,Alappuzha,Mannar,okra,Other,2019-03-04,3000,3200,3100,3,2019,1
+Kerala,Alappuzha,Mannar,bitter gourd,Other,2019-03-04,4000,4200,4100,3,2019,1
+Kerala,Alappuzha,Mannar,brinjal,Other,2019-03-04,3200,3600,3500,3,2019,1
+Kerala,Alappuzha,Mannar,cabbage,Other,2019-03-04,3000,3300,3200,3,2019,1
+Kerala,Alappuzha,Mannar,capsicum,Other,2019-03-04,8000,8300,8200,3,2019,1
+Kerala,Alappuzha,Mannar,carrot,Other,2019-03-04,3700,3900,3800,3,2019,1
+Kerala,Ernakulam,Piravam,amaranthus,Other,2019-03-04,1500,2000,1800,3,2019,1
+Kerala,Ernakulam,Piravam,amphophalus,Other,2019-03-04,2000,3000,2500,3,2019,1
+Kerala,Ernakulam,Piravam,ashgourd,Other,2019-03-04,1500,2000,1800,3,2019,1
+Kerala,Ernakulam,Piravam,banana - green,Other,2019-03-04,3000,4000,3500,3,2019,1
+Kerala,Ernakulam,Piravam,beetroot,Other,2019-03-04,2000,2500,2200,3,2019,1
+Kerala,Ernakulam,Piravam,bitter gourd,Other,2019-03-04,4000,5000,4500,3,2019,1
+Kerala,Ernakulam,Piravam,brinjal,Other,2019-03-04,2000,2500,2200,3,2019,1
+Kerala,Ernakulam,Piravam,cowpea(veg),Other,2019-03-04,4000,5000,4500,3,2019,1
+Kerala,Ernakulam,Piravam,potato,Other,2019-03-04,2000,3000,2500,3,2019,1
+Kerala,Ernakulam,Piravam,tomato,Other,2019-03-04,1500,2000,1800,3,2019,1
+Kerala,Kannur,Taliparamba,arecanut(betelnut/supari),Other,2019-03-04,19500,20000,19750,3,2019,1
+Kerala,Kannur,Taliparamba,black pepper,Other,2019-03-04,29000,29500,29250,3,2019,1
+Kerala,Kannur,Taliparamba,coconut,Other,2019-03-04,3200,3400,3300,3,2019,1
+Kerala,Kannur,Taliparamba,coconut oil,Other,2019-03-04,18000,18300,18150,3,2019,1
+Kerala,Kannur,Taliparamba,copra,other,2019-03-04,10100,10300,10250,3,2019,1
+Kerala,Kannur,Taliparamba,rubber,Other,2019-03-04,12300,12400,12350,3,2019,1
+Kerala,Kasargod,Kasargod,amaranthus,Other,2019-03-04,1500,1600,1550,3,2019,1
+Kerala,Kasargod,Kasargod,arecanut(betelnut/supari),Other,2019-03-04,21000,22000,21500,3,2019,1
+Kerala,Kasargod,Kasargod,banana,Medium,2019-03-04,2200,2300,2250,3,2019,1
+Kerala,Kasargod,Kasargod,banana,Nendra Bale,2019-03-04,3000,3100,3050,3,2019,1
+Kerala,Kasargod,Kasargod,okra,Other,2019-03-04,5500,5600,5550,3,2019,1
+Kerala,Kasargod,Kasargod,cashewnuts,Other,2019-03-04,10000,10200,10100,3,2019,1
+Kerala,Kasargod,Kasargod,copra,other,2019-03-04,10200,10400,10300,3,2019,1
+Kerala,Kasargod,Kasargod,cowpea(veg),Other,2019-03-04,2000,2150,2100,3,2019,1
+Kerala,Kasargod,Kasargod,cucumbar(kheera),Other,2019-03-04,1000,1200,1100,3,2019,1
+Kerala,Kasargod,Kasargod,paddy(dhan)(common),Other,2019-03-04,1800,1900,1850,3,2019,1
+Kerala,Kasargod,Kasargod,pepper garbled,Other,2019-03-04,32000,33000,32500,3,2019,1
+Kerala,Kasargod,Kasargod,pumpkin,Other,2019-03-04,800,900,850,3,2019,1
+Kerala,Kasargod,Manjeswaram,amaranthus,Amaranthus,2019-03-04,2400,3400,2900,3,2019,1
+Kerala,Kasargod,Manjeswaram,arecanut(betelnut/supari),Other,2019-03-04,21500,22000,21750,3,2019,1
+Kerala,Kasargod,Manjeswaram,ashgourd,Ashgourd,2019-03-04,2400,3000,2700,3,2019,1
+Kerala,Kasargod,Manjeswaram,banana - green,Other,2019-03-04,4200,5000,4600,3,2019,1
+Kerala,Kasargod,Manjeswaram,beetroot,Beetroot,2019-03-04,2200,3000,2600,3,2019,1
+Kerala,Kasargod,Manjeswaram,okra,Bhindi,2019-03-04,6000,7000,6500,3,2019,1
+Kerala,Kasargod,Manjeswaram,bitter gourd,Bitter Gourd,2019-03-04,5500,6000,5750,3,2019,1
+Kerala,Kasargod,Manjeswaram,bottle gourd,Bottle Gourd,2019-03-04,1600,2000,1800,3,2019,1
+Kerala,Kasargod,Manjeswaram,brinjal,Brinjal,2019-03-04,3200,4000,3600,3,2019,1
+Kerala,Kasargod,Manjeswaram,cabbage,Cabbage,2019-03-04,2000,3000,2500,3,2019,1
+Kerala,Kasargod,Manjeswaram,carrot,Carrot,2019-03-04,2400,3000,2700,3,2019,1
+Kerala,Kasargod,Manjeswaram,coconut seed,Other,2019-03-04,3400,3500,3450,3,2019,1
+Kerala,Kasargod,Manjeswaram,copra,Copra,2019-03-04,10000,10200,10100,3,2019,1
+Kerala,Kasargod,Manjeswaram,cowpea(veg),Cowpea (Veg),2019-03-04,4500,5500,5000,3,2019,1
+Kerala,Kasargod,Manjeswaram,cucumbar(kheera),Cucumbar,2019-03-04,2400,3000,2700,3,2019,1
+Kerala,Kasargod,Manjeswaram,drumstick,Drumstick,2019-03-04,5500,6500,6000,3,2019,1
+Kerala,Kasargod,Manjeswaram,ginger(green),Green Ginger,2019-03-04,8000,9000,8500,3,2019,1
+Kerala,Kasargod,Manjeswaram,green chilli,Green Chilly,2019-03-04,4500,5500,5000,3,2019,1
+Kerala,Kasargod,Manjeswaram,indian beans (seam),Other,2019-03-04,4200,5000,4600,3,2019,1
+Kerala,Kasargod,Manjeswaram,little gourd (kundru),Other,2019-03-04,4200,5000,4600,3,2019,1
+Kerala,Kasargod,Manjeswaram,long melon(kakri),Other,2019-03-04,2400,3000,2700,3,2019,1
+Kerala,Kasargod,Manjeswaram,pepper garbled,Other,2019-03-04,27500,28000,27750,3,2019,1
+Kerala,Kasargod,Manjeswaram,potato,Other,2019-03-04,2200,2600,2400,3,2019,1
+Kerala,Kasargod,Manjeswaram,pumpkin,Pumpkin,2019-03-04,2400,3000,2700,3,2019,1
+Kerala,Kasargod,Manjeswaram,ridgeguard(tori),Ridgeguard(Tori),2019-03-04,4500,5500,5000,3,2019,1
+Kerala,Kasargod,Manjeswaram,snakeguard,Snakeguard,2019-03-04,3200,4000,3600,3,2019,1
+Kerala,Kasargod,Manjeswaram,sweet potato,Sweet Potato,2019-03-04,2600,3400,3000,3,2019,1
+Kerala,Kasargod,Manjeswaram,tapioca,Other,2019-03-04,2400,3400,2900,3,2019,1
+Kerala,Kasargod,Manjeswaram,tomato,Tomato,2019-03-04,1600,2000,1800,3,2019,1
+Kerala,Kollam,Anchal,amaranthus,Other,2019-03-04,4500,4700,4600,3,2019,1
+Kerala,Kollam,Anchal,ashgourd,Other,2019-03-04,5600,5800,5700,3,2019,1
+Kerala,Kollam,Anchal,banana,Nendra Bale,2019-03-04,6000,6200,6100,3,2019,1
+Kerala,Kollam,Anchal,banana,Palayamthodan,2019-03-04,2600,2800,2700,3,2019,1
+Kerala,Kollam,Anchal,banana,Poovan,2019-03-04,5800,6000,5900,3,2019,1
+Kerala,Kollam,Anchal,banana,Red Banana,2019-03-04,4700,4900,4800,3,2019,1
+Kerala,Kollam,Anchal,banana,Robusta,2019-03-04,2300,2500,2400,3,2019,1
+Kerala,Kollam,Anchal,beetroot,Other,2019-03-04,3100,3300,3200,3,2019,1
+Kerala,Kollam,Anchal,okra,Other,2019-03-04,3700,3900,3800,3,2019,1
+Kerala,Kollam,Anchal,bitter gourd,Other,2019-03-04,6000,6200,6100,3,2019,1
+Kerala,Kollam,Anchal,bottle gourd,Other,2019-03-04,1200,1400,1300,3,2019,1
+Kerala,Kollam,Anchal,cabbage,Other,2019-03-04,1500,1700,1600,3,2019,1
+Kerala,Kollam,Anchal,carrot,Carrot,2019-03-04,5500,5700,5600,3,2019,1
+Kerala,Kollam,Anchal,cauliflower,Cauliflower,2019-03-04,3500,3700,3600,3,2019,1
+Kerala,Kollam,Anchal,colacasia,Other,2019-03-04,4000,4200,4100,3,2019,1
+Kerala,Kollam,Anchal,drumstick,Other,2019-03-04,3400,3600,3500,3,2019,1
+Kerala,Kollam,Anchal,potato,Other,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Kollam,Anchal,pumpkin,Other,2019-03-04,1000,1200,1100,3,2019,1
+Kerala,Kollam,Anchal,snakeguard,Other,2019-03-04,2200,2400,2300,3,2019,1
+Kerala,Kollam,Chathanoor,banana,Banana - Ripe,2019-03-04,4000,4400,4200,3,2019,1
+Kerala,Kollam,Chathanoor,banana,Palayamthodan,2019-03-04,1800,2200,2000,3,2019,1
+Kerala,Kollam,Chathanoor,banana,Poovan,2019-03-04,4300,4700,4500,3,2019,1
+Kerala,Kollam,Chathanoor,banana,Red Banana,2019-03-04,4300,4700,4500,3,2019,1
+Kerala,Kollam,Chathanoor,okra,Other,2019-03-04,4800,5200,5000,3,2019,1
+Kerala,Kollam,Chathanoor,brinjal,Other,2019-03-04,3300,3700,3500,3,2019,1
+Kerala,Kollam,Chathanoor,ginger(green),Other,2019-03-04,6800,7200,7000,3,2019,1
+Kerala,Kollam,Chathanoor,little gourd (kundru),Other,2019-03-04,3800,4200,4000,3,2019,1
+Kerala,Kollam,Chathanoor,tomato,Other,2019-03-04,3300,3700,3500,3,2019,1
+Kerala,Kollam,Kaliyanchanda,amaranthus,Amaranthus,2019-03-04,1300,1500,1400,3,2019,1
+Kerala,Kollam,Kaliyanchanda,banana - green,Banana - Green,2019-03-04,5500,6000,5800,3,2019,1
+Kerala,Kollam,Kaliyanchanda,okra,Bhindi,2019-03-04,4000,4500,4200,3,2019,1
+Kerala,Kollam,Kaliyanchanda,bitter gourd,Bitter Gourd,2019-03-04,9600,10100,9800,3,2019,1
+Kerala,Kollam,Kaliyanchanda,cucumbar(kheera),Cucumbar,2019-03-04,3600,3900,3800,3,2019,1
+Kerala,Kollam,Kaliyanchanda,elephant yam (suran),Elephant Yam (Suran),2019-03-04,3100,3300,3200,3,2019,1
+Kerala,Kollam,Kaliyanchanda,ginger(green),Green Ginger,2019-03-04,8500,9000,8800,3,2019,1
+Kerala,Kollam,Kaliyanchanda,snakeguard,Other,2019-03-04,1700,1900,1800,3,2019,1
+Kerala,Kollam,Kaliyanchanda,tapioca,Other,2019-03-04,2400,2500,2450,3,2019,1
+Kerala,Kollam,Kaliyanchanda,turmeric (raw),Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Kottayam,Ettumanoor,ashgourd,Other,2019-03-04,1300,1400,1400,3,2019,1
+Kerala,Kottayam,Ettumanoor,banana,Banana - Ripe,2019-03-04,3800,3800,3800,3,2019,1
+Kerala,Kottayam,Ettumanoor,banana - green,Banana - Green,2019-03-04,2000,2100,2100,3,2019,1
+Kerala,Kottayam,Ettumanoor,beetroot,Other,2019-03-04,2100,2200,2200,3,2019,1
+Kerala,Kottayam,Ettumanoor,okra,Other,2019-03-04,2600,2800,2700,3,2019,1
+Kerala,Kottayam,Ettumanoor,bitter gourd,Other,2019-03-04,3300,3500,3400,3,2019,1
+Kerala,Kottayam,Ettumanoor,brinjal,Other,2019-03-04,2200,2400,2300,3,2019,1
+Kerala,Kottayam,Ettumanoor,cabbage,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Kottayam,Ettumanoor,carrot,Carrot,2019-03-04,2500,2800,2600,3,2019,1
+Kerala,Kottayam,Ettumanoor,cluster beans,Other,2019-03-04,3300,3500,3400,3,2019,1
+Kerala,Kottayam,Ettumanoor,coconut,Medium,2019-03-04,3500,3700,3600,3,2019,1
+Kerala,Kottayam,Ettumanoor,colacasia,Other,2019-03-04,5500,5700,5700,3,2019,1
+Kerala,Kottayam,Ettumanoor,cucumbar(kheera),Cucumbar,2019-03-04,1800,2000,2000,3,2019,1
+Kerala,Kottayam,Ettumanoor,drumstick,Drumstick,2019-03-04,5500,5800,5800,3,2019,1
+Kerala,Kottayam,Ettumanoor,elephant yam (suran),Other,2019-03-04,2200,2400,2300,3,2019,1
+Kerala,Kottayam,Ettumanoor,ginger(green),Green Ginger,2019-03-04,8500,8600,8600,3,2019,1
+Kerala,Kottayam,Ettumanoor,green chilli,Green Chilly,2019-03-04,3600,3800,3800,3,2019,1
+Kerala,Kottayam,Ettumanoor,little gourd (kundru),Other,2019-03-04,3300,3500,3400,3,2019,1
+Kerala,Kottayam,Ettumanoor,mango (raw-ripe),Mango - Raw-Ripe,2019-03-04,3300,3500,3400,3,2019,1
+Kerala,Kottayam,Ettumanoor,onion,Big,2019-03-04,3300,3500,3500,3,2019,1
+Kerala,Kottayam,Ettumanoor,onion,Onion,2019-03-04,1300,1500,1400,3,2019,1
+Kerala,Kottayam,Ettumanoor,potato,Potato,2019-03-04,2800,3000,2800,3,2019,1
+Kerala,Kottayam,Ettumanoor,pumpkin,Pumpkin,2019-03-04,1000,1100,1100,3,2019,1
+Kerala,Kottayam,Ettumanoor,snakeguard,Snakeguard,2019-03-04,1900,2000,1900,3,2019,1
+Kerala,Kottayam,Ettumanoor,tapioca,Tapioca,2019-03-04,2300,2500,2500,3,2019,1
+Kerala,Kottayam,Ettumanoor,tomato,Tomato,2019-03-04,2100,2300,2200,3,2019,1
+Kerala,Kottayam,Kottayam,banana,Banana - Ripe,2019-03-04,3800,4100,4000,3,2019,1
+Kerala,Kottayam,Kottayam,banana,Palayamthodan,2019-03-04,1600,1900,1800,3,2019,1
+Kerala,Kottayam,Kottayam,banana,Poovan,2019-03-04,2800,3100,3000,3,2019,1
+Kerala,Malappuram,Kondotty,amaranthus,Other,2019-03-04,1700,1900,1800,3,2019,1
+Kerala,Malappuram,Kondotty,amla(nelli kai),Other,2019-03-04,3700,3900,3800,3,2019,1
+Kerala,Malappuram,Kondotty,amphophalus,Other,2019-03-04,2200,2400,2300,3,2019,1
+Kerala,Malappuram,Kondotty,ashgourd,Other,2019-03-04,1200,1400,1300,3,2019,1
+Kerala,Malappuram,Kondotty,beetroot,Other,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Malappuram,Kondotty,okra,Other,2019-03-04,3000,3400,3200,3,2019,1
+Kerala,Malappuram,Kondotty,bitter gourd,Other,2019-03-04,3000,3200,3100,3,2019,1
+Kerala,Malappuram,Kondotty,bottle gourd,Other,2019-03-04,1600,1800,1700,3,2019,1
+Kerala,Malappuram,Kondotty,brinjal,Other,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Malappuram,Kondotty,cabbage,Other,2019-03-04,1200,1400,1300,3,2019,1
+Kerala,Malappuram,Kondotty,carrot,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Malappuram,Kondotty,cauliflower,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Malappuram,Kondotty,cowpea(veg),Other,2019-03-04,3000,3200,3100,3,2019,1
+Kerala,Malappuram,Kondotty,cucumbar(kheera),Other,2019-03-04,1200,1400,1300,3,2019,1
+Kerala,Malappuram,Kondotty,drumstick,Other,2019-03-04,6000,6200,6100,3,2019,1
+Kerala,Malappuram,Kondotty,french beans (frasbean),Other,2019-03-04,3000,3200,3100,3,2019,1
+Kerala,Malappuram,Kondotty,garlic,Other,2019-03-04,7000,7200,7100,3,2019,1
+Kerala,Malappuram,Kondotty,ginger(green),Other,2019-03-04,8800,9000,8900,3,2019,1
+Kerala,Malappuram,Kondotty,green chilli,Other,2019-03-04,3000,3200,3100,3,2019,1
+Kerala,Malappuram,Kondotty,lemon,Other,2019-03-04,4000,4200,4100,3,2019,1
+Kerala,Malappuram,Kondotty,onion,Other,2019-03-04,1300,1500,1400,3,2019,1
+Kerala,Malappuram,Kondotty,orange,Other,2019-03-04,5800,6000,5900,3,2019,1
+Kerala,Malappuram,Kondotty,potato,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Malappuram,Kondotty,pumpkin,Other,2019-03-04,1200,1400,1300,3,2019,1
+Kerala,Malappuram,Kondotty,snakeguard,Other,2019-03-04,1600,1800,1700,3,2019,1
+Kerala,Malappuram,Kondotty,tomato,Other,2019-03-04,1000,1200,1100,3,2019,1
+Kerala,Thirssur,Chelakkara,amaranthus,Other,2019-03-04,1600,1800,1700,3,2019,1
+Kerala,Thirssur,Chelakkara,ashgourd,Other,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Thirssur,Chelakkara,banana - green,Other,2019-03-04,4200,4400,4300,3,2019,1
+Kerala,Thirssur,Chelakkara,beetroot,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Thirssur,Chelakkara,okra,Other,2019-03-04,2200,2400,2300,3,2019,1
+Kerala,Thirssur,Chelakkara,bitter gourd,Other,2019-03-04,2600,2800,2700,3,2019,1
+Kerala,Thirssur,Chelakkara,brinjal,Other,2019-03-04,1600,1800,1700,3,2019,1
+Kerala,Thirssur,Chelakkara,cabbage,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Thirssur,Chelakkara,carrot,Other,2019-03-04,3400,3600,3500,3,2019,1
+Kerala,Thirssur,Chelakkara,cauliflower,Other,2019-03-04,3500,3800,3600,3,2019,1
+Kerala,Thirssur,Chelakkara,coconut seed,Other,2019-03-04,3400,3600,3500,3,2019,1
+Kerala,Thirssur,Chelakkara,cowpea(veg),Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Thirssur,Chelakkara,cucumbar(kheera),Other,2019-03-04,2200,2400,2300,3,2019,1
+Kerala,Thirssur,Chelakkara,drumstick,Other,2019-03-04,3000,3300,3200,3,2019,1
+Kerala,Thirssur,Chelakkara,duster beans,Other,2019-03-04,3500,3800,3600,3,2019,1
+Kerala,Thirssur,Chelakkara,elephant yam (suran),Other,2019-03-04,2500,2800,2600,3,2019,1
+Kerala,Thirssur,Chelakkara,ginger(green),Other,2019-03-04,8000,8400,8200,3,2019,1
+Kerala,Thirssur,Chelakkara,green chilli,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Thirssur,Chelakkara,mango (raw-ripe),Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Thirssur,Chelakkara,onion,Other,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Thirssur,Chelakkara,potato,Other,2019-03-04,2500,2800,2600,3,2019,1
+Kerala,Thirssur,Chelakkara,pumpkin,Other,2019-03-04,1600,1800,1700,3,2019,1
+Kerala,Thirssur,Chelakkara,snakeguard,Other,2019-03-04,1800,2000,1900,3,2019,1
+Kerala,Thirssur,Chelakkara,tapioca,Other,2019-03-04,2400,2600,2500,3,2019,1
+Kerala,Thirssur,Chelakkara,tomato,Other,2019-03-04,2000,2200,2100,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,ashgourd,Other,2019-03-04,2200,2200,2200,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,banana,Other,2019-03-04,6000,6000,6000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,banana - green,Other,2019-03-04,6200,6200,6200,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,beetroot,Other,2019-03-04,3000,3000,3000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,okra,Other,2019-03-04,3200,3200,3200,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,bitter gourd,Other,2019-03-04,4000,4000,4000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,bottle gourd,Other,2019-03-04,2400,2400,2400,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,brinjal,Other,2019-03-04,2500,2500,2500,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,cabbage,Other,2019-03-04,3000,3000,3000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,carrot,Other,2019-03-04,3800,3800,3800,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,cauliflower,Other,2019-03-04,2700,2700,2700,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,coconut,Other,2019-03-04,4000,4000,4000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,cowpea(veg),Other,2019-03-04,3500,3500,3500,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,cucumbar(kheera),Other,2019-03-04,2000,2000,2000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,drumstick,Other,2019-03-04,2600,2600,2600,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,elephant yam (suran),Other,2019-03-04,2400,2400,2400,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,ginger(green),Other,2019-03-04,4000,4000,4000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,green chilli,Other,2019-03-04,3500,3500,3500,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,indian beans (seam),Other,2019-03-04,4000,4000,4000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,lemon,Other,2019-03-04,2000,2000,2000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,mango,Other,2019-03-04,3500,3500,3500,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,onion,Other,2019-03-04,2500,2500,2500,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,potato,Other,2019-03-04,2400,2400,2400,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,pumpkin,Other,2019-03-04,3000,3000,3000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,tapioca,Other,2019-03-04,4000,4000,4000,3,2019,1
+Kerala,Thirssur,Irinjalakkuda,tomato,Other,2019-03-04,2000,2000,2000,3,2019,1
+Kerala,Thirssur,Kodungalloor,ashgourd,Other,2019-03-04,850,850,850,3,2019,1
+Kerala,Thirssur,Kodungalloor,banana - green,Other,2019-03-04,3600,3600,3600,3,2019,1
+Kerala,Thirssur,Kodungalloor,beetroot,Other,2019-03-04,2100,2200,2100,3,2019,1
+Kerala,Thirssur,Kodungalloor,okra,Other,2019-03-04,2300,2300,2300,3,2019,1
+Kerala,Thirssur,Kodungalloor,bitter gourd,Other,2019-03-04,3500,3600,3600,3,2019,1
+Kerala,Thirssur,Kodungalloor,brinjal,Other,2019-03-04,1500,1500,1500,3,2019,1
+Kerala,Thirssur,Kodungalloor,cabbage,Other,2019-03-04,2200,2200,2200,3,2019,1
+Kerala,Thirssur,Kodungalloor,carrot,Other,2019-03-04,2300,2300,2300,3,2019,1
+Kerala,Thirssur,Kodungalloor,drumstick,Other,2019-03-04,2400,2400,2400,3,2019,1
+Kerala,Thirssur,Kodungalloor,elephant yam (suran),Other,2019-03-04,1400,1400,1400,3,2019,1
+Kerala,Thirssur,Kodungalloor,french beans (frasbean),Other,2019-03-04,3000,3000,3000,3,2019,1
+Kerala,Thirssur,Kodungalloor,ginger(green),Other,2019-03-04,7000,7000,7000,3,2019,1
+Kerala,Thirssur,Kodungalloor,green chilli,Other,2019-03-04,3700,3800,3800,3,2019,1
+Kerala,Thirssur,Kodungalloor,mango (raw-ripe),Other,2019-03-04,3000,3000,3000,3,2019,1
+Kerala,Thirssur,Kodungalloor,onion,Other,2019-03-04,950,1000,950,3,2019,1
+Kerala,Thirssur,Kodungalloor,potato,Other,2019-03-04,1400,1400,1400,3,2019,1
+Kerala,Thirssur,Kodungalloor,pumpkin,Other,2019-03-04,1100,1100,1100,3,2019,1
+Kerala,Thirssur,Kodungalloor,sweet potato,Other,2019-03-04,2200,2200,2200,3,2019,1
+Kerala,Thirssur,Kodungalloor,tapioca,Other,2019-03-04,2000,2000,2000,3,2019,1
+Kerala,Thirssur,Kodungalloor,tomato,Other,2019-03-04,1600,1600,1600,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Nendra Bale,2019-03-04,3800,4000,3900,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Nendra Bale,2019-03-04,3500,3700,3600,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Nendra Bale,2019-03-04,2500,3400,3200,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Palayamthodan,2019-03-04,1600,1800,1700,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Palayamthodan,2019-03-04,1300,1500,1400,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Palayamthodan,2019-03-04,1000,1200,1100,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Poovan,2019-03-04,2900,3200,3000,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Poovan,2019-03-04,2600,2800,2700,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Poovan,2019-03-04,3300,3500,3400,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Red Banana,2019-03-04,3800,4000,3900,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Red Banana,2019-03-04,3500,3700,3600,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Robusta,2019-03-04,1700,1900,1800,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Robusta,2019-03-04,1400,1600,1500,3,2019,1
+Kerala,Thiruvananthapuram,Maranelloor,banana,Robusta,2019-03-04,1000,1300,1200,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,amaranthus,Amaranthus,2019-03-04,3500,4000,3500,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,banana,Banana - Ripe,2019-03-04,3800,4000,3800,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,banana,Palayamthodan,2019-03-04,1400,2000,1400,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,banana,Rasakathai,2019-03-04,3500,4000,3500,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,bitter gourd,Bitter Gourd,2019-03-04,5000,5500,5000,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,brinjal,Round,2019-03-04,6000,6500,6000,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,brinjal,Round/Long,2019-03-04,3000,3700,3000,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,colacasia,Colacasia,2019-03-04,4000,4500,4000,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,drumstick,Drumstick,2019-03-04,4000,5000,4000,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,ginger(green),Green Ginger,2019-03-04,8000,9000,8000,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,pumpkin,Pumpkin,2019-03-04,1700,2000,1700,3,2019,1
+Kerala,Thiruvananthapuram,Parassala,snakeguard,Snakeguard,2019-03-04,2600,3000,2600,3,2019,1
+Madhya Pradesh,Anupur,Jaithari,paddy(dhan)(common),Other,2019-03-04,1750,1750,1750,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,okra,Bhindi,2019-03-04,650,850,750,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,bottle gourd,Bottle Gourd,2019-03-04,550,850,700,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,brinjal,Brinjal,2019-03-04,500,900,700,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,cauliflower,Cauliflower,2019-03-04,550,850,700,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,green chilli,Green Chilly,2019-03-04,600,1000,800,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,spinach,Other,2019-03-04,550,850,700,3,2019,1
+Madhya Pradesh,Badwani,Sendhwa,tomato,Tomato,2019-03-04,600,1000,800,3,2019,1
+Madhya Pradesh,Dhar,Dhar,apple,Other,2019-03-04,2000,3000,2200,3,2019,1
+Madhya Pradesh,Dhar,Dhar,banana,Other,2019-03-04,1200,1200,1200,3,2019,1
+Madhya Pradesh,Dhar,Dhar,soyabean,Yellow,2019-03-04,3200,3200,3200,3,2019,1
+Madhya Pradesh,Dhar,Dhar,wheat,Lokwan,2019-03-04,2000,2000,2000,3,2019,1
+Madhya Pradesh,Dhar,Dhar(F&V),apple,Other,2019-03-04,2000,2000,2000,3,2019,1
+Madhya Pradesh,Dhar,Dhar(F&V),banana,Other,2019-03-04,800,800,800,3,2019,1
+Madhya Pradesh,Dhar,Dhar(F&V),orange,Other,2019-03-04,800,1000,900,3,2019,1
+Madhya Pradesh,Dindori,Gorakhpur,linseed,Other,2019-03-04,3450,3500,3475,3,2019,1
+Madhya Pradesh,Dindori,Gorakhpur,niger seed (ramtil),Other,2019-03-04,4100,4200,4150,3,2019,1
+Madhya Pradesh,Dindori,Gorakhpur,paddy(dhan)(common),Other,2019-03-04,1300,1350,1325,3,2019,1
+Madhya Pradesh,Dindori,Gorakhpur,soyabean,Local,2019-03-04,3300,3400,3350,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,okra,Bhindi,2019-03-04,1900,2100,2000,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,bitter gourd,Other,2019-03-04,1300,1600,1450,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,bottle gourd,Bottle Gourd,2019-03-04,1600,1800,1700,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,brinjal,Brinjal,2019-03-04,1500,1700,1600,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,cabbage,Cabbage,2019-03-04,1300,1500,1400,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,cauliflower,Cauliflower,2019-03-04,1400,1600,1500,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,coriander(leaves),Other,2019-03-04,1500,1600,1550,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,cotton,DCH-32  (Ginned),2019-03-04,5300,5600,5400,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,green chilli,Other,2019-03-04,2100,2300,2200,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,green gram dal (moong dal),Green Gram Dal,2019-03-04,3650,3650,3650,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,methi(leaves),Methi,2019-03-04,1200,1400,1300,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,onion,Other,2019-03-04,600,700,650,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,paddy(dhan)(common),1001,2019-03-04,1300,1300,1300,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,spinach,Spinach,2019-03-04,1200,1400,1300,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,tomato,Deshi,2019-03-04,1500,1600,1550,3,2019,1
+Madhya Pradesh,Jhabua,Thandla,wheat,147 Average,2019-03-04,1900,1920,1915,3,2019,1
+Madhya Pradesh,Khandwa,Pandhana(F&V),tomato,Deshi,2019-03-04,1200,1400,1300,3,2019,1
+Madhya Pradesh,Narsinghpur,Gadarwada,cabbage,Cabbage,2019-03-04,700,800,750,3,2019,1
+Madhya Pradesh,Narsinghpur,Gadarwada,coriander(leaves),Coriander,2019-03-04,300,500,400,3,2019,1
+Madhya Pradesh,Narsinghpur,Gadarwada,green chilli,Green Chilly,2019-03-04,2000,2500,2250,3,2019,1
+Madhya Pradesh,Sheopur,Sheopurkalan,mustard,Mustard,2019-03-04,3160,3300,3250,3,2019,1
+Madhya Pradesh,Sheopur,Syopurkalan(F&V),carrot,Other,2019-03-04,400,500,450,3,2019,1
+Madhya Pradesh,Sheopur,Syopurkalan(F&V),orange,Other,2019-03-04,1000,1200,1100,3,2019,1
+Madhya Pradesh,Sheopur,Syopurkalan(F&V),potato,Other,2019-03-04,700,800,750,3,2019,1
+Madhya Pradesh,Sheopur,Syopurkalan(F&V),tomato,Other,2019-03-04,500,600,550,3,2019,1
+Maharashtra,Ahmednagar,Newasa(Ghodegaon),onion,Red,2019-03-04,200,600,400,3,2019,1
+Maharashtra,Ahmednagar,Rahata,pomegranate,Other,2019-03-04,250,7000,4000,3,2019,1
+Maharashtra,Buldhana,Deoulgaon Raja,cotton,Desi,2019-03-04,5100,5400,5300,3,2019,1
+Maharashtra,Jalgaon,Yawal,banana,Other,2019-03-04,490,965,910,3,2019,1
+Maharashtra,Jalgaon,Yawal,chickpea,Other,2019-03-04,4000,4500,4220,3,2019,1
+Maharashtra,Jalgaon,Yawal,cotton,Other,2019-03-04,5150,5850,5200,3,2019,1
+Maharashtra,Jalgaon,Yawal,maize,Yellow,2019-03-04,1250,1630,1350,3,2019,1
+Maharashtra,Jalgaon,Yawal,onion,Red,2019-03-04,410,625,510,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,apple,Other,2019-03-04,4000,11000,10000,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,brinjal,Other,2019-03-04,600,3000,1800,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,cabbage,Other,2019-03-04,800,1400,1100,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,cauliflower,Other,2019-03-04,600,1500,1050,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,coriander(leaves),Other,2019-03-04,1400,3500,2450,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,green chilli,Other,2019-03-04,2700,6500,4600,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,lime,Other,2019-03-04,750,6500,3625,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,mango,Hapus(Alphaso),2019-03-04,1000,8000,4500,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,onion,Other,2019-03-04,200,750,450,3,2019,1
+Maharashtra,Kolhapur,Kolhapur,tomato,Other,2019-03-04,500,2200,1350,3,2019,1
+Maharashtra,Kolhapur,Kolhapur(Malkapur),brinjal,Other,2019-03-04,150,380,250,3,2019,1
+Maharashtra,Kolhapur,Kolhapur(Malkapur),cabbage,Other,2019-03-04,100,350,200,3,2019,1
+Maharashtra,Kolhapur,Kolhapur(Malkapur),cauliflower,Other,2019-03-04,100,300,250,3,2019,1
+Maharashtra,Kolhapur,Kolhapur(Malkapur),tomato,Other,2019-03-04,100,300,200,3,2019,1
+Maharashtra,Nagpur,Savner,arhar (tur/red gram)(whole),Other,2019-03-04,4725,4945,4860,3,2019,1
+Maharashtra,Nagpur,Savner,chickpea,Other,2019-03-04,3745,3745,3745,3,2019,1
+Maharashtra,Nagpur,Savner,cotton,Other,2019-03-04,5325,5325,5325,3,2019,1
+Maharashtra,Nagpur,Savner,wheat,Other,2019-03-04,1935,2040,2000,3,2019,1
+Maharashtra,Nanded,Bhokar,arhar (tur/red gram)(whole),Other,2019-03-04,3800,4751,4000,3,2019,1
+Maharashtra,Nanded,Bhokar,chickpea,Other,2019-03-04,3500,3751,3651,3,2019,1
+Maharashtra,Nanded,Bhokar,turmeric,Other,2019-03-04,5200,5200,5200,3,2019,1
+Maharashtra,Nanded,Bhokar,wheat,Other,2019-03-04,1800,1950,1900,3,2019,1
+Maharashtra,Nashik,Lasalgaon(Niphad),onion,Red,2019-03-04,251,441,351,3,2019,1
+Maharashtra,Pune,Pune,apple,Other,2019-03-04,4000,14000,7800,3,2019,1
+Maharashtra,Pune,Pune,beans,Other,2019-03-04,3000,4000,3500,3,2019,1
+Maharashtra,Pune,Pune,beetroot,Other,2019-03-04,700,1400,1000,3,2019,1
+Maharashtra,Pune,Pune,okra,Other,2019-03-04,1000,4000,2500,3,2019,1
+Maharashtra,Pune,Pune,bitter gourd,Other,2019-03-04,3000,5000,4000,3,2019,1
+Maharashtra,Pune,Pune,bottle gourd,Other,2019-03-04,1000,2000,1500,3,2019,1
+Maharashtra,Pune,Pune,brinjal,Other,2019-03-04,1000,2000,1500,3,2019,1
+Maharashtra,Pune,Pune,cabbage,Other,2019-03-04,700,1000,800,3,2019,1
+Maharashtra,Pune,Pune,carrot,Other,2019-03-04,700,1200,1000,3,2019,1
+Maharashtra,Pune,Pune,cauliflower,Other,2019-03-04,600,1300,1000,3,2019,1
+Maharashtra,Pune,Pune,chikoos(sapota),Other,2019-03-04,1000,2500,1500,3,2019,1
+Maharashtra,Pune,Pune,chilly capsicum,Other,2019-03-04,2000,3500,2500,3,2019,1
+Maharashtra,Pune,Pune,coriander(leaves),Other,2019-03-04,2,5,4,3,2019,1
+Maharashtra,Pune,Pune,cucumbar(kheera),Other,2019-03-04,1000,3000,2000,3,2019,1
+Maharashtra,Pune,Pune,drumstick,Other,2019-03-04,2000,4000,3000,3,2019,1
+Maharashtra,Pune,Pune,elephant yam (suran),Other,2019-03-04,1200,1500,1300,3,2019,1
+Maharashtra,Pune,Pune,garlic,Other,2019-03-04,800,5000,2000,3,2019,1
+Maharashtra,Pune,Pune,ginger(dry),Other,2019-03-04,3500,6750,4500,3,2019,1
+Maharashtra,Pune,Pune,grapes,Other,2019-03-04,1500,6000,3000,3,2019,1
+Maharashtra,Pune,Pune,green chilli,Other,2019-03-04,3000,6500,3500,3,2019,1
+Maharashtra,Pune,Pune,guar,Other,2019-03-04,4000,6000,5000,3,2019,1
+Maharashtra,Pune,Pune,guava,Other,2019-03-04,2000,5000,3500,3,2019,1
+Maharashtra,Pune,Pune,karbuja(musk melon),Other,2019-03-04,1500,2500,1700,3,2019,1
+Maharashtra,Pune,Pune,lime,Other,2019-03-04,400,3000,1000,3,2019,1
+Maharashtra,Pune,Pune,little gourd (kundru),Other,2019-03-04,1500,3000,2000,3,2019,1
+Maharashtra,Pune,Pune,mint(pudina),Other,2019-03-04,2,3,2,3,2019,1
+Maharashtra,Pune,Pune,onion,Local,2019-03-04,200,550,300,3,2019,1
+Maharashtra,Pune,Pune,onion green,Other,2019-03-04,3,6,5,3,2019,1
+Maharashtra,Pune,Pune,orange,Other,2019-03-04,1300,5800,2900,3,2019,1
+Maharashtra,Pune,Pune,pear(marasebu),Other,2019-03-04,6000,12000,8000,3,2019,1
+Maharashtra,Pune,Pune,peas wet,Other,2019-03-04,1600,2000,1800,3,2019,1
+Maharashtra,Pune,Pune,pineapple,Other,2019-03-04,1000,2000,1400,3,2019,1
+Maharashtra,Pune,Pune,potato,Other,2019-03-04,800,1350,1100,3,2019,1
+Maharashtra,Pune,Pune,pumpkin,Other,2019-03-04,800,2000,1500,3,2019,1
+Maharashtra,Pune,Pune,raddish,Other,2019-03-04,7,20,12,3,2019,1
+Maharashtra,Pune,Pune,rajgir,Other,2019-03-04,3,5,4,3,2019,1
+Maharashtra,Pune,Pune,ridgeguard(tori),Other,2019-03-04,2500,4500,3000,3,2019,1
+Maharashtra,Pune,Pune,snakeguard,Other,2019-03-04,1500,2000,1700,3,2019,1
+Maharashtra,Pune,Pune,spinach,Other,2019-03-04,3,5,4,3,2019,1
+Maharashtra,Pune,Pune,sweet potato,Other,2019-03-04,1000,2500,1500,3,2019,1
+Maharashtra,Pune,Pune,sweet pumpkin,Other,2019-03-04,600,1800,1000,3,2019,1
+Maharashtra,Pune,Pune,tender coconut,Other,2019-03-04,300,900,400,3,2019,1
+Maharashtra,Pune,Pune,tomato,Local,2019-03-04,700,1400,1000,3,2019,1
+Maharashtra,Pune,Pune,water melon,Other,2019-03-04,300,1000,400,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),okra,Other,2019-03-04,4000,6000,5000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),bitter gourd,Other,2019-03-04,4000,6000,5000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),bottle gourd,Other,2019-03-04,1000,2000,1500,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),brinjal,Other,2019-03-04,1000,2500,1800,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),cabbage,Other,2019-03-04,600,1000,800,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),cauliflower,Other,2019-03-04,600,1200,1000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),coriander(leaves),Other,2019-03-04,2,4,3,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),cucumbar(kheera),Other,2019-03-04,2000,4000,3000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),grapes,Other,2019-03-04,3000,3000,3000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),guava,Other,2019-03-04,4000,4700,4500,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),leafy vegetable,Other,2019-03-04,1800,1800,1800,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),methi(leaves),Other,2019-03-04,3,10,6,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),mint(pudina),Other,2019-03-04,6,6,6,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),onion,Local,2019-03-04,200,600,300,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),onion green,Other,2019-03-04,3,7,5,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),peas wet,Other,2019-03-04,3000,5000,4000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),raddish,Other,2019-03-04,3,12,8,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),rajgir,Other,2019-03-04,2,4,3,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),ridgeguard(tori),Other,2019-03-04,5000,7000,6000,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),spinach,Other,2019-03-04,1,4,3,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),tomato,Other,2019-03-04,700,1800,1400,3,2019,1
+Maharashtra,Pune,Pune(Hadapsar),water melon,Other,2019-03-04,700,900,800,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),carrot,Other,2019-03-04,800,1000,900,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),cauliflower,Other,2019-03-04,700,800,750,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),coriander(leaves),Other,2019-03-04,3,4,4,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),green chilli,Other,2019-03-04,1600,3200,2400,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),onion,Local,2019-03-04,300,500,400,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),onion green,Other,2019-03-04,5,5,5,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),potato,Other,2019-03-04,500,1200,850,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),raddish,Other,2019-03-04,8,8,8,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),spinach,Other,2019-03-04,3,5,4,3,2019,1
+Maharashtra,Pune,Pune(Khadiki),tomato,Local,2019-03-04,800,1200,1000,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),beans,Other,2019-03-04,3000,4200,3600,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),beetroot,Other,2019-03-04,1400,1400,1400,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),bottle gourd,Other,2019-03-04,2000,2000,2000,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),brinjal,Other,2019-03-04,2200,3000,2600,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),cabbage,Other,2019-03-04,1500,1600,1550,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),cauliflower,Other,2019-03-04,1200,1200,1200,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),coriander(leaves),Other,2019-03-04,3,4,4,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),drumstick,Other,2019-03-04,5000,5000,5000,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),onion,Local,2019-03-04,500,600,550,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),potato,Other,2019-03-04,1000,1000,1000,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),raddish,Other,2019-03-04,8,12,10,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),spinach,Other,2019-03-04,8,9,9,3,2019,1
+Maharashtra,Pune,Pune(Pimpri),tomato,Local,2019-03-04,1200,1200,1200,3,2019,1
+Maharashtra,Satara,Karad,apple,Simla,2019-03-04,5400,8000,8000,3,2019,1
+Maharashtra,Satara,Karad,banana,Other,2019-03-04,600,1000,1000,3,2019,1
+Maharashtra,Satara,Karad,beans,Other,2019-03-04,2000,2500,2500,3,2019,1
+Maharashtra,Satara,Karad,okra,Other,2019-03-04,3500,4000,4000,3,2019,1
+Maharashtra,Satara,Karad,bitter gourd,Other,2019-03-04,3000,3700,3700,3,2019,1
+Maharashtra,Satara,Karad,bottle gourd,Other,2019-03-04,500,1000,1000,3,2019,1
+Maharashtra,Satara,Karad,brinjal,Other,2019-03-04,500,800,800,3,2019,1
+Maharashtra,Satara,Karad,cabbage,Other,2019-03-04,500,1000,1000,3,2019,1
+Maharashtra,Satara,Karad,carrot,Other,2019-03-04,500,1000,1000,3,2019,1
+Maharashtra,Satara,Karad,cauliflower,Other,2019-03-04,400,900,900,3,2019,1
+Maharashtra,Satara,Karad,chikoos(sapota),Other,2019-03-04,2000,2500,2500,3,2019,1
+Maharashtra,Satara,Karad,chilly capsicum,Other,2019-03-04,3000,3500,3500,3,2019,1
+Maharashtra,Satara,Karad,coriander(leaves),Other,2019-03-04,1,2,2,3,2019,1
+Maharashtra,Satara,Karad,cucumbar(kheera),Other,2019-03-04,1500,2000,2000,3,2019,1
+Maharashtra,Satara,Karad,drumstick,Other,2019-03-04,1600,2000,2000,3,2019,1
+Maharashtra,Satara,Karad,garlic,Other,2019-03-04,3000,3400,3400,3,2019,1
+Maharashtra,Satara,Karad,ginger(dry),Other,2019-03-04,5000,6500,6500,3,2019,1
+Maharashtra,Satara,Karad,grapes,Other,2019-03-04,1500,2250,2250,3,2019,1
+Maharashtra,Satara,Karad,green chilli,Other,2019-03-04,3500,4500,4500,3,2019,1
+Maharashtra,Satara,Karad,guar,Other,2019-03-04,4000,4600,4600,3,2019,1
+Maharashtra,Satara,Karad,onion,Other,2019-03-04,400,800,800,3,2019,1
+Maharashtra,Satara,Karad,onion green,Other,2019-03-04,2,3,3,3,2019,1
+Maharashtra,Satara,Karad,peas wet,Other,2019-03-04,2000,2600,2600,3,2019,1
+Maharashtra,Satara,Karad,pomegranate,Other,2019-03-04,2000,2500,2500,3,2019,1
+Maharashtra,Satara,Karad,potato,Local,2019-03-04,1000,1500,1500,3,2019,1
+Maharashtra,Satara,Karad,ridgeguard(tori),Other,2019-03-04,3000,3800,3800,3,2019,1
+Maharashtra,Satara,Karad,spinach,Other,2019-03-04,1,2,2,3,2019,1
+Maharashtra,Satara,Karad,sweet potato,Hosur Red,2019-03-04,1000,1800,1800,3,2019,1
+Maharashtra,Satara,Karad,tomato,Other,2019-03-04,600,1000,1000,3,2019,1
+Maharashtra,Satara,Karad,water melon,Other,2019-03-04,600,700,700,3,2019,1
+Maharashtra,Sholapur,Akluj,brinjal,Other,2019-03-04,1500,2500,2000,3,2019,1
+Maharashtra,Sholapur,Akluj,potato,Local,2019-03-04,1200,1600,1400,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,okra,Other,2019-03-04,800,4300,2800,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,bitter gourd,Other,2019-03-04,3100,3100,3100,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,brinjal,Other,2019-03-04,600,2400,1300,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,coriander(leaves),Other,2019-03-04,1,3,2,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,cucumbar(kheera),Other,2019-03-04,400,3600,2000,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,green chilli,Other,2019-03-04,3500,6600,5000,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,onion,Other,2019-03-04,100,700,500,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,ridgeguard(tori),Other,2019-03-04,1000,5900,2900,3,2019,1
+Maharashtra,Sholapur,Mangal Wedha,tomato,Other,2019-03-04,300,1700,1000,3,2019,1
+Maharashtra,Sholapur,Pandharpur,banana,Other,2019-03-04,425,511,475,3,2019,1
+Manipur,Bishnupur,Bishenpur,banana,Other,2019-03-04,3300,4000,3500,3,2019,1
+Manipur,Bishnupur,Bishenpur,cabbage,Cabbage,2019-03-04,1100,1300,1300,3,2019,1
+Manipur,Bishnupur,Bishenpur,cauliflower,Cauliflower,2019-03-04,2300,2500,2500,3,2019,1
+Manipur,Bishnupur,Bishenpur,ginger(green),Green Ginger,2019-03-04,4300,4500,4500,3,2019,1
+Manipur,Bishnupur,Bishenpur,masur dal,Masur Dal,2019-03-04,7300,7350,7300,3,2019,1
+Manipur,Bishnupur,Bishenpur,onion,Onion,2019-03-04,2400,2500,2500,3,2019,1
+Manipur,Bishnupur,Bishenpur,paddy(dhan)(common),Other,2019-03-04,2250,2250,2250,3,2019,1
+Manipur,Bishnupur,Bishenpur,potato,Other,2019-03-04,800,1000,1000,3,2019,1
+Manipur,Bishnupur,Bishenpur,rice,Other,2019-03-04,3700,3700,3700,3,2019,1
+Manipur,Chandel,Moreh,banana,Other,2019-03-04,2800,3200,3000,3,2019,1
+Manipur,Chandel,Moreh,cabbage,Other,2019-03-04,800,1200,1000,3,2019,1
+Manipur,Chandel,Moreh,cauliflower,Other,2019-03-04,1800,2200,2000,3,2019,1
+Manipur,Chandel,Moreh,dry chillies,Other,2019-03-04,13000,13500,13300,3,2019,1
+Manipur,Chandel,Moreh,ginger(green),Green Ginger,2019-03-04,3300,3700,3500,3,2019,1
+Manipur,Chandel,Moreh,onion,Other,2019-03-04,2300,2500,2500,3,2019,1
+Manipur,Chandel,Moreh,potato,Other,2019-03-04,1200,1600,1400,3,2019,1
+Manipur,Chandel,Moreh,rice,Other,2019-03-04,3500,3500,3500,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,banana,Other,2019-03-04,2800,3500,3500,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,cabbage,Cabbage,2019-03-04,1300,1500,1500,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,cauliflower,Cauliflower,2019-03-04,2300,2500,2500,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,dry chillies,Other,2019-03-04,13000,15000,15000,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,ginger(green),Green Ginger,2019-03-04,5300,5500,5500,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,onion,Other,2019-03-04,1300,2500,2500,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,potato,Other,2019-03-04,800,1000,1000,3,2019,1
+Manipur,Imphal East,Lamlong Bazaar,rice,Other,2019-03-04,3900,4100,4100,3,2019,1
+Manipur,Imphal West,Imphal,banana,Other,2019-03-04,3300,3500,3500,3,2019,1
+Manipur,Imphal West,Imphal,cabbage,Other,2019-03-04,1300,1500,1500,3,2019,1
+Manipur,Imphal West,Imphal,cauliflower,Other,2019-03-04,1800,2000,2000,3,2019,1
+Manipur,Imphal West,Imphal,dry chillies,Other,2019-03-04,14800,15000,15000,3,2019,1
+Manipur,Imphal West,Imphal,ginger(green),Green Ginger,2019-03-04,2800,3000,3000,3,2019,1
+Manipur,Imphal West,Imphal,onion,Other,2019-03-04,2300,2700,2500,3,2019,1
+Manipur,Imphal West,Imphal,paddy(dhan)(common),Other,2019-03-04,1050,2250,2250,3,2019,1
+Manipur,Imphal West,Imphal,potato,Other,2019-03-04,1500,1500,1500,3,2019,1
+Manipur,Imphal West,Imphal,rice,Other,2019-03-04,3800,3800,3800,3,2019,1
+Manipur,Thoubal,Thoubal,banana,Other,2019-03-04,3000,4000,3500,3,2019,1
+Manipur,Thoubal,Thoubal,cabbage,Cabbage,2019-03-04,700,1300,1000,3,2019,1
+Manipur,Thoubal,Thoubal,cauliflower,Cauliflower,2019-03-04,1700,2300,2000,3,2019,1
+Manipur,Thoubal,Thoubal,dry chillies,Other,2019-03-04,13500,14500,14000,3,2019,1
+Manipur,Thoubal,Thoubal,ginger(green),Green Ginger,2019-03-04,5000,5500,5500,3,2019,1
+Manipur,Thoubal,Thoubal,paddy(dhan)(common),Other,2019-03-04,2375,2375,2375,3,2019,1
+Manipur,Thoubal,Thoubal,potato,Other,2019-03-04,800,1200,1000,3,2019,1
+Manipur,Thoubal,Thoubal,rice,Other,2019-03-04,3900,3900,3900,3,2019,1
+Meghalaya,East Khasi Hills,Shillong,arecanut(betelnut/supari),New Variety,2019-03-04,9500,17000,13500,3,2019,1
+Meghalaya,East Khasi Hills,Shillong,banana,Champa,2019-03-04,3500,4500,4000,3,2019,1
+Meghalaya,East Khasi Hills,Shillong,betal leaves,Local,2019-03-04,21000,30000,26500,3,2019,1
+Meghalaya,East Khasi Hills,Shillong,ginger(dry),Dry,2019-03-04,6000,7000,6500,3,2019,1
+Meghalaya,East Khasi Hills,Shillong,orange,Orange,2019-03-04,3500,4500,4000,3,2019,1
+Meghalaya,East Khasi Hills,Shillong,pumpkin,Pumpkin,2019-03-04,1700,2000,1850,3,2019,1
+Nagaland,Mokokchung,Mangkolemba,arecanut(betelnut/supari),api,2019-03-04,1400,1700,1500,3,2019,1
+Nagaland,Mokokchung,Mangkolemba,banana - green,Banana - Green,2019-03-04,4100,4400,4200,3,2019,1
+Nagaland,Mokokchung,Mangkolemba,cabbage,Cabbage,2019-03-04,2100,2400,2300,3,2019,1
+Nagaland,Mokokchung,Mangkolemba,ginger(green),Green Ginger,2019-03-04,1600,1900,1700,3,2019,1
+Nagaland,Mokokchung,Mangkolemba,leafy vegetable,Leafy Vegetables,2019-03-04,1600,1900,1700,3,2019,1
+Nagaland,Mokokchung,Mangkolemba,turmeric (raw),Other,2019-03-04,1500,1800,1700,3,2019,1
+Odisha,Angul,Angul,brinjal,Other,2019-03-04,400,600,500,3,2019,1
+Odisha,Angul,Angul(Jarapada),brinjal,Other,2019-03-04,400,600,500,3,2019,1
+Odisha,Angul,Pallahara,potato,Other,2019-03-04,700,900,800,3,2019,1
+Odisha,Balasore,Jaleswar,brinjal,Other,2019-03-04,1100,1300,1200,3,2019,1
+Odisha,Balasore,Jaleswar,cabbage,Other,2019-03-04,600,800,700,3,2019,1
+Odisha,Balasore,Jaleswar,garlic,Other,2019-03-04,5000,5200,5100,3,2019,1
+Odisha,Balasore,Jaleswar,ginger(dry),Other,2019-03-04,7400,7600,7500,3,2019,1
+Odisha,Balasore,Jaleswar,onion,Other,2019-03-04,1000,1150,1100,3,2019,1
+Odisha,Balasore,Jaleswar,tomato,Other,2019-03-04,600,800,700,3,2019,1
+Odisha,Balasore,Nilagiri,cabbage,Other,2019-03-04,500,600,550,3,2019,1
+Odisha,Balasore,Nilagiri,carrot,Other,2019-03-04,1400,1500,1450,3,2019,1
+Odisha,Balasore,Nilagiri,garlic,Other,2019-03-04,2800,3000,2900,3,2019,1
+Odisha,Balasore,Nilagiri,tomato,Other,2019-03-04,550,650,600,3,2019,1
+Odisha,Bargarh,Godabhaga,paddy(dhan)(common),Other,2019-03-04,1750,1770,1750,3,2019,1
+Odisha,Dhenkanal,Hindol,banana - green,Other,2019-03-04,2500,3000,2800,3,2019,1
+Odisha,Dhenkanal,Hindol,beans,Other,2019-03-04,2400,2600,2500,3,2019,1
+Odisha,Dhenkanal,Hindol,okra,Bhindi,2019-03-04,3500,4000,3800,3,2019,1
+Odisha,Dhenkanal,Hindol,bitter gourd,Bitter Gourd,2019-03-04,4000,4500,4200,3,2019,1
+Odisha,Dhenkanal,Hindol,brinjal,Brinjal,2019-03-04,800,1200,1000,3,2019,1
+Odisha,Dhenkanal,Hindol,cucumbar(kheera),Cucumbar,2019-03-04,2200,2500,2400,3,2019,1
+Odisha,Dhenkanal,Hindol,onion,Other,2019-03-04,1200,1400,1300,3,2019,1
+Odisha,Dhenkanal,Hindol,potato,Potato,2019-03-04,800,1000,900,3,2019,1
+Odisha,Dhenkanal,Hindol,pumpkin,Pumpkin,2019-03-04,1200,1400,1300,3,2019,1
+Odisha,Dhenkanal,Hindol,tomato,Tomato,2019-03-04,700,1000,800,3,2019,1
+Odisha,Gajapati,Kasinagar,banana,Banana - Ripe,2019-03-04,2500,3000,3000,3,2019,1
+Odisha,Gajapati,Kasinagar,okra,Other,2019-03-04,2500,3000,3000,3,2019,1
+Odisha,Gajapati,Kasinagar,brinjal,Other,2019-03-04,800,1000,1000,3,2019,1
+Odisha,Gajapati,Kasinagar,tomato,Other,2019-03-04,1000,1200,1200,3,2019,1
+Odisha,Gajapati,Kasinagar,water melon,Other,2019-03-04,2500,3000,3000,3,2019,1
+Odisha,Gajapati,Parlakhemundi,banana,Other,2019-03-04,2500,3000,3000,3,2019,1
+Odisha,Gajapati,Parlakhemundi,coconut,Other,2019-03-04,1400,1500,1500,3,2019,1
+Odisha,Ganjam,Bhanjanagar,brinjal,Other,2019-03-04,1400,1600,1500,3,2019,1
+Odisha,Ganjam,Bhanjanagar,onion,Other,2019-03-04,1300,1500,1400,3,2019,1
+Odisha,Ganjam,Bhanjanagar,paddy(dhan)(common),Common,2019-03-04,1750,1750,1750,3,2019,1
+Odisha,Ganjam,Digapahandi,brinjal,Other,2019-03-04,3000,3500,3200,3,2019,1
+Odisha,Ganjam,Digapahandi,maize,Other,2019-03-04,1300,1420,1350,3,2019,1
+Odisha,Jharsuguda,Jharsuguda,onion,Other,2019-03-04,1000,1400,1300,3,2019,1
+Odisha,Jharsuguda,Jharsuguda,potato,Other,2019-03-04,800,1000,900,3,2019,1
+Odisha,Mayurbhanja,Betnoti,beans,Other,2019-03-04,2500,3000,2800,3,2019,1
+Odisha,Mayurbhanja,Betnoti,bitter gourd,Bitter Gourd,2019-03-04,2500,3000,2800,3,2019,1
+Odisha,Mayurbhanja,Betnoti,brinjal,Other,2019-03-04,600,1000,700,3,2019,1
+Odisha,Mayurbhanja,Betnoti,cabbage,Cabbage,2019-03-04,500,700,600,3,2019,1
+Odisha,Mayurbhanja,Betnoti,cauliflower,Cauliflower,2019-03-04,1400,1600,1500,3,2019,1
+Odisha,Mayurbhanja,Betnoti,cucumbar(kheera),Cucumbar,2019-03-04,3000,4000,3500,3,2019,1
+Odisha,Mayurbhanja,Betnoti,leafy vegetable,Other,2019-03-04,1400,1600,1500,3,2019,1
+Odisha,Mayurbhanja,Betnoti,onion,Other,2019-03-04,1300,1500,1400,3,2019,1
+Odisha,Mayurbhanja,Betnoti,potato,Potato,2019-03-04,500,700,600,3,2019,1
+Odisha,Mayurbhanja,Betnoti,rice,Sanna Bhatta,2019-03-04,2000,2500,2200,3,2019,1
+Odisha,Mayurbhanja,Betnoti,tomato,Tomato,2019-03-04,700,1000,800,3,2019,1
+Odisha,Mayurbhanja,Saraskana,okra,Bhindi,2019-03-04,6000,7000,6500,3,2019,1
+Odisha,Mayurbhanja,Saraskana,bitter gourd,Bitter Gourd,2019-03-04,7000,8000,7500,3,2019,1
+Odisha,Mayurbhanja,Saraskana,brinjal,Brinjal,2019-03-04,1200,1500,1400,3,2019,1
+Odisha,Mayurbhanja,Saraskana,cabbage,Cabbage,2019-03-04,600,800,700,3,2019,1
+Odisha,Mayurbhanja,Saraskana,cauliflower,Cauliflower,2019-03-04,700,1000,800,3,2019,1
+Odisha,Mayurbhanja,Saraskana,pumpkin,Pumpkin,2019-03-04,1000,1200,1100,3,2019,1
+Odisha,Mayurbhanja,Saraskana,tomato,Tomato,2019-03-04,700,1000,800,3,2019,1
+Odisha,Nowarangpur,Nawarangpur,broken rice,Broken Rice,2019-03-04,1200,1200,1200,3,2019,1
+Odisha,Nowarangpur,Nawarangpur,gur(jaggery),NO 2,2019-03-04,2000,2000,2000,3,2019,1
+Odisha,Nowarangpur,Nawarangpur,maize,Hybrid/Local,2019-03-04,1400,1550,1400,3,2019,1
+Odisha,Sundergarh,Bonai,banana - green,Other,2019-03-04,4000,4000,4000,3,2019,1
+Odisha,Sundergarh,Bonai,okra,Other,2019-03-04,4000,4000,4000,3,2019,1
+Odisha,Sundergarh,Bonai,black gram (urd beans)(whole),Local,2019-03-04,5600,9000,9000,3,2019,1
+Odisha,Sundergarh,Bonai,black gram (urd beans)(whole),Other,2019-03-04,5600,9000,9000,3,2019,1
+Odisha,Sundergarh,Bonai,brinjal,Other,2019-03-04,2000,2000,2000,3,2019,1
+Odisha,Sundergarh,Bonai,cabbage,Other,2019-03-04,1000,1000,1000,3,2019,1
+Odisha,Sundergarh,Bonai,capsicum,Other,2019-03-04,4000,4000,4000,3,2019,1
+Odisha,Sundergarh,Bonai,carrot,Other,2019-03-04,1000,2000,1000,3,2019,1
+Odisha,Sundergarh,Bonai,cauliflower,Other,2019-03-04,1000,1000,1000,3,2019,1
+Odisha,Sundergarh,Bonai,cucumbar(kheera),Other,2019-03-04,4000,4000,4000,3,2019,1
+Odisha,Sundergarh,Bonai,french beans (frasbean),Other,2019-03-04,4000,4000,4000,3,2019,1
+Odisha,Sundergarh,Bonai,onion,Onion,2019-03-04,1500,1500,1500,3,2019,1
+Odisha,Sundergarh,Bonai,onion,Other,2019-03-04,1500,1500,1500,3,2019,1
+Odisha,Sundergarh,Bonai,orange,Other,2019-03-04,8000,8000,8000,3,2019,1
+Odisha,Sundergarh,Bonai,paddy(dhan)(common),Other,2019-03-04,1750,1790,1790,3,2019,1
+Odisha,Sundergarh,Bonai,potato,Other,2019-03-04,1000,1000,1000,3,2019,1
+Odisha,Sundergarh,Bonai,rice,Other,2019-03-04,3000,3000,3000,3,2019,1
+Odisha,Sundergarh,Bonai,sugar,Other,2019-03-04,4000,4000,4000,3,2019,1
+Odisha,Sundergarh,Bonai,tomato,Other,2019-03-04,1000,1500,1000,3,2019,1
+Odisha,Sundergarh,Bonai,wheat,Other,2019-03-04,1735,3000,3000,3,2019,1
+Odisha,Sundergarh,Bonai,wheat atta,Wheat Atta,2019-03-04,3500,3500,3500,3,2019,1
+Odisha,Sundergarh,Panposh,brinjal,Other,2019-03-04,400,700,600,3,2019,1
+Odisha,Sundergarh,Panposh,cabbage,Other,2019-03-04,600,900,800,3,2019,1
+Odisha,Sundergarh,Panposh,cauliflower,Other,2019-03-04,700,1000,900,3,2019,1
+Odisha,Sundergarh,Panposh,tomato,Other,2019-03-04,600,1000,900,3,2019,1
+Pondicherry,Karaikal,Karaikal,copra,Copra,2019-03-04,9000,9000,9000,3,2019,1
+Pondicherry,Karaikal,Karaikal,paddy(dhan)(common),B P T,2019-03-04,1833,1833,1833,3,2019,1
+Pondicherry,Karaikal,Karaikal,paddy(dhan)(common),Fine,2019-03-04,1583,1750,1667,3,2019,1
+Pondicherry,Karaikal,Karaikal,paddy(dhan)(common),Other,2019-03-04,1583,1583,1583,3,2019,1
+Pondicherry,Karaikal,Karaikal,paddy(dhan)(common),Pommani,2019-03-04,1583,1583,1583,3,2019,1
+Pondicherry,Karaikal,Karaikal,paddy(dhan)(common),White Ponni,2019-03-04,1833,1833,1833,3,2019,1
+Pondicherry,Karaikal,Karaikal,"sesamum(sesame,gingelly,til)",Sesame,2019-03-04,10000,10000,10000,3,2019,1
+Punjab,Amritsar,Chogawan,carrot,Carrot,2019-03-04,700,900,800,3,2019,1
+Punjab,Amritsar,Chogawan,cauliflower,Cauliflower,2019-03-04,800,1000,900,3,2019,1
+Punjab,Amritsar,Chogawan,peas cod,Peas cod,2019-03-04,700,900,800,3,2019,1
+Punjab,Amritsar,Mehta,carrot,Carrot,2019-03-04,700,820,800,3,2019,1
+Punjab,Barnala,Dhanaula,carrot,Carrot,2019-03-04,400,550,500,3,2019,1
+Punjab,Barnala,Dhanaula,cauliflower,Cauliflower,2019-03-04,450,650,500,3,2019,1
+Punjab,Barnala,Dhanaula,peas wet,Peas Wet,2019-03-04,1400,1600,1500,3,2019,1
+Punjab,Barnala,Dhanaula,raddish,Raddish,2019-03-04,200,350,300,3,2019,1
+Punjab,Bhatinda,Bhucho,onion,Other,2019-03-04,1400,1600,1500,3,2019,1
+Punjab,Bhatinda,Bhucho,potato,Other,2019-03-04,400,500,450,3,2019,1
+Punjab,Gurdaspur,Dera Baba Nanak,cauliflower,Other,2019-03-04,600,800,700,3,2019,1
+Punjab,Gurdaspur,Dera Baba Nanak,peas cod,Other,2019-03-04,900,1100,1000,3,2019,1
+Punjab,Gurdaspur,Dera Baba Nanak,turnip,Other,2019-03-04,600,800,700,3,2019,1
+Punjab,Gurdaspur,Dhariwal,brinjal,Brinjal,2019-03-04,600,800,700,3,2019,1
+Punjab,Gurdaspur,Dhariwal,carrot,Carrot,2019-03-04,600,700,650,3,2019,1
+Punjab,Gurdaspur,Dhariwal,cauliflower,Cauliflower,2019-03-04,500,700,580,3,2019,1
+Punjab,Gurdaspur,Dhariwal,onion,Other,2019-03-04,700,1000,850,3,2019,1
+Punjab,Gurdaspur,Dhariwal,peas wet,Peas Wet,2019-03-04,500,800,700,3,2019,1
+Punjab,Gurdaspur,Dhariwal,potato,Other,2019-03-04,300,450,370,3,2019,1
+Punjab,Gurdaspur,Dhariwal,raddish,Raddish,2019-03-04,300,500,420,3,2019,1
+Punjab,Gurdaspur,Kalanaur,brinjal,Other,2019-03-04,1400,1550,1450,3,2019,1
+Punjab,Gurdaspur,Kalanaur,capsicum,Capsicum,2019-03-04,1900,2150,2050,3,2019,1
+Punjab,Gurdaspur,Kalanaur,green chilli,Other,2019-03-04,1300,1600,1500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,brinjal,Other,2019-03-04,1500,2000,2000,3,2019,1
+Punjab,Hoshiarpur,Dasuya,cabbage,Other,2019-03-04,400,500,500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,capsicum,Other,2019-03-04,2500,3000,3000,3,2019,1
+Punjab,Hoshiarpur,Dasuya,carrot,Other,2019-03-04,500,700,700,3,2019,1
+Punjab,Hoshiarpur,Dasuya,cauliflower,Other,2019-03-04,600,800,800,3,2019,1
+Punjab,Hoshiarpur,Dasuya,cucumbar(kheera),Other,2019-03-04,2000,2500,2500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,field pea,Other,2019-03-04,1000,1500,1500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,ginger(green),Other,2019-03-04,7000,7500,7500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,grapes,Other,2019-03-04,4500,5000,5000,3,2019,1
+Punjab,Hoshiarpur,Dasuya,grapes,Other,2019-03-04,2500,3000,3000,3,2019,1
+Punjab,Hoshiarpur,Dasuya,green chilli,Other,2019-03-04,4500,5000,5000,3,2019,1
+Punjab,Hoshiarpur,Dasuya,kinnow,Other,2019-03-04,1600,2000,2000,3,2019,1
+Punjab,Hoshiarpur,Dasuya,kinnow,Other,2019-03-04,800,1200,1200,3,2019,1
+Punjab,Hoshiarpur,Dasuya,kinnow,Other,2019-03-04,400,500,500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,onion,Other,2019-03-04,600,800,800,3,2019,1
+Punjab,Hoshiarpur,Dasuya,papaya,Other,2019-03-04,1200,1500,1500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,potato,Other,2019-03-04,450,500,500,3,2019,1
+Punjab,Hoshiarpur,Dasuya,raddish,Other,2019-03-04,500,600,600,3,2019,1
+Punjab,Hoshiarpur,Dasuya,spinach,Other,2019-03-04,500,700,700,3,2019,1
+Punjab,Hoshiarpur,Dasuya,tomato,Other,2019-03-04,1500,2000,2000,3,2019,1
+Punjab,Jalandhar,Adampur,amphophalus,Other,2019-03-04,1800,2000,2000,3,2019,1
+Punjab,Jalandhar,Adampur,okra,Other,2019-03-04,4000,5000,5000,3,2019,1
+Punjab,Jalandhar,Adampur,brinjal,Other,2019-03-04,1500,2000,2000,3,2019,1
+Punjab,Jalandhar,Adampur,cabbage,Other,2019-03-04,300,400,400,3,2019,1
+Punjab,Jalandhar,Adampur,capsicum,Other,2019-03-04,3000,4000,4000,3,2019,1
+Punjab,Jalandhar,Adampur,carrot,Other,2019-03-04,400,500,500,3,2019,1
+Punjab,Jalandhar,Adampur,cauliflower,Other,2019-03-04,600,700,700,3,2019,1
+Punjab,Jalandhar,Adampur,coriander(leaves),Other,2019-03-04,800,1000,1000,3,2019,1
+Punjab,Jalandhar,Adampur,cucumbar(kheera),Other,2019-03-04,2000,2500,2500,3,2019,1
+Punjab,Jalandhar,Adampur,garlic,Other,2019-03-04,3500,4000,4000,3,2019,1
+Punjab,Jalandhar,Adampur,ginger(green),Other,2019-03-04,6500,7000,7000,3,2019,1
+Punjab,Jalandhar,Adampur,green chilli,Other,2019-03-04,4000,5000,5000,3,2019,1
+Punjab,Jalandhar,Adampur,kinnow,Other,2019-03-04,1000,1200,1200,3,2019,1
+Punjab,Jalandhar,Adampur,onion,Other,2019-03-04,700,800,800,3,2019,1
+Punjab,Jalandhar,Adampur,peas wet,Other,2019-03-04,1000,1500,1500,3,2019,1
+Punjab,Jalandhar,Adampur,potato,Other,2019-03-04,400,500,500,3,2019,1
+Punjab,Jalandhar,Adampur,raddish,Other,2019-03-04,300,400,400,3,2019,1
+Punjab,Jalandhar,Adampur,spinach,Other,2019-03-04,800,900,900,3,2019,1
+Punjab,Jalandhar,Adampur,tomato,Other,2019-03-04,2000,2500,2500,3,2019,1
+Punjab,Jalandhar,Adampur,turnip,Other,2019-03-04,300,400,400,3,2019,1
+Punjab,Jalandhar,Lohian Khas,cabbage,Other,2019-03-04,200,400,300,3,2019,1
+Punjab,Jalandhar,Lohian Khas,carrot,Other,2019-03-04,200,400,300,3,2019,1
+Punjab,Jalandhar,Lohian Khas,cauliflower,Other,2019-03-04,100,300,200,3,2019,1
+Punjab,Jalandhar,Lohian Khas,peas wet,Other,2019-03-04,600,1000,800,3,2019,1
+Punjab,Jalandhar,Lohian Khas,potato,Other,2019-03-04,300,500,400,3,2019,1
+Punjab,Jalandhar,Lohian Khas,raddish,Other,2019-03-04,200,400,300,3,2019,1
+Punjab,Jalandhar,Lohian Khas,spinach,Other,2019-03-04,200,400,300,3,2019,1
+Punjab,Jalandhar,Lohian Khas,tomato,Other,2019-03-04,1300,1500,1400,3,2019,1
+Punjab,Jalandhar,Mehatpur,carrot,Other,2019-03-04,600,800,700,3,2019,1
+Punjab,Jalandhar,Mehatpur,cauliflower,Other,2019-03-04,500,700,700,3,2019,1
+Punjab,Jalandhar,Mehatpur,methi(leaves),Other,2019-03-04,600,700,600,3,2019,1
+Punjab,Jalandhar,Mehatpur,raddish,Other,2019-03-04,400,500,500,3,2019,1
+Punjab,Jalandhar,Mehatpur,spinach,Other,2019-03-04,400,600,600,3,2019,1
+Punjab,Ludhiana,Doraha,carrot,Other,2019-03-04,400,1000,700,3,2019,1
+Punjab,Ludhiana,Doraha,cauliflower,Other,2019-03-04,500,600,550,3,2019,1
+Punjab,Ludhiana,Doraha,green chilli,Other,2019-03-04,2000,4000,3000,3,2019,1
+Punjab,Ludhiana,Doraha,onion,Other,2019-03-04,800,1200,1000,3,2019,1
+Punjab,Ludhiana,Doraha,peas wet,Other,2019-03-04,1000,1500,1250,3,2019,1
+Punjab,Ludhiana,Doraha,potato,Other,2019-03-04,300,400,350,3,2019,1
+Punjab,Ludhiana,Doraha,tomato,Other,2019-03-04,1000,2000,1500,3,2019,1
+Punjab,Ludhiana,Sahnewal,cabbage,Cabbage,2019-03-04,500,500,500,3,2019,1
+Punjab,Ludhiana,Sahnewal,carrot,Carrot,2019-03-04,900,900,900,3,2019,1
+Punjab,Ludhiana,Sahnewal,cauliflower,Cauliflower,2019-03-04,600,900,900,3,2019,1
+Punjab,Ludhiana,Sahnewal,coriander(leaves),Coriander,2019-03-04,1300,1500,1500,3,2019,1
+Punjab,Ludhiana,Sahnewal,green chilli,Green Chilly,2019-03-04,5000,5000,5000,3,2019,1
+Punjab,Ludhiana,Sahnewal,methi(leaves),Methi,2019-03-04,1000,1000,1000,3,2019,1
+Punjab,Ludhiana,Sahnewal,peas wet,Peas Wet,2019-03-04,1300,1800,1700,3,2019,1
+Punjab,Ludhiana,Sahnewal,potato,Potato,2019-03-04,400,400,400,3,2019,1
+Punjab,Ludhiana,Sahnewal,raddish,Raddish,2019-03-04,250,250,250,3,2019,1
+Punjab,Ludhiana,Sahnewal,spinach,Spinach,2019-03-04,600,800,800,3,2019,1
+Punjab,Ludhiana,Sahnewal,tomato,Tomato,2019-03-04,2000,2000,2000,3,2019,1
+Punjab,Mansa,Mansa,banana,Banana - Ripe,2019-03-04,1300,1700,1500,3,2019,1
+Punjab,Mansa,Mansa,okra,Bhindi,2019-03-04,3000,4000,3500,3,2019,1
+Punjab,Mansa,Mansa,brinjal,Brinjal,2019-03-04,900,1300,1100,3,2019,1
+Punjab,Mansa,Mansa,capsicum,Capsicum,2019-03-04,2300,3000,2800,3,2019,1
+Punjab,Mansa,Mansa,carrot,Carrot,2019-03-04,400,500,500,3,2019,1
+Punjab,Mansa,Mansa,cauliflower,Cauliflower,2019-03-04,600,800,700,3,2019,1
+Punjab,Mansa,Mansa,cotton,American,2019-03-04,5200,5445,5390,3,2019,1
+Punjab,Mansa,Mansa,cucumbar(kheera),Cucumbar,2019-03-04,1200,2800,1800,3,2019,1
+Punjab,Mansa,Mansa,grapes,Black,2019-03-04,6500,7500,7000,3,2019,1
+Punjab,Mansa,Mansa,grapes,Green,2019-03-04,4000,5000,4500,3,2019,1
+Punjab,Mansa,Mansa,green chilli,Green Chilly,2019-03-04,2500,4000,3000,3,2019,1
+Punjab,Mansa,Mansa,kinnow,Kinnow,2019-03-04,1200,1700,1500,3,2019,1
+Punjab,Mansa,Mansa,onion,Nasik,2019-03-04,1000,1300,1200,3,2019,1
+Punjab,Mansa,Mansa,peas cod,Peas cod,2019-03-04,1000,1500,1200,3,2019,1
+Punjab,Mansa,Mansa,potato,Potato,2019-03-04,380,600,520,3,2019,1
+Punjab,Mansa,Mansa,tomato,Tomato,2019-03-04,1800,2500,2200,3,2019,1
+Punjab,Muktsar,Malout,apple,Apple,2019-03-04,3500,7000,5500,3,2019,1
+Punjab,Muktsar,Malout,banana,Banana - Ripe,2019-03-04,1500,2500,1800,3,2019,1
+Punjab,Muktsar,Malout,brinjal,Round/Long,2019-03-04,1200,1500,1300,3,2019,1
+Punjab,Muktsar,Malout,cabbage,Cabbage,2019-03-04,300,500,400,3,2019,1
+Punjab,Muktsar,Malout,carrot,Carrot,2019-03-04,400,600,500,3,2019,1
+Punjab,Muktsar,Malout,cauliflower,Cauliflower,2019-03-04,400,700,500,3,2019,1
+Punjab,Muktsar,Malout,chikoos(sapota),Sapota,2019-03-04,2500,3500,3000,3,2019,1
+Punjab,Muktsar,Malout,cotton,Other,2019-03-04,5400,5515,5500,3,2019,1
+Punjab,Muktsar,Malout,cucumbar(kheera),Cucumbar,2019-03-04,2500,4000,3500,3,2019,1
+Punjab,Muktsar,Malout,ginger(green),Green Ginger,2019-03-04,7000,8500,7500,3,2019,1
+Punjab,Muktsar,Malout,gram raw(chholia),Other,2019-03-04,500,1500,1000,3,2019,1
+Punjab,Muktsar,Malout,grapes,Black,2019-03-04,8000,9000,8500,3,2019,1
+Punjab,Muktsar,Malout,grapes,Green,2019-03-04,4000,5000,4500,3,2019,1
+Punjab,Muktsar,Malout,green chilli,Green Chilly,2019-03-04,800,3500,2000,3,2019,1
+Punjab,Muktsar,Malout,guava,Guava,2019-03-04,2000,2500,2200,3,2019,1
+Punjab,Muktsar,Malout,kinnow,Kinnow,2019-03-04,1000,1500,1200,3,2019,1
+Punjab,Muktsar,Malout,onion,Onion,2019-03-04,600,800,700,3,2019,1
+Punjab,Muktsar,Malout,onion green,Onion Green,2019-03-04,1000,1500,1200,3,2019,1
+Punjab,Muktsar,Malout,peas cod,Other,2019-03-04,1000,1500,1200,3,2019,1
+Punjab,Muktsar,Malout,pineapple,Pine Apple,2019-03-04,3000,4500,4000,3,2019,1
+Punjab,Muktsar,Malout,pomegranate,Pomogranate,2019-03-04,4500,7000,6500,3,2019,1
+Punjab,Muktsar,Malout,potato,Potato,2019-03-04,500,600,550,3,2019,1
+Punjab,Muktsar,Malout,raddish,Raddish,2019-03-04,400,600,500,3,2019,1
+Punjab,Muktsar,Malout,spinach,Spinach,2019-03-04,500,800,600,3,2019,1
+Punjab,Muktsar,Malout,tomato,Tomato,2019-03-04,1800,2200,2000,3,2019,1
+Punjab,Patiala,Ghanaur,brinjal,Other,2019-03-04,1500,1500,1500,3,2019,1
+Punjab,Patiala,Ghanaur,onion,Other,2019-03-04,800,1000,1000,3,2019,1
+Punjab,Patiala,Rajpura,carrot,Other,2019-03-04,500,700,600,3,2019,1
+Punjab,Patiala,Rajpura,cauliflower,Cauliflower,2019-03-04,400,600,500,3,2019,1
+Punjab,Patiala,Rajpura,ginger(green),Other,2019-03-04,5000,6000,5500,3,2019,1
+Punjab,Patiala,Rajpura,green chilli,Other,2019-03-04,2000,3000,2500,3,2019,1
+Punjab,Patiala,Rajpura,onion,Local,2019-03-04,700,1000,850,3,2019,1
+Punjab,Patiala,Rajpura,peas wet,Peas Wet,2019-03-04,700,1000,850,3,2019,1
+Punjab,Patiala,Rajpura,potato,Other,2019-03-04,200,500,350,3,2019,1
+Punjab,Patiala,Rajpura,tomato,Local,2019-03-04,1000,1400,1200,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,carrot,Other,2019-03-04,700,850,760,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,cucumbar(kheera),Cucumbar,2019-03-04,1300,1500,1400,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,ginger(green),Other,2019-03-04,7700,7800,7730,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,green chilli,Other,2019-03-04,2600,2750,2640,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,onion,Other,2019-03-04,1000,1100,1020,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,peas wet,Other,2019-03-04,1200,1400,1330,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,raddish,Other,2019-03-04,500,650,550,3,2019,1
+Punjab,Ropar (Rupnagar),Morinda,tomato,Deshi,2019-03-04,1500,1500,1500,3,2019,1
+Punjab,Tarntaran,Harike,carrot,Carrot,2019-03-04,500,500,500,3,2019,1
+Punjab,Tarntaran,Harike,cauliflower,Cauliflower,2019-03-04,400,500,400,3,2019,1
+Punjab,Tarntaran,Harike,coriander(leaves),Coriander,2019-03-04,400,500,400,3,2019,1
+Punjab,Tarntaran,Harike,peas wet,Peas Wet,2019-03-04,700,800,700,3,2019,1
+Punjab,Tarntaran,Harike,raddish,Raddish,2019-03-04,300,400,400,3,2019,1
+Punjab,Tarntaran,Harike,squash(chappal kadoo),Squash(Chappal Kadoo),2019-03-04,1400,1500,1400,3,2019,1
+Punjab,Tarntaran,Patti,apple,Other,2019-03-04,5000,6000,5500,3,2019,1
+Punjab,Tarntaran,Patti,banana,Other,2019-03-04,800,1000,900,3,2019,1
+Punjab,Tarntaran,Patti,brinjal,Other,2019-03-04,800,1000,900,3,2019,1
+Punjab,Tarntaran,Patti,capsicum,Other,2019-03-04,2000,2200,2100,3,2019,1
+Punjab,Tarntaran,Patti,carrot,Other,2019-03-04,600,800,700,3,2019,1
+Punjab,Tarntaran,Patti,cauliflower,Other,2019-03-04,500,530,520,3,2019,1
+Punjab,Tarntaran,Patti,coriander(leaves),Other,2019-03-04,100,150,120,3,2019,1
+Punjab,Tarntaran,Patti,cucumbar(kheera),Other,2019-03-04,1500,2000,1800,3,2019,1
+Punjab,Tarntaran,Patti,garlic,Other,2019-03-04,2000,2500,2200,3,2019,1
+Punjab,Tarntaran,Patti,ginger(dry),Other,2019-03-04,6000,7000,6500,3,2019,1
+Punjab,Tarntaran,Patti,green chilli,Other,2019-03-04,1200,1600,1400,3,2019,1
+Punjab,Tarntaran,Patti,guava,Other,2019-03-04,1800,2200,2000,3,2019,1
+Punjab,Tarntaran,Patti,kinnow,Other,2019-03-04,800,1000,900,3,2019,1
+Punjab,Tarntaran,Patti,leafy vegetable,Other,2019-03-04,300,400,320,3,2019,1
+Punjab,Tarntaran,Patti,onion,Other,2019-03-04,800,1000,900,3,2019,1
+Punjab,Tarntaran,Patti,papaya,Other,2019-03-04,1000,1500,1200,3,2019,1
+Punjab,Tarntaran,Patti,peas wet,Other,2019-03-04,900,1200,1000,3,2019,1
+Punjab,Tarntaran,Patti,potato,Other,2019-03-04,500,700,600,3,2019,1
+Punjab,Tarntaran,Patti,raddish,Other,2019-03-04,300,400,350,3,2019,1
+Punjab,Tarntaran,Patti,spinach,Other,2019-03-04,300,430,400,3,2019,1
+Punjab,Tarntaran,Patti,tomato,Other,2019-03-04,1000,1800,1500,3,2019,1
+Rajasthan,Baran,Anta,mustard,Other,2019-03-04,3316,3570,3443,3,2019,1
+Rajasthan,Barmer,Barmer,guar seed(cluster beans seed),Other,2019-03-04,4050,4150,4100,3,2019,1
+Rajasthan,Barmer,Barmer,moath dal,Other,2019-03-04,4300,4400,4350,3,2019,1
+Rajasthan,Bikaner,Lunkaransar,guar,Other,2019-03-04,3990,4050,4020,3,2019,1
+Rajasthan,Bikaner,Lunkaransar,moath dal,Other,2019-03-04,4250,4320,4285,3,2019,1
+Rajasthan,Chittorgarh,Begu,wheat,Other,2019-03-04,1650,1990,1750,3,2019,1
+Rajasthan,Jalore,Jalore,banana,Banana - Ripe,2019-03-04,1800,2000,1900,3,2019,1
+Rajasthan,Jalore,Jalore,okra,Other,2019-03-04,3800,4000,3900,3,2019,1
+Rajasthan,Jalore,Jalore,bottle gourd,Other,2019-03-04,1000,1200,1100,3,2019,1
+Rajasthan,Jalore,Jalore,cabbage,Other,2019-03-04,800,1000,900,3,2019,1
+Rajasthan,Jalore,Jalore,capsicum,Other,2019-03-04,2300,2500,2400,3,2019,1
+Rajasthan,Jalore,Jalore,carrot,Other,2019-03-04,800,1000,900,3,2019,1
+Rajasthan,Jalore,Jalore,cauliflower,Other,2019-03-04,1000,1200,1100,3,2019,1
+Rajasthan,Jalore,Jalore,cucumbar(kheera),Other,2019-03-04,2300,2500,2400,3,2019,1
+Rajasthan,Jalore,Jalore,ginger(green),Other,2019-03-04,5800,6000,5900,3,2019,1
+Rajasthan,Jalore,Jalore,grapes,Green,2019-03-04,3300,3500,3400,3,2019,1
+Rajasthan,Jalore,Jalore,green chilli,Other,2019-03-04,4300,4500,4400,3,2019,1
+Rajasthan,Jalore,Jalore,lemon,Other,2019-03-04,2300,2500,2400,3,2019,1
+Rajasthan,Jalore,Jalore,onion,Other,2019-03-04,600,800,700,3,2019,1
+Rajasthan,Jalore,Jalore,papaya,Other,2019-03-04,1300,1500,1400,3,2019,1
+Rajasthan,Jalore,Jalore,pomegranate,Other,2019-03-04,1400,1600,1500,3,2019,1
+Rajasthan,Jalore,Jalore,tomato,Other,2019-03-04,1400,1600,1500,3,2019,1
+Rajasthan,Jhalawar,Khanpur,mustard,Other,2019-03-04,2549,3613,3613,3,2019,1
+Rajasthan,Jhalawar,Khanpur,soyabean,Other,2019-03-04,3500,3525,3525,3,2019,1
+Rajasthan,Jhalawar,Khanpur,wheat,Other,2019-03-04,1950,1975,1975,3,2019,1
+Rajasthan,Kota,Itawa,chickpea,999,2019-03-04,3550,3550,3550,3,2019,1
+Rajasthan,Kota,Itawa,corriander seed,Other,2019-03-04,4152,4152,4152,3,2019,1
+Rajasthan,Kota,Itawa,mustard,Other,2019-03-04,2786,3471,3128,3,2019,1
+Rajasthan,Kota,Itawa,soyabean,Other,2019-03-04,3615,3615,3615,3,2019,1
+Rajasthan,Kota,Itawa,wheat,Other,2019-03-04,1915,1915,1915,3,2019,1
+Rajasthan,Sikar,Sri Madhopur,bajra(pearl millet/cumbu),Other,2019-03-04,1700,1925,1812,3,2019,1
+Rajasthan,Sikar,Sri Madhopur,chickpea,Other,2019-03-04,3400,3400,3400,3,2019,1
+Rajasthan,Sikar,Sri Madhopur,ground nut seed,Other,2019-03-04,3500,3500,3500,3,2019,1
+Rajasthan,Sikar,Sri Madhopur,guar seed(cluster beans seed),Other,2019-03-04,3850,3900,3875,3,2019,1
+Rajasthan,Sikar,Surajgarh,guar,Other,2019-03-04,4050,4050,4050,3,2019,1
+Rajasthan,Tonk,Deoli,bajra(pearl millet/cumbu),Other,2019-03-04,1740,1740,1740,3,2019,1
+Rajasthan,Tonk,Deoli,maize,Other,2019-03-04,1875,1875,1875,3,2019,1
+Rajasthan,Tonk,Deoli,mustard,Other,2019-03-04,2900,3800,3350,3,2019,1
+Rajasthan,Tonk,Deoli,taramira,Other,2019-03-04,3111,3401,3256,3,2019,1
+Rajasthan,Tonk,Deoli,wheat,Other,2019-03-04,1835,1920,1878,3,2019,1
+Rajasthan,Tonk,Uniyara,black gram (urd beans)(whole),Other,2019-03-04,2650,2750,2700,3,2019,1
+Tamil Nadu,Coimbatore,Anaimalai,coconut,Other,2019-03-04,2800,3000,2900,3,2019,1
+Tamil Nadu,Coimbatore,Annur,tobacco,Other,2019-03-04,3000,3200,3100,3,2019,1
+Tamil Nadu,Coimbatore,Coimbatore,turmeric,Bulb,2019-03-04,5800,7200,6300,3,2019,1
+Tamil Nadu,Coimbatore,Karamadai,coconut,Other,2019-03-04,2000,3000,2500,3,2019,1
+Tamil Nadu,Coimbatore,Madathukulam,coconut,Coconut,2019-03-04,3050,3150,3100,3,2019,1
+Tamil Nadu,Coimbatore,Madathukulam,copra,Ball,2019-03-04,10250,10300,10275,3,2019,1
+Tamil Nadu,Coimbatore,Madathukulam,maize,Other,2019-03-04,1900,1950,1925,3,2019,1
+Tamil Nadu,Coimbatore,Madathukulam,paddy(dhan)(common),Other,2019-03-04,1680,1720,1700,3,2019,1
+Tamil Nadu,Coimbatore,Negamam,coconut,Other,2019-03-04,3100,3200,3150,3,2019,1
+Tamil Nadu,Coimbatore,Palladam,coconut,Other,2019-03-04,2040,2240,2140,3,2019,1
+Tamil Nadu,Coimbatore,Pethappampatti,copra,Copra,2019-03-04,9000,10000,9500,3,2019,1
+Tamil Nadu,Coimbatore,Pethappampatti,maize,Yellow,2019-03-04,1800,1950,1850,3,2019,1
+Tamil Nadu,Coimbatore,Pollachi,coconut,Other,2019-03-04,2600,2900,2720,3,2019,1
+Tamil Nadu,Coimbatore,Pongalur,coconut,Other,2019-03-04,2100,2700,2400,3,2019,1
+Tamil Nadu,Coimbatore,Pudupalayam,coconut,Coconut,2019-03-04,2170,2370,2270,3,2019,1
+Tamil Nadu,Coimbatore,Senjeri,coconut,Coconut,2019-03-04,2700,2900,2800,3,2019,1
+Tamil Nadu,Coimbatore,Sevur,groundnut,DMV-7,2019-03-04,5000,5340,5100,3,2019,1
+Tamil Nadu,Coimbatore,Thondamuthur,coconut,Other,2019-03-04,2700,2900,2800,3,2019,1
+Tamil Nadu,Coimbatore,Udumalpet,coconut,Other,2019-03-04,2700,2800,2750,3,2019,1
+Tamil Nadu,Coimbatore,Udumalpet,copra,other,2019-03-04,8900,10250,9350,3,2019,1
+Tamil Nadu,Coimbatore,Udumalpet,maize,Hybrid Red (Cattle Feed),2019-03-04,1800,1900,1850,3,2019,1
+Tamil Nadu,Cuddalore,Cuddalore,black gram (urd beans)(whole),Black Gram (Whole),2019-03-04,4559,4789,4789,3,2019,1
+Tamil Nadu,Cuddalore,Cuddalore,groundnut,Other,2019-03-04,6036,7361,7034,3,2019,1
+Tamil Nadu,Cuddalore,Cuddalore,paddy(dhan)(common),B P T,2019-03-04,1344,1555,1500,3,2019,1
+Tamil Nadu,Cuddalore,Cuddalore,paddy(dhan)(common),Other,2019-03-04,1616,1616,1616,3,2019,1
+Tamil Nadu,Cuddalore,Cuddalore,paddy(dhan)(common),Pommani,2019-03-04,1407,1407,1407,3,2019,1
+Tamil Nadu,Cuddalore,Kurinchipadi,black gram (urd beans)(whole),Black Gram (Whole),2019-03-04,4606,4806,4706,3,2019,1
+Tamil Nadu,Cuddalore,Kurinchipadi,groundnut,Other,2019-03-04,6861,7240,7036,3,2019,1
+Tamil Nadu,Dharmapuri,Dharampuri,tamarind fruit,Chapathi,2019-03-04,4000,7500,6000,3,2019,1
+Tamil Nadu,Dharmapuri,Palakode,coconut seed,Other,2019-03-04,1000,1500,1200,3,2019,1
+Tamil Nadu,Dharmapuri,Papparapatti,cotton,Other,2019-03-04,5200,5700,5600,3,2019,1
+Tamil Nadu,Dharmapuri,Papparapatti,tamarind fruit,Chapathi,2019-03-04,4000,6800,5900,3,2019,1
+Tamil Nadu,Dharmapuri,Pappireddipatti,coconut seed,Other,2019-03-04,1000,1500,1200,3,2019,1
+Tamil Nadu,Dharmapuri,Pennagaram,groundnut,Other,2019-03-04,4900,5200,5000,3,2019,1
+Tamil Nadu,Dindigul,Gopalpatti,coconut,Medium,2019-03-04,1100,2100,1600,3,2019,1
+Tamil Nadu,Dindigul,Gopalpatti,maize,Medium,2019-03-04,1500,1700,1600,3,2019,1
+Tamil Nadu,Dindigul,Palani,coconut,Coconut,2019-03-04,1500,1800,1650,3,2019,1
+Tamil Nadu,Erode,Dharapuram,coconut,Big,2019-03-04,2505,3275,3000,3,2019,1
+Tamil Nadu,Erode,Elumathur,coconut,Other,2019-03-04,2535,3410,2870,3,2019,1
+Tamil Nadu,Erode,Kodumudi,coconut,Other,2019-03-04,2635,3000,2935,3,2019,1
+Tamil Nadu,Erode,Kodumudi,copra,other,2019-03-04,9605,10205,10195,3,2019,1
+Tamil Nadu,Erode,Kodumudi,"sesamum(sesame,gingelly,til)",Black,2019-03-04,11300,14677,14509,3,2019,1
+Tamil Nadu,Erode,Kodumudi,"sesamum(sesame,gingelly,til)",Red,2019-03-04,10249,11791,11681,3,2019,1
+Tamil Nadu,Erode,Kunnathur,coconut,Coconut,2019-03-04,2500,2600,2530,3,2019,1
+Tamil Nadu,Erode,Muthur,coconut,Coconut,2019-03-04,2505,3275,3225,3,2019,1
+Tamil Nadu,Erode,Vellakkoil,copra,Copra,2019-03-04,5305,10915,8845,3,2019,1
+Tamil Nadu,Kancheepuram,Acharapakkam,paddy(dhan)(common),ADT 37,2019-03-04,1350,1480,1420,3,2019,1
+Tamil Nadu,Kancheepuram,Chengalpattu,paddy(dhan)(common),ADT 37,2019-03-04,1427,1692,1560,3,2019,1
+Tamil Nadu,Kancheepuram,Gummidipoondy,paddy(dhan)(common),ADT 37,2019-03-04,1450,1750,1550,3,2019,1
+Tamil Nadu,Kancheepuram,Kanchipuram,paddy(dhan)(common),ADT 37,2019-03-04,1220,1410,1350,3,2019,1
+Tamil Nadu,Kancheepuram,Maduranthagam,paddy(dhan)(common),ADT 37,2019-03-04,1360,1480,1420,3,2019,1
+Tamil Nadu,Kancheepuram,Pallipattu,paddy(dhan)(common),ADT 37,2019-03-04,1427,1692,1560,3,2019,1
+Tamil Nadu,Kancheepuram,Ponner,paddy(dhan)(common),ADT 43,2019-03-04,1450,1750,1550,3,2019,1
+Tamil Nadu,Kancheepuram,Sunguvarchatram,paddy(dhan)(common),ADT 37,2019-03-04,1427,1692,1560,3,2019,1
+Tamil Nadu,Kancheepuram,Uthiramerur,paddy(dhan)(common),ADT 37,2019-03-04,1400,1407,1404,3,2019,1
+Tamil Nadu,Krishnagiri,Bargur,coconut seed,Other,2019-03-04,1500,1950,1800,3,2019,1
+Tamil Nadu,Krishnagiri,Pochampalli,coconut seed,Other,2019-03-04,1500,2100,1950,3,2019,1
+Tamil Nadu,Krishnagiri,Uthangarai,coconut seed,Other,2019-03-04,1500,2100,1950,3,2019,1
+Tamil Nadu,Krishnagiri,Uthangarai,cotton,Other,2019-03-04,5200,6200,5700,3,2019,1
+Tamil Nadu,Madurai,Melur,coconut,Medium,2019-03-04,1350,2150,1750,3,2019,1
+Tamil Nadu,Madurai,Melur,paddy(dhan)(common),ADT 36,2019-03-04,1790,1850,1820,3,2019,1
+Tamil Nadu,Madurai,Melur,paddy(dhan)(common),ADT 43,2019-03-04,1810,1870,1840,3,2019,1
+Tamil Nadu,Madurai,Melur,"sesamum(sesame,gingelly,til)",Black,2019-03-04,6200,8000,7100,3,2019,1
+Tamil Nadu,Madurai,Thirumangalam,cotton,MCU 5,2019-03-04,4200,4300,4250,3,2019,1
+Tamil Nadu,Madurai,Thirumangalam,cotton,Other,2019-03-04,3950,4080,4000,3,2019,1
+Tamil Nadu,Madurai,Thirumangalam,jowar(sorghum),Red,2019-03-04,2100,2200,2150,3,2019,1
+Tamil Nadu,Madurai,Thirumangalam,paddy(dhan)(common),ADT 43,2019-03-04,1800,1900,1850,3,2019,1
+Tamil Nadu,Madurai,Thirumangalam,paddy(dhan)(common),Ponni,2019-03-04,2400,2500,2450,3,2019,1
+Tamil Nadu,Nagercoil (Kannyiakumari),Kalliakavillai,cashewnuts,Local(Raw),2019-03-04,9500,11500,10500,3,2019,1
+Tamil Nadu,Namakkal,Namagiripettai,turmeric,Bulb,2019-03-04,5050,6050,5740,3,2019,1
+Tamil Nadu,Namakkal,Namagiripettai,turmeric,Finger,2019-03-04,6500,7500,6800,3,2019,1
+Tamil Nadu,Namakkal,Namakkal,copra,Ball,2019-03-04,8100,8700,8400,3,2019,1
+Tamil Nadu,Namakkal,Rasipuram,copra,other,2019-03-04,8500,10400,9450,3,2019,1
+Tamil Nadu,Namakkal,Tiruchengode,turmeric,Bulb,2019-03-04,6712,7288,6950,3,2019,1
+Tamil Nadu,Namakkal,Tiruchengode,turmeric,Finger,2019-03-04,7412,8609,8000,3,2019,1
+Tamil Nadu,Namakkal,Velur,coconut,Other,2019-03-04,2200,2500,2350,3,2019,1
+Tamil Nadu,Ramanathapuram,Sivagangai,paddy(dhan)(common),ADT 36,2019-03-04,1780,1830,1810,3,2019,1
+Tamil Nadu,Salem,Attur,copra,Ball,2019-03-04,9400,10300,9700,3,2019,1
+Tamil Nadu,Salem,Attur,tapioca,Other,2019-03-04,210,230,220,3,2019,1
+Tamil Nadu,Salem,Gangavalli,cotton,Other,2019-03-04,5600,5700,5650,3,2019,1
+Tamil Nadu,Salem,Karumanturai,coconut,Other,2019-03-04,1980,2440,2210,3,2019,1
+Tamil Nadu,Salem,Kolathur,cotton,Other,2019-03-04,4600,5000,4800,3,2019,1
+Tamil Nadu,Salem,Konganapuram,cotton,Other,2019-03-04,5000,5400,5200,3,2019,1
+Tamil Nadu,Salem,Omalur,coconut,Other,2019-03-04,1160,1400,1280,3,2019,1
+Tamil Nadu,Salem,Salem,turmeric,Finger,2019-03-04,6940,7395,7120,3,2019,1
+Tamil Nadu,Salem,Thalaivasal,maize,Other,2019-03-04,1790,1880,1840,3,2019,1
+Tamil Nadu,Salem,Thammampati,cotton,GCH,2019-03-04,5600,5650,5625,3,2019,1
+Tamil Nadu,Salem,Vazhapadi,coconut,Other,2019-03-04,2080,2540,2310,3,2019,1
+Tamil Nadu,Sivaganga,Singampuneri,coconut,Other,2019-03-04,800,1200,950,3,2019,1
+Tamil Nadu,Thanjavur,Budalur,paddy(dhan)(common),B P T,2019-03-04,1900,2100,2000,3,2019,1
+Tamil Nadu,Thanjavur,Kumbakonam,paddy(dhan)(common),B P T,2019-03-04,1750,1800,1780,3,2019,1
+Tamil Nadu,Thanjavur,Orathanadu,paddy(dhan)(common),B P T,2019-03-04,1750,1800,1780,3,2019,1
+Tamil Nadu,Thanjavur,Papanasam,paddy(dhan)(common),1001,2019-03-04,1750,1800,1780,3,2019,1
+Tamil Nadu,Thanjavur,Thanjavur,paddy(dhan)(common),B P T,2019-03-04,2200,2300,2250,3,2019,1
+Tamil Nadu,Thanjavur,Thiruppananthal,paddy(dhan)(common),Paddy,2019-03-04,1800,1900,1850,3,2019,1
+Tamil Nadu,Thanjavur,Vallam,paddy(dhan)(common),B P T,2019-03-04,1900,2000,1950,3,2019,1
+Tamil Nadu,Thiruvannamalai,Cheyyar,groundnut,Other,2019-03-04,6203,6703,6620,3,2019,1
+Tamil Nadu,Thiruvannamalai,Cheyyar,paddy(dhan)(common),ADT 37,2019-03-04,1258,1449,1356,3,2019,1
+Tamil Nadu,Thiruvannamalai,Cheyyar,paddy(dhan)(common),Other,2019-03-04,1286,1509,1448,3,2019,1
+Tamil Nadu,Vellore,Ammoor,paddy(dhan)(common),ADT 36,2019-03-04,1385,1467,1426,3,2019,1
+Tamil Nadu,Vellore,Ammoor,paddy(dhan)(common),ADT 37,2019-03-04,1140,1455,1298,3,2019,1
+Tamil Nadu,Vellore,Ammoor,paddy(dhan)(common),Other,2019-03-04,1448,1521,1485,3,2019,1
+Tamil Nadu,Vellore,Kalavai,paddy(dhan)(common),ADT 37,2019-03-04,1453,1453,1453,3,2019,1
+Tamil Nadu,Vellore,Kalavai,paddy(dhan)(common),Super Ponni,2019-03-04,1406,1453,1430,3,2019,1
+Tamil Nadu,Vellore,Vellore,black gram (urd beans)(whole),Other,2019-03-04,4315,4815,4715,3,2019,1
+Tamil Nadu,Vellore,Vellore,copra,Copra,2019-03-04,7030,9600,9300,3,2019,1
+Tamil Nadu,Vellore,Vellore,cowpea (lobia/karamani),Other,2019-03-04,4350,4550,4550,3,2019,1
+Tamil Nadu,Vellore,Vellore,groundnut,Other,2019-03-04,7013,7752,7361,3,2019,1
+Tamil Nadu,Vellore,Vellore,kulthi(horse gram),Other,2019-03-04,2189,3002,2881,3,2019,1
+Tamil Nadu,Vellore,Vellore,maize,Other,2019-03-04,1589,2210,2210,3,2019,1
+Tamil Nadu,Vellore,Vellore,paddy(dhan)(common),ADT 37,2019-03-04,1092,1492,1400,3,2019,1
+Tamil Nadu,Vellore,Vellore,paddy(dhan)(common),Other,2019-03-04,1652,1652,1652,3,2019,1
+Tamil Nadu,Vellore,Vellore,ragi (finger millet),Other,2019-03-04,2089,2661,2640,3,2019,1
+Tamil Nadu,Vellore,Vellore,tamarind fruit,Other,2019-03-04,10100,10100,10100,3,2019,1
+Tamil Nadu,Villupuram,Avalurpet,black gram (urd beans)(whole),Other,2019-03-04,4569,4892,4792,3,2019,1
+Tamil Nadu,Villupuram,Avalurpet,green gram (moong)(whole),Other,2019-03-04,4412,7079,5062,3,2019,1
+Tamil Nadu,Villupuram,Avalurpet,groundnut,Other,2019-03-04,5786,7111,6961,3,2019,1
+Tamil Nadu,Villupuram,Avalurpet,paddy(dhan)(common),ADT 37,2019-03-04,1400,1507,1453,3,2019,1
+Tamil Nadu,Villupuram,Avalurpet,paddy(dhan)(common),Ponni,2019-03-04,1772,2265,2019,3,2019,1
+Tamil Nadu,Villupuram,Chinnasalem,black gram (urd beans)(whole),Other,2019-03-04,4870,4870,4870,3,2019,1
+Tamil Nadu,Villupuram,Chinnasalem,maize,Other,2019-03-04,1867,2009,1900,3,2019,1
+Tamil Nadu,Villupuram,Chinnasalem,"sesamum(sesame,gingelly,til)",Other,2019-03-04,9300,9400,9350,3,2019,1
+Tamil Nadu,Villupuram,Gingee,black gram (urd beans)(whole),Other,2019-03-04,4809,4839,4824,3,2019,1
+Tamil Nadu,Villupuram,Gingee,cotton,RCH-2,2019-03-04,4250,4939,4595,3,2019,1
+Tamil Nadu,Villupuram,Gingee,green gram (moong)(whole),Other,2019-03-04,5080,5199,5140,3,2019,1
+Tamil Nadu,Villupuram,Gingee,groundnut,Other,2019-03-04,6336,6711,6524,3,2019,1
+Tamil Nadu,Villupuram,Gingee,paddy(dhan)(common),B P T,2019-03-04,1673,1827,1700,3,2019,1
+Tamil Nadu,Villupuram,Gingee,paddy(dhan)(common),Ponni,2019-03-04,2200,2812,2506,3,2019,1
+Tamil Nadu,Villupuram,Gingee,paddy(dhan)(common),TKM 9,2019-03-04,1336,1565,1451,3,2019,1
+Tamil Nadu,Villupuram,Gingee,ragi (finger millet),Other,2019-03-04,2400,2439,2420,3,2019,1
+Tamil Nadu,Villupuram,Gingee,"sesamum(sesame,gingelly,til)",95/5,2019-03-04,10799,11299,11049,3,2019,1
+Tamil Nadu,Villupuram,Gingee,t.v. cumbu,Other,2019-03-04,1851,1851,1851,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,black gram (urd beans)(whole),Other,2019-03-04,4769,5013,4866,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,gingelly oil,Other,2019-03-04,7999,11561,10649,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,green gram (moong)(whole),Other,2019-03-04,4199,4599,4302,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,groundnut,Other,2019-03-04,6886,6886,6886,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,kodo millet(varagu),Other,2019-03-04,1989,1989,1989,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,maize,Other,2019-03-04,1509,1999,1849,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,ragi (finger millet),Other,2019-03-04,2599,2599,2599,3,2019,1
+Tamil Nadu,Villupuram,Kallakurichi,t.v. cumbu,Other,2019-03-04,1910,2112,2029,3,2019,1
+Tamil Nadu,Villupuram,Manalurpet,black gram (urd beans)(whole),Other,2019-03-04,4769,4852,4811,3,2019,1
+Tamil Nadu,Villupuram,Manalurpet,green gram (moong)(whole),Other,2019-03-04,3539,3539,3539,3,2019,1
+Tamil Nadu,Villupuram,Manalurpet,hybrid cumbu,Other,2019-03-04,1948,1948,1948,3,2019,1
+Tamil Nadu,Villupuram,Manalurpet,paddy(dhan)(common),ADT 37,2019-03-04,1252,1457,1355,3,2019,1
+Tamil Nadu,Villupuram,Manalurpet,ragi (finger millet),Other,2019-03-04,2312,2312,2312,3,2019,1
+Tamil Nadu,Villupuram,Manalurpet,"sesamum(sesame,gingelly,til)",Other,2019-03-04,9011,11351,10181,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,black gram (urd beans)(whole),Other,2019-03-04,4009,5000,4802,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,groundnut,Other,2019-03-04,4080,4080,4080,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,kulthi(horse gram),Other,2019-03-04,2630,2630,2630,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,maize,Other,2019-03-04,1953,2042,2029,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,paddy(dhan)(common),A. Ponni,2019-03-04,1548,1875,1789,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,ragi (finger millet),Other,2019-03-04,1180,1180,1180,3,2019,1
+Tamil Nadu,Villupuram,Sangarapuram,"sesamum(sesame,gingelly,til)",Other,2019-03-04,8640,10516,9391,3,2019,1
+Tamil Nadu,Villupuram,Tindivanam,groundnut,Other,2019-03-04,6236,7387,6724,3,2019,1
+Tamil Nadu,Villupuram,Tindivanam,hybrid cumbu,Other,2019-03-04,2222,2222,2222,3,2019,1
+Tamil Nadu,Villupuram,Tindivanam,karamani,Other,2019-03-04,5987,6363,6263,3,2019,1
+Tamil Nadu,Villupuram,Tindivanam,ragi (finger millet),Other,2019-03-04,2400,2654,2400,3,2019,1
+Tamil Nadu,Villupuram,Tindivanam,"sesamum(sesame,gingelly,til)",Other,2019-03-04,11199,11324,11261,3,2019,1
+Tamil Nadu,Villupuram,Tiruvennainallur,paddy(dhan)(common),ADT 37,2019-03-04,1318,1425,1376,3,2019,1
+Tamil Nadu,Villupuram,Tiruvennainallur,paddy(dhan)(common),Other,2019-03-04,1358,1420,1395,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,black gram (urd beans)(whole),Other,2019-03-04,4699,4869,4779,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,cotton,Other,2019-03-04,4696,4912,4896,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,green gram (moong)(whole),Other,2019-03-04,5179,5339,5209,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,groundnut,Other,2019-03-04,4723,5923,5555,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,hybrid cumbu,Other,2019-03-04,1800,1853,1825,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,paddy(dhan)(common),ADT 37,2019-03-04,1248,1629,1420,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,paddy(dhan)(common),ADT 39,2019-03-04,1270,1587,1515,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,paddy(dhan)(common),B P T,2019-03-04,1700,1737,1715,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,ragi (finger millet),Other,2019-03-04,2529,2592,2579,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,"sesamum(sesame,gingelly,til)",Other,2019-03-04,9774,10749,10049,3,2019,1
+Tamil Nadu,Villupuram,Vikkiravandi,thinai (italian millet),Other,2019-03-04,1200,1214,1205,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,black gram (urd beans)(whole),Other,2019-03-04,2559,2639,2619,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,green gram (moong)(whole),Other,2019-03-04,5071,5239,5109,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,groundnut,Bold Kernel,2019-03-04,6549,6915,6584,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,paddy(dhan)(common),ADT 37,2019-03-04,1393,1456,1424,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,paddy(dhan)(common),ADT 39,2019-03-04,1392,1471,1431,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,paddy(dhan)(common),B P T,2019-03-04,1579,1715,1643,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,paddy(dhan)(common),Other,2019-03-04,1400,1440,1420,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,paddy(dhan)(common),White Ponni,2019-03-04,1608,1701,1655,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,"sesamum(sesame,gingelly,til)",Black,2019-03-04,10636,11458,11124,3,2019,1
+Tamil Nadu,Villupuram,Villupuram,t.v. cumbu,Other,2019-03-04,1969,1969,1969,3,2019,1
+Tamil Nadu,Virudhunagar,Rajapalayam,paddy(dhan)(common),Super Ponni,2019-03-04,1650,1750,1700,3,2019,1
+Tamil Nadu,Virudhunagar,Sathur,paddy(dhan)(common),Other,2019-03-04,1750,1800,1775,3,2019,1
+Telangana,Hyderabad,Mahboob Manison,dry chillies,1st Sort,2019-03-04,6000,8500,7000,3,2019,1
+Telangana,Hyderabad,Mahboob Manison,dry chillies,2nd Sort,2019-03-04,2500,5000,4000,3,2019,1
+Telangana,Karimnagar,Koratla,cotton,Desi,2019-03-04,5150,6000,6000,3,2019,1
+Telangana,Karimnagar,Koratla,mustard,Mustard,2019-03-04,4200,4255,4255,3,2019,1
+Telangana,Karimnagar,Vemulawada,cotton,Cotton (Unginned),2019-03-04,5000,5350,5200,3,2019,1
+Telangana,Khammam,Madhira,wood, Subabul,2019-03-04,440,440,440,3,2019,1
+Telangana,Nalgonda,Nalgonda,paddy(dhan)(common),B P T,2019-03-04,1750,1750,1750,3,2019,1
+Telangana,Nalgonda,Ramannapet,paddy(dhan)(common),1001,2019-03-04,1770,1770,1770,3,2019,1
+Telangana,Nalgonda,Voligonda,paddy(dhan)(common),1001,2019-03-04,1770,1770,1770,3,2019,1
+Telangana,Nizamabad,Pitlam,paddy(dhan)(common),MTU-1010,2019-03-04,1750,1750,1750,3,2019,1
+Telangana,Ranga Reddy,Chevella,brinjal,Other,2019-03-04,300,300,300,3,2019,1
+Telangana,Ranga Reddy,Chevella,cabbage,Cabbage,2019-03-04,500,500,500,3,2019,1
+Telangana,Ranga Reddy,Chevella,cauliflower,African Sarson,2019-03-04,650,650,650,3,2019,1
+Telangana,Ranga Reddy,Chevella,green chilli,Green Chilly,2019-03-04,1200,1200,1200,3,2019,1
+Telangana,Ranga Reddy,Chevella,tomato,Deshi,2019-03-04,300,300,300,3,2019,1
+Tripura,North Tripura,Dasda,masur dal,Kala Masoor New,2019-03-04,8000,9000,8500,3,2019,1
+Tripura,North Tripura,Dasda,rice,Masuri,2019-03-04,2500,2700,2600,3,2019,1
+Tripura,Sepahijala,Bishalgarh,bitter gourd,Other,2019-03-04,6500,7500,7000,3,2019,1
+Tripura,Sepahijala,Bishalgarh,brinjal,Round/Long,2019-03-04,1500,2500,2000,3,2019,1
+Tripura,Sepahijala,Bishalgarh,cabbage,Other,2019-03-04,800,1000,900,3,2019,1
+Tripura,Sepahijala,Bishalgarh,cauliflower,Other,2019-03-04,2500,3500,3000,3,2019,1
+Tripura,Sepahijala,Bishalgarh,cucumbar(kheera),Cucumbar,2019-03-04,3500,4500,4000,3,2019,1
+Tripura,Sepahijala,Bishalgarh,green chilli,Green Chilly,2019-03-04,6000,7000,6500,3,2019,1
+Tripura,Sepahijala,Bishalgarh,papaya (raw),Papaya (Raw),2019-03-04,1500,2000,1800,3,2019,1
+Tripura,Sepahijala,Bishramganj,bitter gourd,Bitter Gourd,2019-03-04,6500,7500,7000,3,2019,1
+Tripura,Sepahijala,Bishramganj,brinjal,Round/Long,2019-03-04,1200,2000,1500,3,2019,1
+Tripura,Sepahijala,Bishramganj,cabbage,Cabbage,2019-03-04,600,800,700,3,2019,1
+Tripura,Sepahijala,Bishramganj,cauliflower,Cauliflower,2019-03-04,2500,3500,3000,3,2019,1
+Tripura,Sepahijala,Bishramganj,cucumbar(kheera),Cucumbar,2019-03-04,3000,4000,3500,3,2019,1
+Tripura,Sepahijala,Bishramganj,ginger(green),Green Ginger,2019-03-04,6000,7000,6500,3,2019,1
+Tripura,Sepahijala,Bishramganj,papaya (raw),Papaya (Raw),2019-03-04,1000,1500,1200,3,2019,1
+Tripura,South District,Barpathari,onion,Other,2019-03-04,1800,1900,1850,3,2019,1
+Tripura,South District,Barpathari,potato,Jalander,2019-03-04,700,800,750,3,2019,1
+Uttar Pradesh,Agra,Achnera,bajra(pearl millet/cumbu),Deshi,2019-03-04,1700,1760,1730,3,2019,1
+Uttar Pradesh,Agra,Achnera,banana,Banana - Ripe,2019-03-04,1500,1600,1550,3,2019,1
+Uttar Pradesh,Agra,Achnera,barley (jau),Dara,2019-03-04,1800,1860,1830,3,2019,1
+Uttar Pradesh,Agra,Achnera,bottle gourd,Bottle Gourd,2019-03-04,950,1050,1000,3,2019,1
+Uttar Pradesh,Agra,Achnera,brinjal,Brinjal,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Achnera,cabbage,Cabbage,2019-03-04,550,650,600,3,2019,1
+Uttar Pradesh,Agra,Achnera,carrot,Carrot,2019-03-04,440,480,460,3,2019,1
+Uttar Pradesh,Agra,Achnera,cauliflower,Cauliflower,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Achnera,ginger(green),Green Ginger,2019-03-04,4500,4600,4550,3,2019,1
+Uttar Pradesh,Agra,Achnera,green chilli,Green Chilly,2019-03-04,2200,2300,2250,3,2019,1
+Uttar Pradesh,Agra,Achnera,gur(jaggery),Red,2019-03-04,2560,2580,2570,3,2019,1
+Uttar Pradesh,Agra,Achnera,lemon,Lemon,2019-03-04,2950,3050,3000,3,2019,1
+Uttar Pradesh,Agra,Achnera,mustard,Sarson(Black),2019-03-04,3300,3500,3400,3,2019,1
+Uttar Pradesh,Agra,Achnera,onion,Red,2019-03-04,750,850,800,3,2019,1
+Uttar Pradesh,Agra,Achnera,potato,Desi,2019-03-04,500,560,530,3,2019,1
+Uttar Pradesh,Agra,Achnera,pumpkin,Pumpkin,2019-03-04,500,580,540,3,2019,1
+Uttar Pradesh,Agra,Achnera,raddish,Raddish,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Achnera,rice,III,2019-03-04,2530,2550,2540,3,2019,1
+Uttar Pradesh,Agra,Achnera,spinach,Spinach,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Achnera,tomato,Tomato,2019-03-04,800,880,840,3,2019,1
+Uttar Pradesh,Agra,Achnera,wheat,Dara,2019-03-04,1900,1960,1930,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,apple,Delicious,2019-03-04,5800,5950,5850,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,bajra(pearl millet/cumbu),Deshi,2019-03-04,1750,1800,1780,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,banana,Banana - Ripe,2019-03-04,900,1000,950,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,barley (jau),Dara,2019-03-04,1700,1750,1720,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,okra,Bhindi,2019-03-04,1800,1850,1820,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,bottle gourd,Bottle Gourd,2019-03-04,1500,1600,1550,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,brinjal,Round,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,cabbage,Cabbage,2019-03-04,400,500,450,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,cauliflower,Cauliflower,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,cucumbar(kheera),Cucumbar,2019-03-04,1550,1600,1550,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,ginger(green),Green Ginger,2019-03-04,1800,1850,1820,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,green chilli,Green Chilly,2019-03-04,1500,1600,1550,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,guava,Guava,2019-03-04,1500,1550,1520,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,gur(jaggery),Pathari,2019-03-04,2800,2850,2820,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,lemon,Lemon,2019-03-04,2500,2600,2550,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,mousambi(sweet lime),Mousambi,2019-03-04,2200,2300,2250,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,mustard,Sarson(Black),2019-03-04,3250,3450,3300,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,onion,Red,2019-03-04,850,1000,900,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,papaya,Papaya,2019-03-04,1000,1100,1050,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,potato,Desi,2019-03-04,400,500,450,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,pumpkin,Pumpkin,2019-03-04,800,950,850,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,raddish,Raddish,2019-03-04,400,500,450,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,rice,Other,2019-03-04,2250,2350,2300,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,tomato,Deshi,2019-03-04,400,550,450,3,2019,1
+Uttar Pradesh,Agra,Fatehabad,wheat,Dara,2019-03-04,1850,1900,1880,3,2019,1
+Uttar Pradesh,Agra,Jagnair,apple,Delicious,2019-03-04,5500,5600,5550,3,2019,1
+Uttar Pradesh,Agra,Jagnair,bajra(pearl millet/cumbu),Deshi,2019-03-04,1700,1760,1730,3,2019,1
+Uttar Pradesh,Agra,Jagnair,banana,Banana - Ripe,2019-03-04,1500,1560,1530,3,2019,1
+Uttar Pradesh,Agra,Jagnair,barley (jau),Dara,2019-03-04,1750,1850,1800,3,2019,1
+Uttar Pradesh,Agra,Jagnair,okra,Bhindi,2019-03-04,3350,3450,3400,3,2019,1
+Uttar Pradesh,Agra,Jagnair,bottle gourd,Bottle Gourd,2019-03-04,950,1050,1000,3,2019,1
+Uttar Pradesh,Agra,Jagnair,brinjal,Brinjal,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Jagnair,cabbage,Cabbage,2019-03-04,500,600,550,3,2019,1
+Uttar Pradesh,Agra,Jagnair,cauliflower,Cauliflower,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Jagnair,green chilli,Green Chilly,2019-03-04,2200,2300,2250,3,2019,1
+Uttar Pradesh,Agra,Jagnair,gur(jaggery),Red,2019-03-04,2570,2590,2580,3,2019,1
+Uttar Pradesh,Agra,Jagnair,lemon,Lemon,2019-03-04,2950,3050,3000,3,2019,1
+Uttar Pradesh,Agra,Jagnair,mustard,Sarson(Black),2019-03-04,3350,3550,3450,3,2019,1
+Uttar Pradesh,Agra,Jagnair,onion,Red,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Jagnair,potato,Desi,2019-03-04,500,580,540,3,2019,1
+Uttar Pradesh,Agra,Jagnair,pumpkin,Pumpkin,2019-03-04,1100,1200,1150,3,2019,1
+Uttar Pradesh,Agra,Jagnair,raddish,Raddish,2019-03-04,550,650,600,3,2019,1
+Uttar Pradesh,Agra,Jagnair,rice,III,2019-03-04,2530,2550,2540,3,2019,1
+Uttar Pradesh,Agra,Jagnair,wheat,Dara,2019-03-04,1900,1960,1930,3,2019,1
+Uttar Pradesh,Agra,Jarar,apple,Kasmir/Shimla - II,2019-03-04,5150,5250,5200,3,2019,1
+Uttar Pradesh,Agra,Jarar,bajra(pearl millet/cumbu),Deshi,2019-03-04,1730,1780,1760,3,2019,1
+Uttar Pradesh,Agra,Jarar,banana,Other,2019-03-04,1050,1150,1100,3,2019,1
+Uttar Pradesh,Agra,Jarar,bottle gourd,Bottle Gourd,2019-03-04,950,1050,1000,3,2019,1
+Uttar Pradesh,Agra,Jarar,brinjal,Round,2019-03-04,1000,1100,1050,3,2019,1
+Uttar Pradesh,Agra,Jarar,cabbage,Cabbage,2019-03-04,600,680,640,3,2019,1
+Uttar Pradesh,Agra,Jarar,carrot,Carrot,2019-03-04,540,620,580,3,2019,1
+Uttar Pradesh,Agra,Jarar,cauliflower,Cauliflower,2019-03-04,560,620,590,3,2019,1
+Uttar Pradesh,Agra,Jarar,ginger(green),Green Ginger,2019-03-04,2700,2800,2750,3,2019,1
+Uttar Pradesh,Agra,Jarar,green chilli,Green Chilly,2019-03-04,1040,1120,1080,3,2019,1
+Uttar Pradesh,Agra,Jarar,lemon,Lemon,2019-03-04,2000,2100,2050,3,2019,1
+Uttar Pradesh,Agra,Jarar,onion,Red,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Jarar,papaya,Papaya,2019-03-04,980,1060,1040,3,2019,1
+Uttar Pradesh,Agra,Jarar,peas wet,Other,2019-03-04,740,820,780,3,2019,1
+Uttar Pradesh,Agra,Jarar,potato,Desi,2019-03-04,450,550,500,3,2019,1
+Uttar Pradesh,Agra,Jarar,pumpkin,Pumpkin,2019-03-04,500,540,520,3,2019,1
+Uttar Pradesh,Agra,Jarar,raddish,Raddish,2019-03-04,300,400,350,3,2019,1
+Uttar Pradesh,Agra,Jarar,tomato,Deshi,2019-03-04,900,1000,950,3,2019,1
+Uttar Pradesh,Agra,Jarar,wheat,Dara,2019-03-04,1800,1840,1830,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,apple,Delicious,2019-03-04,5500,5600,5550,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,bajra(pearl millet/cumbu),Deshi,2019-03-04,1700,1760,1730,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,banana,Banana - Ripe,2019-03-04,1500,1580,1540,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,barley (jau),Deshi,2019-03-04,1770,1870,1820,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,okra,Bhindi,2019-03-04,3300,3400,3350,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,bottle gourd,Bottle Gourd,2019-03-04,950,1050,1000,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,brinjal,Round/Long,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,cabbage,Cabbage,2019-03-04,500,600,550,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,carrot,Carrot,2019-03-04,440,480,460,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,cauliflower,Cauliflower,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,green chilli,Green Chilly,2019-03-04,2200,2300,2250,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,gur(jaggery),Red,2019-03-04,2570,2590,2580,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,lemon,Lemon,2019-03-04,2950,3050,3000,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,mousambi(sweet lime),Mousambi,2019-03-04,2600,2700,2650,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,mustard,Sarson(Black),2019-03-04,3300,3500,3400,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,onion,Red,2019-03-04,750,850,800,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,papaya,Papaya,2019-03-04,2100,2200,2150,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,potato,Desi,2019-03-04,500,560,530,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,pumpkin,Pumpkin,2019-03-04,1100,1200,1150,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,raddish,Raddish,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,rice,III,2019-03-04,2530,2550,2540,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,tomato,Deshi,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Agra,Khairagarh,wheat,Dara,2019-03-04,1900,1950,1925,3,2019,1
+Uttar Pradesh,Agra,Samsabad,bajra(pearl millet/cumbu),Hybrid,2019-03-04,1825,1875,1850,3,2019,1
+Uttar Pradesh,Agra,Samsabad,barley (jau),Dara,2019-03-04,1825,1875,1850,3,2019,1
+Uttar Pradesh,Agra,Samsabad,brinjal,Round,2019-03-04,500,700,600,3,2019,1
+Uttar Pradesh,Agra,Samsabad,carrot,Carrot,2019-03-04,500,700,600,3,2019,1
+Uttar Pradesh,Agra,Samsabad,cauliflower,Cauliflower,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Agra,Samsabad,colacasia,Colacasia,2019-03-04,2050,2150,2100,3,2019,1
+Uttar Pradesh,Agra,Samsabad,green chilli,Green Chilly,2019-03-04,1100,1300,1200,3,2019,1
+Uttar Pradesh,Agra,Samsabad,groundnut,Local,2019-03-04,4900,5100,5000,3,2019,1
+Uttar Pradesh,Agra,Samsabad,gur(jaggery),Pathari,2019-03-04,4900,5100,5000,3,2019,1
+Uttar Pradesh,Agra,Samsabad,mustard,Sarson(Black),2019-03-04,3400,3600,3500,3,2019,1
+Uttar Pradesh,Agra,Samsabad,onion,Red,2019-03-04,800,900,800,3,2019,1
+Uttar Pradesh,Agra,Samsabad,peas wet,Peas Wet,2019-03-04,700,900,800,3,2019,1
+Uttar Pradesh,Agra,Samsabad,potato,Local,2019-03-04,450,550,500,3,2019,1
+Uttar Pradesh,Agra,Samsabad,raddish,Raddish,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Agra,Samsabad,tomato,Hybrid,2019-03-04,450,600,500,3,2019,1
+Uttar Pradesh,Agra,Samsabad,wheat,Dara,2019-03-04,1975,2050,2000,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,bajra(pearl millet/cumbu),Hybrid,2019-03-04,1830,1850,1840,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,brinjal,Brinjal,2019-03-04,430,450,440,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,carrot,Carrot,2019-03-04,380,400,390,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,cauliflower,Cauliflower,2019-03-04,480,500,490,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,green chilli,Green Chilly,2019-03-04,780,800,790,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,maize,Hybrid,2019-03-04,1930,1950,1940,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,potato,Desi,2019-03-04,530,550,540,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,pumpkin,Pumpkin,2019-03-04,730,750,740,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,raddish,Raddish,2019-03-04,280,300,290,3,2019,1
+Uttar Pradesh,Aligarh,Atrauli,tomato,Hybrid,2019-03-04,980,1000,990,3,2019,1
+Uttar Pradesh,Allahabad,Sirsa,gur(jaggery),Red,2019-03-04,2950,3050,3000,3,2019,1
+Uttar Pradesh,Allahabad,Sirsa,onion,Red,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Allahabad,Sirsa,potato,Desi,2019-03-04,550,650,600,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,brinjal,Arkasheela Mattigulla,2019-03-04,1100,1300,1200,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,carrot,Carrot,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,cauliflower,African Sarson,2019-03-04,1100,1300,1200,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,green chilli,Green Chilly,2019-03-04,2400,2600,2500,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,onion,1st Sort,2019-03-04,900,1100,1000,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,potato,(Red Nanital),2019-03-04,500,700,600,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,raddish,Raddish,2019-03-04,300,400,350,3,2019,1
+Uttar Pradesh,Baghpat,Bagpat,tomato,Deshi,2019-03-04,1100,1300,1200,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,apple,Kasmir/Shimla - II,2019-03-04,4800,5000,4900,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,banana - green,Banana - Green,2019-03-04,1020,1040,1030,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,chickpea,Desi (Whole),2019-03-04,5000,5150,5100,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,brinjal,Round/Long,2019-03-04,700,800,750,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,carrot,Carrot,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,cauliflower,Cauliflower,2019-03-04,700,800,750,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,chikoos(sapota),Sapota,2019-03-04,2200,2400,2300,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,cucumbar(kheera),Cucumbar,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,ginger(green),Green Ginger,2019-03-04,2600,2800,2700,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,green chilli,Green Chilly,2019-03-04,1500,1700,1600,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,guava,Guava,2019-03-04,1300,1500,1400,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,gur(jaggery),Yellow,2019-03-04,2400,2600,2500,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,onion,Red,2019-03-04,800,1000,900,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,papaya,Papaya,2019-03-04,1050,1150,1100,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,pomegranate,Pomogranate,2019-03-04,4200,4400,4300,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,potato,Chips,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,pumpkin,Pumpkin,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,raddish,Raddish,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,tomato,Deshi,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Baghpat,Baraut,wheat,Other,2019-03-04,1800,1900,1850,3,2019,1
+Uttar Pradesh,Bahraich,Mihipurwa,gur(jaggery),Yellow,2019-03-04,1900,2100,2000,3,2019,1
+Uttar Pradesh,Bahraich,Mihipurwa,paddy(dhan)(common),Paddy Coarse,2019-03-04,1450,1550,1500,3,2019,1
+Uttar Pradesh,Bahraich,Mihipurwa,tomato,Deshi,2019-03-04,400,475,450,3,2019,1
+Uttar Pradesh,Bahraich,Risia,paddy(dhan)(common),Paddy,2019-03-04,1500,1550,1510,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,apple,Apple,2019-03-04,5250,5500,5350,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,banana,Banana - Ripe,2019-03-04,850,1000,900,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,okra,Bhindi,2019-03-04,1125,1200,1150,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,brinjal,Brinjal,2019-03-04,450,550,500,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,fish,Rahu(Local),2019-03-04,4250,4350,4300,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,grapes,Green,2019-03-04,4480,4540,4500,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,green chilli,Green Chilly,2019-03-04,1480,1560,1500,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,gur(jaggery),Yellow,2019-03-04,1450,2525,2500,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,lemon,Lemon,2019-03-04,2260,2480,2350,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,onion,Red,2019-03-04,680,850,785,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,paddy(dhan)(common),Paddy,2019-03-04,1460,1540,1500,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,potato,Potato,2019-03-04,580,750,675,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,rice,III,2019-03-04,2080,2240,2150,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,tomato,Deshi,2019-03-04,675,755,700,3,2019,1
+Uttar Pradesh,Bahraich,Ruperdeeha,wheat,Dara,2019-03-04,1760,1825,1800,3,2019,1
+Uttar Pradesh,Ballia,Chitwadagaon,banana,Banana - Ripe,2019-03-04,1700,1800,1750,3,2019,1
+Uttar Pradesh,Ballia,Chitwadagaon,gur(jaggery),Other,2019-03-04,4200,4400,4300,3,2019,1
+Uttar Pradesh,Ballia,Chitwadagaon,onion,Other,2019-03-04,1100,1200,1150,3,2019,1
+Uttar Pradesh,Ballia,Chitwadagaon,potato,Other,2019-03-04,1000,1100,1050,3,2019,1
+Uttar Pradesh,Ballia,Chitwadagaon,rice,III,2019-03-04,2000,2200,2100,3,2019,1
+Uttar Pradesh,Bhadohi(Sant Ravi Nagar),Gopiganj,apple,American,2019-03-04,3500,3500,3500,3,2019,1
+Uttar Pradesh,Bhadohi(Sant Ravi Nagar),Gopiganj,kinnow,Kinnow,2019-03-04,850,900,900,3,2019,1
+Uttar Pradesh,Bhadohi(Sant Ravi Nagar),Gopiganj,onion,Red,2019-03-04,700,700,700,3,2019,1
+Uttar Pradesh,Bhadohi(Sant Ravi Nagar),Gopiganj,pomegranate,Pomogranate,2019-03-04,3800,3800,3800,3,2019,1
+Uttar Pradesh,Bhadohi(Sant Ravi Nagar),Gopiganj,potato,Potato,2019-03-04,350,400,400,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,bajra(pearl millet/cumbu),Hybrid,2019-03-04,1580,1600,1590,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,banana,Banana - Ripe,2019-03-04,1180,1200,1190,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,okra,Bhindi,2019-03-04,580,600,590,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,bottle gourd,Bottle Gourd,2019-03-04,680,700,690,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,brinjal,Brinjal,2019-03-04,570,590,580,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,carrot,Carrot,2019-03-04,680,700,690,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,cauliflower,Cauliflower,2019-03-04,580,600,590,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,maize,Hybrid,2019-03-04,1480,1500,1490,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,mustard,Laha(Sarsib),2019-03-04,3580,3600,3590,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,onion,Red,2019-03-04,1180,1200,1190,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,potato,F.A.Q.,2019-03-04,580,600,590,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,pumpkin,Pumpkin,2019-03-04,680,700,690,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,tomato,Deshi,2019-03-04,680,700,690,3,2019,1
+Uttar Pradesh,Bulandshahar,Divai,wheat,Dara,2019-03-04,1730,1736,1735,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,brinjal,Other,2019-03-04,443,447,445,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,carrot,Carrot,2019-03-04,428,432,430,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,cauliflower,Cauliflower,2019-03-04,408,412,410,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,green chilli,Green Chilly,2019-03-04,1003,1007,1005,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,guava,Guava,2019-03-04,908,912,910,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,onion,Other,2019-03-04,983,987,985,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,potato,Other,2019-03-04,438,442,440,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,raddish,Other,2019-03-04,218,222,220,3,2019,1
+Uttar Pradesh,Bulandshahar,Gulavati,tomato,Other,2019-03-04,708,712,710,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,carrot,Carrot,2019-03-04,400,500,460,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,cauliflower,Cauliflower,2019-03-04,500,600,550,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,green chilli,Green Chilly,2019-03-04,910,1000,960,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,gur(jaggery),Yellow,2019-03-04,2100,2300,2200,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,onion,Red,2019-03-04,500,600,560,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,potato,Potato,2019-03-04,360,460,410,3,2019,1
+Uttar Pradesh,Bulandshahar,Siyana,tomato,Other,2019-03-04,800,900,860,3,2019,1
+Uttar Pradesh,Chitrakut,Mau(Chitrakut),arhar (tur/red gram)(whole),777 New Ind,2019-03-04,4450,4500,4475,3,2019,1
+Uttar Pradesh,Chitrakut,Mau(Chitrakut),chickpea,Desi (Whole),2019-03-04,3850,3900,3875,3,2019,1
+Uttar Pradesh,Chitrakut,Mau(Chitrakut),mustard,Big 100 Kg,2019-03-04,3450,3500,3475,3,2019,1
+Uttar Pradesh,Chitrakut,Mau(Chitrakut),rice,1009 Kar,2019-03-04,1750,1800,1775,3,2019,1
+Uttar Pradesh,Chitrakut,Mau(Chitrakut),wheat,147 Average,2019-03-04,1900,1950,1925,3,2019,1
+Uttar Pradesh,Etah,Aliganj,bajra(pearl millet/cumbu),Deshi,2019-03-04,1800,1850,1830,3,2019,1
+Uttar Pradesh,Etah,Aliganj,banana - green,Banana - Green,2019-03-04,800,1000,900,3,2019,1
+Uttar Pradesh,Etah,Aliganj,brinjal,Round/Long,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Etah,Aliganj,carrot,Carrot,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Etah,Aliganj,cauliflower,Cauliflower,2019-03-04,500,700,600,3,2019,1
+Uttar Pradesh,Etah,Aliganj,colacasia,Colacasia,2019-03-04,1000,1200,1100,3,2019,1
+Uttar Pradesh,Etah,Aliganj,field pea,Field Pea,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Etah,Aliganj,garlic,Desi,2019-03-04,700,900,800,3,2019,1
+Uttar Pradesh,Etah,Aliganj,ginger(green),Green Ginger,2019-03-04,3800,4000,3900,3,2019,1
+Uttar Pradesh,Etah,Aliganj,green chilli,Green Chilly,2019-03-04,1200,1400,1300,3,2019,1
+Uttar Pradesh,Etah,Aliganj,mustard,Big 100 Kg,2019-03-04,3000,3200,3100,3,2019,1
+Uttar Pradesh,Etah,Aliganj,onion,Red,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Etah,Aliganj,potato,Local,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Etah,Aliganj,tobacco,Beedi,2019-03-04,1800,2000,1900,3,2019,1
+Uttar Pradesh,Etah,Aliganj,tomato,Deshi,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Etah,Aliganj,wheat,Dara,2019-03-04,1800,2000,1900,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,bajra(pearl millet/cumbu),Hybrid,2019-03-04,1550,1750,1650,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,brinjal,Brinjal,2019-03-04,550,650,600,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,carrot,Carrot,2019-03-04,700,800,750,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,cauliflower,Cauliflower,2019-03-04,400,500,450,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,green chilli,Green Chilly,2019-03-04,1200,1300,1250,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,green peas,Green Peas,2019-03-04,600,700,650,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,guava,Guava,2019-03-04,900,1000,950,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,potato,Desi,2019-03-04,300,450,400,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,pumpkin,Pumpkin,2019-03-04,500,600,550,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,raddish,Raddish,2019-03-04,450,550,500,3,2019,1
+Uttar Pradesh,Etawah,Jasvantnagar,tomato,Hybrid,2019-03-04,650,750,700,3,2019,1
+Uttar Pradesh,Farukhabad,Kamlaganj,maize,Yellow,2019-03-04,1600,1700,1650,3,2019,1
+Uttar Pradesh,Farukhabad,Kamlaganj,potato,Desi,2019-03-04,400,450,430,3,2019,1
+Uttar Pradesh,Farukhabad,Kamlaganj,wheat,Dara,2019-03-04,1850,1900,1870,3,2019,1
+Uttar Pradesh,Fatehpur,Bindki,potato,Potato,2019-03-04,400,550,490,3,2019,1
+Uttar Pradesh,Fatehpur,Kishunpur,gur(jaggery),Other,2019-03-04,2400,2600,2500,3,2019,1
+Uttar Pradesh,Fatehpur,Kishunpur,paddy(dhan)(common),Common,2019-03-04,1600,1900,1750,3,2019,1
+Uttar Pradesh,Fatehpur,Kishunpur,wheat,Dara,2019-03-04,1800,2100,1950,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,apple,Delicious,2019-03-04,5700,6000,5850,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,6000,6150,6080,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,banana,Medium,2019-03-04,1200,1350,1260,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,chickpea,Desi (Whole),2019-03-04,5250,5450,5330,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,black gram dal (urd dal),Black Gram Dal,2019-03-04,5400,5650,5500,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,bottle gourd,Bottle Gourd,2019-03-04,1650,2050,1800,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,brinjal,Round/Long,2019-03-04,900,1050,970,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,cabbage,Cabbage,2019-03-04,500,650,570,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,green chilli,Green Chilly,2019-03-04,2400,2650,2500,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,gur(jaggery),Red,2019-03-04,2200,2350,2260,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,lemon,Lemon,2019-03-04,2700,2850,2750,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,mousambi(sweet lime),Other,2019-03-04,2600,2750,2680,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,mustard,Mustard,2019-03-04,3950,4250,4100,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,mustard oil,Other,2019-03-04,9150,9400,9250,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,onion,Red,2019-03-04,700,850,760,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,papaya,Papaya,2019-03-04,1200,1450,1300,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,potato,Desi,2019-03-04,550,700,610,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,raddish,Raddish,2019-03-04,250,350,280,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,rice,III,2019-03-04,2550,2750,2670,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,sugar,Fine,2019-03-04,3300,3450,3380,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,tomato,Deshi,2019-03-04,900,1050,970,3,2019,1
+Uttar Pradesh,Ghaziabad,Hapur,wheat,Dara,2019-03-04,1900,2100,1980,3,2019,1
+Uttar Pradesh,Jalaun (Orai),Ait,wheat,Dara,2019-03-04,1980,1980,1980,3,2019,1
+Uttar Pradesh,Jalaun (Orai),Kadaura,wheat,147 Average,2019-03-04,1750,1800,1775,3,2019,1
+Uttar Pradesh,Jhansi,Baruwasagar,colacasia,Colacasia,2019-03-04,2130,2365,2245,3,2019,1
+Uttar Pradesh,Jhansi,Baruwasagar,ginger(green),Green Ginger,2019-03-04,3165,3345,3245,3,2019,1
+Uttar Pradesh,Jhansi,Chirgaon,black gram (urd beans)(whole),Black Gram (Whole),2019-03-04,3500,3700,3600,3,2019,1
+Uttar Pradesh,Jhansi,Chirgaon,groundnut,Other,2019-03-04,3100,3200,3150,3,2019,1
+Uttar Pradesh,Jhansi,Chirgaon,wheat,Dara,2019-03-04,1800,1850,1825,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),apple,Delicious,2019-03-04,6400,6600,6500,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,6700,6900,6800,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),banana,Banana - Ripe,2019-03-04,2100,2300,2200,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),chickpea,Desi (Whole),2019-03-04,4500,4650,4600,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),black gram dal (urd dal),Black Gram Dal,2019-03-04,6400,6600,6500,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),brinjal,Round/Long,2019-03-04,780,850,800,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),cabbage,Cabbage,2019-03-04,450,480,470,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),cauliflower,Local,2019-03-04,450,500,480,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),green chilli,Green Chilly,2019-03-04,2000,2200,2100,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),gur(jaggery),Red,2019-03-04,2300,2450,2400,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),maize,Yellow,2019-03-04,1780,1810,1800,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),mustard,Lohi Black,2019-03-04,3300,3450,3400,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),mustard oil,Mustard Oil,2019-03-04,8900,9090,9000,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),onion,Red,2019-03-04,780,866,800,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),paddy(dhan)(common),Fine,2019-03-04,2300,2450,2400,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),peas cod,Peas cod,2019-03-04,890,1090,1000,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),potato,Local,2019-03-04,450,500,480,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),rice,III,2019-03-04,2340,2540,2500,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),tomato,Deshi,2019-03-04,760,790,780,3,2019,1
+Uttar Pradesh,Kannuj,Chhibramau(Kannuj),wheat,Dara,2019-03-04,2000,2100,2040,3,2019,1
+Uttar Pradesh,Kanpur,Rura,apple,Apple,2019-03-04,5500,5800,5800,3,2019,1
+Uttar Pradesh,Kanpur,Rura,bajra(pearl millet/cumbu),Deshi,2019-03-04,1300,1400,1400,3,2019,1
+Uttar Pradesh,Kanpur,Rura,banana,Banana - Ripe,2019-03-04,2200,2800,2800,3,2019,1
+Uttar Pradesh,Kanpur,Rura,barley (jau),Dara,2019-03-04,1300,1400,1400,3,2019,1
+Uttar Pradesh,Kanpur,Rura,bottle gourd,Bottle Gourd,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,brinjal,Brinjal,2019-03-04,950,1000,1000,3,2019,1
+Uttar Pradesh,Kanpur,Rura,cabbage,Cabbage,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,cauliflower,African Sarson,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,ghee,Ghee,2019-03-04,28000,29000,29000,3,2019,1
+Uttar Pradesh,Kanpur,Rura,green chilli,Green Chilly,2019-03-04,400,500,500,3,2019,1
+Uttar Pradesh,Kanpur,Rura,green gram (moong)(whole),Ankola,2019-03-04,5500,5800,5800,3,2019,1
+Uttar Pradesh,Kanpur,Rura,guava,Guava,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,jowar(sorghum),Annigeri,2019-03-04,1300,1400,1400,3,2019,1
+Uttar Pradesh,Kanpur,Rura,maize,Hybrid Yellow (Cattle Feed),2019-03-04,1400,1500,1500,3,2019,1
+Uttar Pradesh,Kanpur,Rura,mustard,Sarson(Black),2019-03-04,3400,3800,3800,3,2019,1
+Uttar Pradesh,Kanpur,Rura,onion,Red,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,paddy(dhan)(basmati),1121,2019-03-04,1770,1775,1775,3,2019,1
+Uttar Pradesh,Kanpur,Rura,paddy(dhan)(common),Common,2019-03-04,1750,1752,1752,3,2019,1
+Uttar Pradesh,Kanpur,Rura,potato,Desi,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,pumpkin,Other,2019-03-04,1300,1400,1400,3,2019,1
+Uttar Pradesh,Kanpur,Rura,raddish,Other,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,tomato,Deshi,2019-03-04,800,900,900,3,2019,1
+Uttar Pradesh,Kanpur,Rura,wheat,Dara,2019-03-04,1755,1800,1800,3,2019,1
+Uttar Pradesh,Kanpur,Rura,wood,Beete (Rose),2019-03-04,400,500,500,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Mohammdi,onion,Red,2019-03-04,890,900,900,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Mohammdi,potato,F.A.Q.,2019-03-04,430,440,440,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Mohammdi,tomato,Local,2019-03-04,840,850,850,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Tikonia,gur(jaggery),Khandsari,2019-03-04,3000,3200,3100,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Tikonia,gur(jaggery),Other,2019-03-04,475,525,500,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Tikonia,gur(jaggery),Pathari,2019-03-04,2050,2150,2100,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Tikonia,pumpkin,Pumpkin,2019-03-04,320,380,350,3,2019,1
+Uttar Pradesh,Khiri (Lakhimpur),Tikonia,white pumpkin,White Pumpkin,2019-03-04,280,340,310,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,apple,Kasmir/Shimla - II,2019-03-04,6390,6435,6410,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,6350,6410,6380,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,banana,Banana - Ripe,2019-03-04,1750,1800,1785,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,banana - green,Banana - Green,2019-03-04,620,730,670,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,bottle gourd,Bottle Gourd,2019-03-04,1020,1080,1050,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,brinjal,Brinjal,2019-03-04,930,1000,960,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,cabbage,Cabbage,2019-03-04,660,730,700,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,capsicum,Capsicum,2019-03-04,1690,1750,1720,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,cauliflower,Cauliflower,2019-03-04,650,740,710,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,field pea,Field Pea,2019-03-04,820,890,860,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,garlic,Garlic,2019-03-04,2510,2560,2540,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,ginger(green),Green Ginger,2019-03-04,3500,3600,3540,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,grapes,Annabesahai,2019-03-04,4210,4260,4240,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,green chilli,Green Chilly,2019-03-04,1850,1930,1890,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,gur(jaggery),Pathari,2019-03-04,2400,2460,2430,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,mustard,Sarson(Black),2019-03-04,3050,3110,3085,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,mustard oil,Mustard Oil,2019-03-04,9220,9300,9245,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,onion,Red,2019-03-04,800,870,850,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,orange,Nagpuri,2019-03-04,1710,1790,1750,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,pomegranate,Pomogranate,2019-03-04,4110,4160,4140,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,potato,Potato,2019-03-04,490,530,500,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,pumpkin,Pumpkin,2019-03-04,1090,1150,1120,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,rice,Coarse,2019-03-04,2230,2300,2250,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,sugar,Chini,2019-03-04,3415,3470,3440,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,tomato,Tomato,2019-03-04,650,730,690,3,2019,1
+Uttar Pradesh,Lakhimpur,Paliakala,wheat,Dara,2019-03-04,1820,1860,1845,3,2019,1
+Uttar Pradesh,Mahoba,Charkhari,chickpea,999,2019-03-04,4000,4100,4050,3,2019,1
+Uttar Pradesh,Mahoba,Charkhari,black gram (urd beans)(whole),Black Gram (Whole),2019-03-04,3700,3800,3750,3,2019,1
+Uttar Pradesh,Mahoba,Charkhari,mustard,Big 100 Kg,2019-03-04,3400,3500,3450,3,2019,1
+Uttar Pradesh,Mahoba,Charkhari,wheat,147 Average,2019-03-04,1800,1850,1825,3,2019,1
+Uttar Pradesh,Mau(Maunathbhanjan),Doharighat,arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,5800,6500,6200,3,2019,1
+Uttar Pradesh,Mau(Maunathbhanjan),Doharighat,rice,1009 Kar,2019-03-04,1800,2300,2000,3,2019,1
+Uttar Pradesh,Mau(Maunathbhanjan),Doharighat,wheat,Dara,2019-03-04,1650,1800,1735,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,apple,Delicious,2019-03-04,6200,6290,6250,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,6840,6910,6875,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,bengal gram dal (chana dal),Bengal Gram Dal,2019-03-04,5400,5470,5430,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,chickpea,Desi (Whole),2019-03-04,4960,5060,5010,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,black gram dal (urd dal),Black Gram Dal,2019-03-04,6390,6470,6430,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,bottle gourd,Bottle Gourd,2019-03-04,945,1010,980,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,brinjal,Brinjal,2019-03-04,790,850,820,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,garlic,Desi,2019-03-04,1960,2050,2000,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,ginger(green),Green Ginger,2019-03-04,5300,5400,5360,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,green chilli,Green Chilly,2019-03-04,1460,1545,1500,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,gur(jaggery),Red,2019-03-04,3145,3200,3170,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,lentil (masur)(whole),Masoor Gola,2019-03-04,4375,4445,4410,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,mustard,Sarson(Black),2019-03-04,4065,4120,4090,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,mustard oil,Mustard Oil,2019-03-04,9830,9940,9880,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,onion,Red,2019-03-04,830,885,860,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,peas(dry),Peas(Dry),2019-03-04,4845,4910,4880,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,potato,Potato,2019-03-04,580,625,600,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,rice,Coarse,2019-03-04,2300,2345,2320,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,tomato,Tomato,2019-03-04,475,530,500,3,2019,1
+Uttar Pradesh,Mirzapur,Mirzapur,wheat,Dara,2019-03-04,1925,1970,1950,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,apple,Delicious,2019-03-04,3900,4260,4130,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,banana - green,Banana - Green,2019-03-04,300,420,360,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,brinjal,Other,2019-03-04,390,520,460,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,cabbage,Other,2019-03-04,200,470,260,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,onion,Red,2019-03-04,470,610,530,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,paddy(dhan)(common),Paddy,2019-03-04,1928,1945,1932,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,peas(dry),Other,2019-03-04,360,560,400,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,potato,Desi,2019-03-04,410,500,460,3,2019,1
+Uttar Pradesh,Muradabad,Sambhal,tomato,Deshi,2019-03-04,360,535,450,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,apple,Delicious,2019-03-04,5800,5850,5820,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,banana - green,Banana - Green,2019-03-04,1260,1340,1310,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,barley (jau),Dara,2019-03-04,1450,1950,1940,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,bottle gourd,Bottle Gourd,2019-03-04,1250,1300,1280,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,brinjal,Brinjal,2019-03-04,1000,1060,1030,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,carrot,Carrot,2019-03-04,600,660,630,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,cauliflower,Cauliflower,2019-03-04,650,720,700,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,garlic,Garlic,2019-03-04,2050,2100,2090,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,green chilli,Green Chilly,2019-03-04,2230,2300,2260,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,gur(jaggery),Yellow,2019-03-04,2400,2600,2510,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,lemon,Lemon,2019-03-04,2620,2700,2660,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,maize,Yellow,2019-03-04,1700,1950,1930,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,mousambi(sweet lime),Mousambi,2019-03-04,2560,2650,2610,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,mustard,Mustard,2019-03-04,4050,4130,4100,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,mustard oil,Mustard Oil,2019-03-04,9230,9285,9270,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,onion,Red,2019-03-04,830,920,890,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,papaya,Papaya,2019-03-04,1130,1200,1170,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,potato,Desi,2019-03-04,600,650,615,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,pumpkin,Pumpkin,2019-03-04,750,830,800,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,rice,III,2019-03-04,2650,2725,2700,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,tomato,Tomato,2019-03-04,1030,1100,1070,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Muzzafarnagar,wheat,Dara,2019-03-04,1750,1980,1965,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,ber(zizyphus/borehannu),Other,2019-03-04,1000,1200,1150,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,okra,Bhindi,2019-03-04,1000,1200,1150,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,brinjal,Brinjal,2019-03-04,400,500,440,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,carrot,Carrot,2019-03-04,400,500,440,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,cauliflower,Local,2019-03-04,300,400,340,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,cucumbar(kheera),Cucumbar,2019-03-04,800,1000,900,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,green chilli,Green Chilly,2019-03-04,1000,1200,1100,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,green peas,Green Peas,2019-03-04,1000,1200,1100,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,lemon,Lemon,2019-03-04,3000,3200,3100,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,onion,Red,2019-03-04,1000,1200,1100,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,papaya,Papaya,2019-03-04,800,1000,900,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,potato,Local,2019-03-04,400,500,440,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,pumpkin,Pumpkin,2019-03-04,400,500,470,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,raddish,Raddish,2019-03-04,250,300,260,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,tomato,Local,2019-03-04,800,1000,900,3,2019,1
+Uttar Pradesh,Muzaffarnagar,Thanabhawan,wood,Other,2019-03-04,250,300,295,3,2019,1
+Uttar Pradesh,Raebarelli,Lalganj,paddy(dhan)(common),Common,2019-03-04,1750,1750,1750,3,2019,1
+Uttar Pradesh,Raebarelli,Lalganj,potato,Desi,2019-03-04,450,550,500,3,2019,1
+Uttar Pradesh,Rampur,Milak,mustard,Mustard,2019-03-04,3300,3400,3350,3,2019,1
+Uttar Pradesh,Rampur,Milak,potato,Desi,2019-03-04,480,510,495,3,2019,1
+Uttar Pradesh,Rampur,Milak,wheat,Other,2019-03-04,1900,1910,1905,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,apple,Apple,2019-03-04,3850,4100,3950,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,banana,Banana - Ripe,2019-03-04,1150,1250,1200,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,cabbage,Cabbage,2019-03-04,480,600,520,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,carrot,Carrot,2019-03-04,450,600,500,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,ginger(green),Green Ginger,2019-03-04,3700,3900,3800,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,green chilli,Green Chilly,2019-03-04,2150,2350,2250,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,onion,Onion,2019-03-04,920,1130,1050,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,peas cod,Peas cod,2019-03-04,820,980,900,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,potato,Potato,2019-03-04,480,620,560,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,raddish,Raddish,2019-03-04,360,480,420,3,2019,1
+Uttar Pradesh,Saharanpur,Chutmalpur,tomato,Tomato,2019-03-04,980,1260,1120,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,bottle gourd,Bottle Gourd,2019-03-04,500,650,600,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,brinjal,Arkasheela Mattigulla,2019-03-04,450,540,500,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,carrot,Carrot,2019-03-04,300,450,360,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,cauliflower,African Sarson,2019-03-04,200,300,250,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,cucumbar(kheera),Cucumbar,2019-03-04,600,750,700,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,ginger(green),Green Ginger,2019-03-04,3100,3300,3200,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,green chilli,Green Chilly,2019-03-04,1200,1350,1300,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,onion,Red,2019-03-04,450,600,500,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,papaya (raw),Other,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,potato,Desi,2019-03-04,250,300,280,3,2019,1
+Uttar Pradesh,Saharanpur,Devband,tomato,Deshi,2019-03-04,450,550,500,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,apple,Kasmir/Shimla - II,2019-03-04,6445,6500,6475,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,banana,Medium,2019-03-04,1140,1180,1165,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,brinjal,Round/Long,2019-03-04,645,670,660,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,cabbage,Cabbage,2019-03-04,435,465,450,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,carrot,Carrot,2019-03-04,440,455,445,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,field pea,Field Pea,2019-03-04,1345,1370,1360,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,garlic,Garlic,2019-03-04,1875,1910,1890,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,ginger(green),Green Ginger,2019-03-04,2730,2755,2745,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,green chilli,Green Chilly,2019-03-04,2025,2055,2040,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,guava,Guava,2019-03-04,1855,1955,1945,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,gur(jaggery),Disara,2019-03-04,2425,2475,2450,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,onion,Red,2019-03-04,1430,1455,1440,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,papaya,Papaya,2019-03-04,1730,1755,1745,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,potato,Desi,2019-03-04,530,555,545,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,pumpkin,Pumpkin,2019-03-04,645,660,650,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,raddish,Raddish,2019-03-04,285,310,295,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,sweet potato,Sweet Potato,2019-03-04,1125,1160,1145,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,tomato,Deshi,2019-03-04,1325,1350,1340,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,wheat,Dara,2019-03-04,1745,1770,1760,3,2019,1
+Uttar Pradesh,Saharanpur,Gangoh,wood,Beete (Rose),2019-03-04,415,450,440,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,banana - green,Banana - Green,2019-03-04,1000,1200,1100,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,cabbage,Cabbage,2019-03-04,400,500,450,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,cauliflower,Cauliflower,2019-03-04,400,500,440,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,green peas,Other,2019-03-04,1100,1200,1150,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,onion,1st Sort,2019-03-04,1000,1200,1120,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,potato,Other,2019-03-04,500,600,540,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,raddish,Other,2019-03-04,300,400,360,3,2019,1
+Uttar Pradesh,Saharanpur,Nakud,wood,Other,2019-03-04,250,300,280,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,apple,Apple,2019-03-04,4700,5000,4900,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,banana,Medium,2019-03-04,1200,1400,1300,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,banana - green,Banana - Green,2019-03-04,900,1100,1000,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,bottle gourd,Bottle Gourd,2019-03-04,800,900,850,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,brinjal,Round/Long,2019-03-04,900,1000,950,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,cabbage,Cabbage,2019-03-04,300,500,400,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,carrot,Carrot,2019-03-04,400,550,500,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,green chilli,Green Chilly,2019-03-04,1200,1300,1250,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,groundnut,Hybrid,2019-03-04,4800,5000,4900,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,guava,Guava,2019-03-04,1300,1450,1400,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,mustard,Sarson(Black),2019-03-04,3800,4100,4000,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,onion,Red,2019-03-04,1000,1200,1100,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,papaya,Papaya,2019-03-04,1200,1500,1300,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,peas wet,Other,2019-03-04,900,1050,1000,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,potato,Desi,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,pumpkin,Pumpkin,2019-03-04,350,500,400,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,raddish,Raddish,2019-03-04,300,450,400,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,tomato,Tomato,2019-03-04,900,1050,1000,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,wheat,Dara,2019-03-04,1800,2000,1900,3,2019,1
+Uttar Pradesh,Saharanpur,Nanuta,wood,Other,2019-03-04,350,500,450,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,banana - green,Banana - Green,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,bottle gourd,Bottle Gourd,2019-03-04,700,900,800,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,brinjal,Brinjal,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,carrot,Carrot,2019-03-04,400,500,450,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,cauliflower,Cauliflower,2019-03-04,400,600,500,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,green chilli,Green Chilly,2019-03-04,1100,1300,1200,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,green peas,Green Peas,2019-03-04,700,900,800,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,onion,Red,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Saharanpur,Sultanpurchilkana,papaya,Papaya,2019-03-04,700,900,800,3,2019,1
+Uttar Pradesh,Shahjahanpur,Jalalabad,brinjal,Round/Long,2019-03-04,460,480,470,3,2019,1
+Uttar Pradesh,Shahjahanpur,Jalalabad,cauliflower,Cauliflower,2019-03-04,390,410,400,3,2019,1
+Uttar Pradesh,Shahjahanpur,Jalalabad,colacasia,Colacasia,2019-03-04,1500,1600,1550,3,2019,1
+Uttar Pradesh,Shahjahanpur,Jalalabad,potato,Potato,2019-03-04,440,480,460,3,2019,1
+Uttar Pradesh,Shahjahanpur,Jalalabad,raddish,Raddish,2019-03-04,300,340,320,3,2019,1
+Uttar Pradesh,Shahjahanpur,Jalalabad,tomato,Tomato,2019-03-04,680,720,700,3,2019,1
+Uttar Pradesh,Sitapur,Viswan,gur(jaggery),Other,2019-03-04,2000,2100,2050,3,2019,1
+Uttar Pradesh,Sitapur,Viswan,lentil (masur)(whole),Other,2019-03-04,4200,4300,4250,3,2019,1
+Uttar Pradesh,Sitapur,Viswan,onion,Other,2019-03-04,600,800,700,3,2019,1
+Uttar Pradesh,Sitapur,Viswan,potato,Desi,2019-03-04,500,700,600,3,2019,1
+Uttar Pradesh,Sitapur,Viswan,wheat,Other,2019-03-04,1700,1800,1750,3,2019,1
+Uttar Pradesh,Sitapur,Viswan,wood,Other,2019-03-04,200,380,240,3,2019,1
+Uttar Pradesh,Sonbhadra,Dudhi,cauliflower,Cauliflower,2019-03-04,400,500,500,3,2019,1
+Uttar Pradesh,Sonbhadra,Dudhi,peas wet,Peas Wet,2019-03-04,700,800,800,3,2019,1
+Uttar Pradesh,Sonbhadra,Dudhi,raddish,Raddish,2019-03-04,500,600,600,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,6700,6730,6715,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,barley (jau),Dara,2019-03-04,1650,1750,1700,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,chickpea,Desi (Whole),2019-03-04,5050,5100,5075,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,bottle gourd,Bottle Gourd,2019-03-04,850,900,885,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,brinjal,Brinjal,2019-03-04,750,800,785,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,cauliflower,Cauliflower,2019-03-04,450,530,490,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,garlic,Garlic,2019-03-04,1750,1840,1810,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,green chilli,Green Chilly,2019-03-04,1600,1700,1650,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,gur(jaggery),Red,2019-03-04,3200,3240,3220,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,mustard,Lohi Black,2019-03-04,4000,4070,4035,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,onion,Red,2019-03-04,800,850,815,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,potato,Potato,2019-03-04,640,700,660,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,rice,III,2019-03-04,2220,2260,2240,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,tomato,Hybrid,2019-03-04,450,500,475,3,2019,1
+Uttar Pradesh,Sonbhadra,Robertsganj,wheat,Dara,2019-03-04,1880,1930,1910,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,apple,Apple,2019-03-04,2800,4250,3050,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,banana,Other,2019-03-04,700,800,750,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,cabbage,Other,2019-03-04,350,500,400,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,carrot,Other,2019-03-04,600,800,700,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,cauliflower,Other,2019-03-04,400,600,550,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,garlic,Other,2019-03-04,1200,1400,1350,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,grapes,Other,2019-03-04,1650,2350,1800,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,green chilli,Other,2019-03-04,600,1050,850,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,kinnow,Other,2019-03-04,600,800,750,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,lemon,Other,2019-03-04,1200,1400,1350,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,onion,Other,2019-03-04,1050,1400,1150,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,orange,Other,2019-03-04,1200,2050,1800,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,papaya,Other,2019-03-04,600,800,700,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,peas wet,Other,2019-03-04,1000,1250,1150,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,pomegranate,Other,2019-03-04,2800,4050,3500,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,potato,Other,2019-03-04,450,600,550,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,pumpkin,Other,2019-03-04,400,600,450,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,raddish,Other,2019-03-04,250,350,300,3,2019,1
+Uttrakhand,Dehradoon,Dehradoon,tomato,Other,2019-03-04,400,600,500,3,2019,1
+Uttrakhand,UdhamSinghNagar,Kashipur,onion,Other,2019-03-04,900,1000,975,3,2019,1
+Uttrakhand,UdhamSinghNagar,Kashipur,potato,Other,2019-03-04,500,700,600,3,2019,1
+West Bengal,Bankura,Bishnupur(Bankura),mustard,Mustard,2019-03-04,4100,4300,4200,3,2019,1
+West Bengal,Bankura,Bishnupur(Bankura),onion,Nasik,2019-03-04,1100,1200,1150,3,2019,1
+West Bengal,Bankura,Bishnupur(Bankura),potato,Jyoti,2019-03-04,360,400,380,3,2019,1
+West Bengal,Bankura,Bishnupur(Bankura),rice,Common,2019-03-04,2600,2700,2650,3,2019,1
+West Bengal,Bankura,Bishnupur(Bankura),rice,Fine,2019-03-04,2800,2900,2850,3,2019,1
+West Bengal,Bankura,Bishnupur(Bankura),wheat,Sonalika,2019-03-04,1650,1750,1700,3,2019,1
+West Bengal,Bankura,Khatra,brinjal,Round/Long,2019-03-04,400,800,500,3,2019,1
+West Bengal,Bankura,Khatra,cucumbar(kheera),Cucumbar,2019-03-04,2300,3000,2500,3,2019,1
+West Bengal,Bankura,Khatra,mustard,Mustard,2019-03-04,4100,4300,4200,3,2019,1
+West Bengal,Bankura,Khatra,paddy(dhan)(common),Swarna Masuri (New),2019-03-04,1750,1770,1750,3,2019,1
+West Bengal,Bankura,Khatra,potato,Jyoti,2019-03-04,350,400,370,3,2019,1
+West Bengal,Bankura,Khatra,rice,Common,2019-03-04,2600,2700,2650,3,2019,1
+West Bengal,Bankura,Khatra,sweet pumpkin,Sweet Pumpkin,2019-03-04,800,1000,900,3,2019,1
+West Bengal,Bankura,Khatra,tomato,Tomato,2019-03-04,400,700,500,3,2019,1
+West Bengal,Bankura,Khatra,wheat,Sonalika,2019-03-04,1650,1750,1700,3,2019,1
+West Bengal,Burdwan,Asansol,arhar (tur/red gram)(whole),Other,2019-03-04,6300,6500,6400,3,2019,1
+West Bengal,Burdwan,Asansol,black gram (urd beans)(whole),Black Gram Dal,2019-03-04,6000,6200,6100,3,2019,1
+West Bengal,Burdwan,Asansol,black gram (urd beans)(whole),Other,2019-03-04,5800,6000,5900,3,2019,1
+West Bengal,Burdwan,Asansol,brinjal,Other,2019-03-04,1030,1150,1100,3,2019,1
+West Bengal,Burdwan,Asansol,ginger(dry),Other,2019-03-04,7200,7500,7360,3,2019,1
+West Bengal,Burdwan,Asansol,green gram (moong)(whole),Green Gram Dhall-I,2019-03-04,7300,7700,7500,3,2019,1
+West Bengal,Burdwan,Asansol,green gram (moong)(whole),Other,2019-03-04,6900,7200,7000,3,2019,1
+West Bengal,Burdwan,Asansol,lentil (masur)(whole),Masur Dal,2019-03-04,6000,6200,6100,3,2019,1
+West Bengal,Burdwan,Asansol,mustard,Other,2019-03-04,4300,4400,4350,3,2019,1
+West Bengal,Burdwan,Asansol,onion,Nasik,2019-03-04,1000,1060,1020,3,2019,1
+West Bengal,Burdwan,Asansol,peas(dry),Other,2019-03-04,4800,5000,4900,3,2019,1
+West Bengal,Burdwan,Asansol,peas(dry),Peas(Dry),2019-03-04,4500,4700,4600,3,2019,1
+West Bengal,Burdwan,Asansol,potato,Jyoti,2019-03-04,540,580,560,3,2019,1
+West Bengal,Burdwan,Asansol,rice,Fine,2019-03-04,3000,3100,3000,3,2019,1
+West Bengal,Burdwan,Asansol,sweet pumpkin,Other,2019-03-04,880,940,910,3,2019,1
+West Bengal,Burdwan,Asansol,tomato,Hybrid,2019-03-04,520,600,560,3,2019,1
+West Bengal,Burdwan,Asansol,wheat,Kalyan,2019-03-04,1960,2040,2000,3,2019,1
+West Bengal,Burdwan,Burdwan,cucumbar(kheera),Cucumbar,2019-03-04,3900,4100,4000,3,2019,1
+West Bengal,Burdwan,Burdwan,green chilli,Green Chilly,2019-03-04,6900,7100,7000,3,2019,1
+West Bengal,Burdwan,Burdwan,gur(jaggery),Other,2019-03-04,3050,3150,3100,3,2019,1
+West Bengal,Burdwan,Burdwan,mustard,Sarson(Black),2019-03-04,4250,4350,4300,3,2019,1
+West Bengal,Burdwan,Burdwan,onion,Nasik,2019-03-04,950,1050,1000,3,2019,1
+West Bengal,Burdwan,Burdwan,paddy(dhan)(common),Common,2019-03-04,1750,1770,1750,3,2019,1
+West Bengal,Burdwan,Burdwan,potato,Jyoti,2019-03-04,580,620,600,3,2019,1
+West Bengal,Burdwan,Burdwan,rice,Common,2019-03-04,2250,2350,2300,3,2019,1
+West Bengal,Burdwan,Burdwan,sweet pumpkin,Sweet Pumpkin,2019-03-04,950,1050,1000,3,2019,1
+West Bengal,Burdwan,Burdwan,tomato,Other,2019-03-04,700,900,800,3,2019,1
+West Bengal,Burdwan,Guskara(Burdwan),brinjal,Other,2019-03-04,700,900,800,3,2019,1
+West Bengal,Burdwan,Guskara(Burdwan),mustard,Yellow (Black),2019-03-04,3750,3850,3800,3,2019,1
+West Bengal,Burdwan,Guskara(Burdwan),paddy(dhan)(common),Fine,2019-03-04,1750,1770,1750,3,2019,1
+West Bengal,Burdwan,Guskara(Burdwan),potato,Jyoti,2019-03-04,480,520,500,3,2019,1
+West Bengal,Burdwan,Guskara(Burdwan),rice,Fine,2019-03-04,2250,2350,2300,3,2019,1
+West Bengal,Burdwan,Guskara(Burdwan),"sesamum(sesame,gingelly,til)",Other,2019-03-04,6950,7050,7000,3,2019,1
+West Bengal,Burdwan,Kalna,brinjal,Other,2019-03-04,800,900,900,3,2019,1
+West Bengal,Burdwan,Kalna,cucumbar(kheera),Other,2019-03-04,3500,3600,3600,3,2019,1
+West Bengal,Burdwan,Kalna,green chilli,Other,2019-03-04,3600,4000,3800,3,2019,1
+West Bengal,Burdwan,Kalna,jute,TD-5,2019-03-04,3900,4000,3900,3,2019,1
+West Bengal,Burdwan,Kalna,onion,Local,2019-03-04,1000,1100,1100,3,2019,1
+West Bengal,Burdwan,Kalna,paddy(dhan)(common),Ratna,2019-03-04,1770,1770,1770,3,2019,1
+West Bengal,Burdwan,Kalna,paddy(dhan)(common),Swarna Masuri (New),2019-03-04,1750,1770,1750,3,2019,1
+West Bengal,Burdwan,Kalna,potato,Jyoti,2019-03-04,510,520,510,3,2019,1
+West Bengal,Burdwan,Kalna,rice,Fine,2019-03-04,2970,3000,3000,3,2019,1
+West Bengal,Burdwan,Kalna,rice,Other,2019-03-04,2230,2250,2250,3,2019,1
+West Bengal,Burdwan,Kalna,sweet pumpkin,Other,2019-03-04,1000,1100,1100,3,2019,1
+West Bengal,Burdwan,Kalna,tomato,Other,2019-03-04,1000,1100,1050,3,2019,1
+West Bengal,Burdwan,Katwa,ginger(dry),Other,2019-03-04,7900,8100,8000,3,2019,1
+West Bengal,Burdwan,Katwa,jute,TD-5,2019-03-04,3800,4000,3900,3,2019,1
+West Bengal,Burdwan,Katwa,mustard,Yellow (Black),2019-03-04,3750,3850,3800,3,2019,1
+West Bengal,Burdwan,Katwa,mustard oil,Other,2019-03-04,9025,10025,9925,3,2019,1
+West Bengal,Burdwan,Katwa,onion,Other,2019-03-04,950,1050,1000,3,2019,1
+West Bengal,Burdwan,Katwa,paddy(dhan)(common),Other,2019-03-04,1750,1770,1750,3,2019,1
+West Bengal,Burdwan,Katwa,potato,Jyoti,2019-03-04,480,520,500,3,2019,1
+West Bengal,Burdwan,Katwa,rice,Other,2019-03-04,2250,2350,2300,3,2019,1
+West Bengal,Burdwan,Katwa,"sesamum(sesame,gingelly,til)",Other,2019-03-04,7050,7150,7100,3,2019,1
+West Bengal,Burdwan,Memari,bitter gourd,Bitter Gourd,2019-03-04,4800,5200,5000,3,2019,1
+West Bengal,Burdwan,Memari,brinjal,Arkasheela Mattigulla,2019-03-04,1000,1300,1200,3,2019,1
+West Bengal,Burdwan,Memari,cucumbar(kheera),Cucumbar,2019-03-04,3000,3500,3200,3,2019,1
+West Bengal,Hooghly,Pandua,potato,Other,2019-03-04,460,490,480,3,2019,1
+West Bengal,Hooghly,Pandua,rice,Ratnachudi (718 5-749),2019-03-04,2800,2900,2850,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,bitter gourd,Bitter Gourd,2019-03-04,4850,5000,4900,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,brinjal,Other,2019-03-04,700,850,750,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,cabbage,Cabbage,2019-03-04,450,550,500,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,cauliflower,Other,2019-03-04,550,700,650,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,cucumbar(kheera),Other,2019-03-04,3000,3400,3200,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,green chilli,Green Chilly,2019-03-04,2500,2700,2600,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,potato,Jyoti,2019-03-04,475,575,525,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,sweet pumpkin,Sweet Pumpkin,2019-03-04,1100,1300,1200,3,2019,1
+West Bengal,Jalpaiguri,Dhupguri,tomato,Other,2019-03-04,850,1000,900,3,2019,1
+West Bengal,Malda,Samsi,jute,TD-5,2019-03-04,3750,3850,3800,3,2019,1
+West Bengal,Malda,Samsi,mustard,Sarson(Black),2019-03-04,3950,4050,4000,3,2019,1
+West Bengal,Malda,Samsi,mustard,Yellow (Black),2019-03-04,4050,4150,4100,3,2019,1
+West Bengal,Malda,Samsi,onion,Onion,2019-03-04,700,800,750,3,2019,1
+West Bengal,Malda,Samsi,potato,Jyoti,2019-03-04,450,500,475,3,2019,1
+West Bengal,Malda,Samsi,rice,Fine,2019-03-04,3150,3250,3200,3,2019,1
+West Bengal,Malda,Samsi,rice,H.Y.V.,2019-03-04,2650,2750,2700,3,2019,1
+West Bengal,Medinipur(W),Ghatal,gur(jaggery),Other,2019-03-04,2900,3000,2950,3,2019,1
+West Bengal,Medinipur(W),Ghatal,jute,TD-5,2019-03-04,4000,4200,4100,3,2019,1
+West Bengal,Medinipur(W),Ghatal,mustard,Yellow (Black),2019-03-04,4100,4300,4200,3,2019,1
+West Bengal,Medinipur(W),Ghatal,potato,Jyoti,2019-03-04,300,400,350,3,2019,1
+West Bengal,Medinipur(W),Ghatal,rice,Fine,2019-03-04,2500,2600,2550,3,2019,1
+West Bengal,Medinipur(W),Ghatal,rice,Masuri,2019-03-04,2350,2450,2400,3,2019,1
+West Bengal,Medinipur(W),Ghatal,"sesamum(sesame,gingelly,til)",Red,2019-03-04,8500,8700,8600,3,2019,1
+West Bengal,Murshidabad,Beldanga,jute,TD-5,2019-03-04,4250,4320,4300,3,2019,1
+West Bengal,Murshidabad,Beldanga,potato,Jyoti,2019-03-04,390,410,400,3,2019,1
+West Bengal,Murshidabad,Beldanga,rice,Other,2019-03-04,2650,2800,2700,3,2019,1
+West Bengal,Murshidabad,Jangipur,jute,TD-5,2019-03-04,3750,3850,3800,3,2019,1
+West Bengal,Murshidabad,Jangipur,onion,Red,2019-03-04,850,880,860,3,2019,1
+West Bengal,Murshidabad,Jangipur,paddy(dhan)(common),Common,2019-03-04,1760,1795,1780,3,2019,1
+West Bengal,Murshidabad,Jangipur,potato,Jyoti,2019-03-04,500,560,530,3,2019,1
+West Bengal,Murshidabad,Jangipur,rice,Fine,2019-03-04,2890,2935,2900,3,2019,1
+West Bengal,Murshidabad,Jangipur,turmeric,Finger,2019-03-04,7250,7400,7325,3,2019,1
+West Bengal,Murshidabad,Jangipur,wheat,Sonalika,2019-03-04,1975,2015,2000,3,2019,1
+West Bengal,Nadia,Nadia,brinjal,Round/Long,2019-03-04,1400,1600,1500,3,2019,1
+West Bengal,Nadia,Nadia,green chilli,Other,2019-03-04,4900,5100,5000,3,2019,1
+West Bengal,Nadia,Nadia,jute,TD-5,2019-03-04,4250,4350,4300,3,2019,1
+West Bengal,Nadia,Nadia,mustard,Yellow (Black),2019-03-04,4000,4150,4100,3,2019,1
+West Bengal,Nadia,Nadia,onion,Other,2019-03-04,1100,1300,1200,3,2019,1
+West Bengal,Nadia,Nadia,paddy(dhan)(common),Fine,2019-03-04,1750,1780,1770,3,2019,1
+West Bengal,Nadia,Nadia,potato,Other,2019-03-04,570,590,580,3,2019,1
+West Bengal,Nadia,Nadia,rice,Fine,2019-03-04,3700,3900,3800,3,2019,1
+West Bengal,Nadia,Nadia,sweet pumpkin,Sweet Pumpkin,2019-03-04,1300,1500,1400,3,2019,1
+West Bengal,North 24 Parganas,Habra,bitter gourd,Other,2019-03-04,6400,6700,6500,3,2019,1
+West Bengal,North 24 Parganas,Habra,brinjal,Other,2019-03-04,1400,1800,1600,3,2019,1
+West Bengal,North 24 Parganas,Habra,green chilli,Other,2019-03-04,5400,5900,5600,3,2019,1
+West Bengal,North 24 Parganas,Habra,onion,Other,2019-03-04,1000,1100,1000,3,2019,1
+West Bengal,North 24 Parganas,Habra,papaya (raw),Other,2019-03-04,700,900,800,3,2019,1
+West Bengal,North 24 Parganas,Habra,potato,Other,2019-03-04,550,580,560,3,2019,1
+West Bengal,North 24 Parganas,Habra,pumpkin,Other,2019-03-04,1300,1700,1500,3,2019,1
+West Bengal,North 24 Parganas,Habra,tomato,Other,2019-03-04,1300,1600,1400,3,2019,1
+West Bengal,Puruliya,Balarampur,okra,Other,2019-03-04,3200,3400,3300,3,2019,1
+West Bengal,Puruliya,Balarampur,brinjal,Other,2019-03-04,1200,1400,1300,3,2019,1
+West Bengal,Puruliya,Balarampur,lentil (masur)(whole),Other,2019-03-04,5440,5480,5450,3,2019,1
+West Bengal,Puruliya,Balarampur,mustard oil,Other,2019-03-04,9900,9980,9940,3,2019,1
+West Bengal,Puruliya,Balarampur,onion,Other,2019-03-04,900,1100,1000,3,2019,1
+West Bengal,Puruliya,Balarampur,potato,Other,2019-03-04,360,400,380,3,2019,1
+West Bengal,Puruliya,Balarampur,rice,Other,2019-03-04,2620,2660,2640,3,2019,1
+West Bengal,Puruliya,Balarampur,ridgeguard(tori),Other,2019-03-04,3200,3400,3300,3,2019,1
+West Bengal,Puruliya,Balarampur,tomato,Other,2019-03-04,250,350,300,3,2019,1
+West Bengal,Puruliya,Purulia,arhar dal(tur dal),Arhar Dal(Tur),2019-03-04,5900,6000,6000,3,2019,1
+West Bengal,Puruliya,Purulia,brinjal,Other,2019-03-04,1000,1400,1200,3,2019,1
+West Bengal,Puruliya,Purulia,gur(jaggery),Other,2019-03-04,2550,2625,2600,3,2019,1
+West Bengal,Puruliya,Purulia,masur dal,Masur Dal,2019-03-04,6200,6400,6300,3,2019,1
+West Bengal,Puruliya,Purulia,moath dal,Moath Dal,2019-03-04,7300,7400,7400,3,2019,1
+West Bengal,Puruliya,Purulia,mustard oil,Mustard Oil,2019-03-04,10400,10530,10530,3,2019,1
+West Bengal,Puruliya,Purulia,onion,Other,2019-03-04,900,1100,1000,3,2019,1
+West Bengal,Puruliya,Purulia,potato,Jyoti,2019-03-04,400,430,420,3,2019,1
+West Bengal,Puruliya,Purulia,pumpkin,Other,2019-03-04,750,1100,900,3,2019,1
+West Bengal,Puruliya,Purulia,rice,Other,2019-03-04,2580,2620,2600,3,2019,1
+West Bengal,Puruliya,Purulia,tomato,Other,2019-03-04,800,1000,900,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),bitter gourd,Bitter Gourd,2019-03-04,3800,4100,4000,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),brinjal,Brinjal,2019-03-04,2200,2300,2250,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),cucumbar(kheera),Cucumbar,2019-03-04,5200,5500,5400,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),green chilli,Green Chilly,2019-03-04,7400,7800,7600,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),guava,Other,2019-03-04,4600,4900,4800,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),onion,Beelary-Red,2019-03-04,1200,1350,1300,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),papaya (raw),Other,2019-03-04,1300,1450,1400,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),potato,Jyoti,2019-03-04,680,710,700,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),rice,Common,2019-03-04,2700,2900,2800,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),rice,Super Fine,2019-03-04,4300,4500,4400,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),sweet pumpkin,Sweet Pumpkin,2019-03-04,1400,1550,1500,3,2019,1
+West Bengal,Sounth 24 Parganas,Baruipur(Canning),tomato,Tomato,2019-03-04,1200,1350,1300,3,2019,1
+West Bengal,Uttar Dinajpur,Islampur,jute,TD-5,2019-03-04,4500,4700,4600,3,2019,1
+West Bengal,Uttar Dinajpur,Islampur,potato,Jyoti,2019-03-04,530,570,550,3,2019,1
+West Bengal,Uttar Dinajpur,Islampur,rice,Other,2019-03-04,3550,3650,3600,3,2019,1
+West Bengal,Uttar Dinajpur,Raiganj,jute,TD-5,2019-03-04,4400,4600,4500,3,2019,1
+West Bengal,Uttar Dinajpur,Raiganj,rice,Other,2019-03-04,3450,3550,3500,3,2019,1
+West Bengal,Uttar Dinajpur,Raiganj,wheat,Kalyan,2019-03-04,2075,2125,2100,3,2019,1
