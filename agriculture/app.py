@@ -11,8 +11,7 @@ LOGIC FIXES APPLIED:
   BUG 7 FIXED — Yield crop selectbox was global; now state-filtered
   BUG 8 FIXED — State input was free-text; now a selectbox from known states
 """
-"""
-import os
+import. os
 import warnings
 import numpy as np
 import pandas as pd
@@ -35,24 +34,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.markdown("""
-
-import os
-import streamlit as st
-
-# ── UNIVERSAL PATH LOGIC ────────────────────────────────────────────────
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-RAW_DIR   = os.path.join(BASE_DIR, "data", "raw")
-CLEAN_DIR = os.path.join(BASE_DIR, "data", "cleaned")
-MODEL_DIR = os.path.join(BASE_DIR, "models")
-OUT_DIR   = os.path.join(BASE_DIR, "outputs")
-SHAP_DIR  = os.path.join(OUT_DIR, "shap_charts")
-
-# This loop ensures Streamlit doesn't error out if a folder is missing
-for d in [RAW_DIR, CLEAN_DIR, MODEL_DIR, OUT_DIR, SHAP_DIR]:
-    if not os.path.exists(d):
-        os.makedirs(d, exist_ok=True)# ── 2. DATA LOADING LOGIC ────────────────────────────────────────────────
+st.markdown
 
 @st.cache_data
 def load_global_data():
