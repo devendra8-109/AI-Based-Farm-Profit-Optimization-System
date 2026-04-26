@@ -1,5 +1,5 @@
 """
-app.py — AI-Powered Farm Profit Optimization
+app.py — AI-Powered Farm Profit Optimization (v2 - Cache Cleared)
 =============================================
 Clean dashboard layout matching the HTML demo design.
 Sidebar navigation with 6 modules:
