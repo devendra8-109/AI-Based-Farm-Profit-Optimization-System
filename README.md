@@ -4,6 +4,15 @@ AI-Powered Farm Profit Optimization — Streamlit app backed by ML models
 trained across 5 modules (EDA → Price → ARIMA → Profit → SHAP).
 
 ---
+# 🚀 FarmAI: Premium AI Optimizer (v2.4)
+This repository has been upgraded with a high-fidelity "Farmering" UI and advanced predictive logic.
+
+### 🌟 New Premium Features:
+*   **Zero-Scroll Landing Page**: A cinematic full-screen entry experience with location-aware crop counting.
+*   **AI Radar Diagnostics**: A 360-degree interactive Radar Chart showing the core drivers (Rainfall, Humidity, Soil NPK) of every recommendation.
+*   **"Ideal vs. Current" Analysis**: Real-time benchmarking of your farm's soil against national biological ideals for each crop.
+*   **Live Profit Projection**: Integrated economics engine that calculates net profit using live market prices (₹/qtl) and predicted yields.
+*   **Premium Design System**: Full implementation of glassmorphism, Inter/Outfit typography, and a "Slate & Emerald" professional palette.
 
 ## 📁 Repo Structure
 
