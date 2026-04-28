@@ -39,8 +39,6 @@ import joblib
 warnings.filterwarnings("ignore")
 
 
-import os
-
 # This MUST be inside a saved .py file to work
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
